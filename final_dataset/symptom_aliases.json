@@ -1,0 +1,365 @@
+{
+  "abdominal pain": [
+    "abdominal pain",
+    "abdominal pains",
+    "belly pain",
+    "stomach pain"
+  ],
+  "alopecia": [
+    "alopecia",
+    "alopecias",
+    "hair loss"
+  ],
+  "anemia": [
+    "anaemia",
+    "anemia",
+    "anemias",
+    "low haemoglobin",
+    "low hemoglobin"
+  ],
+  "anxiety": [
+    "anxiety",
+    "anxietys",
+    "nervousness"
+  ],
+  "back pain": [
+    "back pain",
+    "back pains",
+    "backache"
+  ],
+  "bleeding": [
+    "bleeding",
+    "bleedings"
+  ],
+  "blurred vision": [
+    "blurred vision",
+    "blurred visions",
+    "blurry vision"
+  ],
+  "breathlessness": [
+    "air hunger",
+    "breathlessnes",
+    "breathlessness",
+    "dyspnea",
+    "shortness of breath"
+  ],
+  "burning": [
+    "burning",
+    "burning sensation",
+    "burnings"
+  ],
+  "chest pain": [
+    "angina",
+    "chest pain",
+    "chest pains",
+    "chest tightness"
+  ],
+  "chills": [
+    "chill",
+    "chills",
+    "shivering"
+  ],
+  "confusion": [
+    "confusion",
+    "confusions",
+    "disorientation"
+  ],
+  "constipation": [
+    "constipation",
+    "constipations",
+    "hard stool"
+  ],
+  "cough": [
+    "cough",
+    "coughing",
+    "coughs"
+  ],
+  "cramps": [
+    "cramp",
+    "cramping",
+    "cramps",
+    "spasms"
+  ],
+  "cyanosis": [
+    "blue skin",
+    "bluish skin",
+    "cyanosi",
+    "cyanosis"
+  ],
+  "depression": [
+    "depression",
+    "depressions",
+    "low mood"
+  ],
+  "diarrhea": [
+    "diarrhea",
+    "diarrheas",
+    "loose stool",
+    "watery stool"
+  ],
+  "dizziness": [
+    "dizzines",
+    "dizziness",
+    "giddiness",
+    "lightheadedness"
+  ],
+  "dyspnea": [
+    "breathlessness",
+    "dyspnea",
+    "dyspneas",
+    "shortness of breath"
+  ],
+  "edema": [
+    "edema",
+    "edemas",
+    "oedema",
+    "swelling"
+  ],
+  "erythema": [
+    "erythema",
+    "erythemas",
+    "redness"
+  ],
+  "fatigue": [
+    "exhaustion",
+    "fatigue",
+    "fatigues",
+    "lethargy",
+    "malaise",
+    "tiredness"
+  ],
+  "fever": [
+    "febrile",
+    "fever",
+    "fevers",
+    "high temperature",
+    "pyrexia"
+  ],
+  "headache": [
+    "cephalalgia",
+    "head pain",
+    "headache",
+    "headaches"
+  ],
+  "hearing loss": [
+    "hearing los",
+    "hearing loss",
+    "reduced hearing"
+  ],
+  "hematuria": [
+    "blood in urine",
+    "haematuria",
+    "hematuria",
+    "hematurias"
+  ],
+  "hypertension": [
+    "high blood pressure",
+    "hypertension",
+    "hypertensions"
+  ],
+  "hypotension": [
+    "hypotension",
+    "hypotensions",
+    "low blood pressure"
+  ],
+  "inflammation": [
+    "inflammation",
+    "inflammations"
+  ],
+  "insomnia": [
+    "insomnia",
+    "insomnias",
+    "sleep difficulty",
+    "sleeplessness",
+    "trouble sleeping"
+  ],
+  "itching": [
+    "itch",
+    "itching",
+    "itchings",
+    "pruritus"
+  ],
+  "jaundice": [
+    "icterus",
+    "jaundice",
+    "jaundices",
+    "yellow skin",
+    "yellowing"
+  ],
+  "joint pain": [
+    "arthralgia",
+    "joint pain",
+    "joint pains"
+  ],
+  "loss of appetite": [
+    "anorexia",
+    "loss of appetite",
+    "loss of appetites",
+    "poor appetite"
+  ],
+  "lymphadenopathy": [
+    "lymphadenopathy",
+    "lymphadenopathys",
+    "swollen lymph nodes"
+  ],
+  "memory loss": [
+    "amnesia",
+    "forgetfulness",
+    "memory los",
+    "memory loss"
+  ],
+  "muscle aches": [
+    "muscle ache",
+    "muscle aches",
+    "muscle pain",
+    "myalgia"
+  ],
+  "nausea": [
+    "nausea",
+    "nauseas",
+    "queasiness",
+    "queasy"
+  ],
+  "night sweats": [
+    "night sweat",
+    "night sweats",
+    "nocturnal sweating"
+  ],
+  "numbness": [
+    "loss of sensation",
+    "numbnes",
+    "numbness",
+    "paresthesia"
+  ],
+  "pain": [
+    "pain",
+    "pains"
+  ],
+  "pallor": [
+    "pale skin",
+    "pallor",
+    "pallors"
+  ],
+  "palpitations": [
+    "heart pounding",
+    "palpitation",
+    "palpitations",
+    "racing heart"
+  ],
+  "paralysis": [
+    "loss of movement",
+    "paralysi",
+    "paralysis"
+  ],
+  "polydipsia": [
+    "excessive thirst",
+    "polydipsia",
+    "polydipsias"
+  ],
+  "polyuria": [
+    "excessive urination",
+    "polyuria",
+    "polyurias"
+  ],
+  "pruritus": [
+    "itching",
+    "pruritu",
+    "pruritus"
+  ],
+  "rash": [
+    "eruption",
+    "rash",
+    "rashs",
+    "skin rash"
+  ],
+  "runny nose": [
+    "nasal discharge",
+    "rhinorrhea",
+    "runny nose",
+    "runny noses"
+  ],
+  "seizures": [
+    "convulsions",
+    "fits",
+    "seizure",
+    "seizures"
+  ],
+  "shortness of breath": [
+    "air hunger",
+    "breathlessness",
+    "dyspnea",
+    "shortness of breath",
+    "shortness of breaths"
+  ],
+  "skin lesions": [
+    "lesions",
+    "skin lesion",
+    "skin lesions"
+  ],
+  "sore throat": [
+    "sore throat",
+    "sore throats",
+    "throat pain"
+  ],
+  "swelling": [
+    "edema",
+    "oedema",
+    "puffiness",
+    "swelling",
+    "swellings"
+  ],
+  "syncope": [
+    "blackout",
+    "fainting",
+    "syncope",
+    "syncopes"
+  ],
+  "tachycardia": [
+    "fast heart rate",
+    "rapid heartbeat",
+    "tachycardia",
+    "tachycardias"
+  ],
+  "tinnitus": [
+    "ringing in ears",
+    "tinnitu",
+    "tinnitus"
+  ],
+  "tremors": [
+    "shaking",
+    "tremor",
+    "tremors"
+  ],
+  "urinary frequency": [
+    "frequent urination",
+    "urinary frequency",
+    "urinary frequencys"
+  ],
+  "vertigo": [
+    "spinning sensation",
+    "vertigo",
+    "vertigos"
+  ],
+  "vomiting": [
+    "emesis",
+    "throwing up",
+    "vomiting",
+    "vomitings"
+  ],
+  "weakness": [
+    "asthenia",
+    "weaknes",
+    "weakness"
+  ],
+  "weight gain": [
+    "increased weight",
+    "weight gain",
+    "weight gains"
+  ],
+  "weight loss": [
+    "cachexia",
+    "unintentional weight loss",
+    "weight los",
+    "weight loss"
+  ]
+}

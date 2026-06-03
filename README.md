@@ -164,3 +164,4 @@ RETURN DISTINCT m.label LIMIT 25;
 | `UnicodeEncodeError` on Windows | Use Python 3.10+, restart terminal |
 | `OpenRouter API key missing` | Add key to `.env` or paste into UI field |
 | Neo4j routing error with `neo4j://...` | Use `bolt://127.0.0.1:7687` instead |
+

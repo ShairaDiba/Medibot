@@ -1,0 +1,789 @@
+[
+  {
+    "id": "DEF-001",
+    "type": "definition",
+    "query": "What is diabetes mellitus?",
+    "expected_diseases": [
+      "Diabetes mellitus"
+    ],
+    "reference_answer": "Diabetes mellitus is a condition in which the pancreas no longer produces enough insulin or cells stop responding to insulin. It is a severe endocrine and cardiovascular disease. Management includes medication, diet control, and monitoring blood glucose levels. Uncontrolled diabetes is a leading cause of blindness and end-stage renal disease.",
+    "required_fields": [
+      "definition",
+      "treatment",
+      "prognosis"
+    ],
+    "notes": "Classic definition query. Exact label match expected."
+  },
+  {
+    "id": "DEF-002",
+    "type": "definition",
+    "query": "What is tuberculosis?",
+    "expected_diseases": [
+      "Tuberculosis"
+    ],
+    "reference_answer": "Tuberculosis (TB) is a chronic, potentially fatal contagious disease that most often affects the lungs. It is caused by Mycobacterium tuberculosis. Most patients recover with appropriate medication taken for a sufficient length of time.",
+    "required_fields": [
+      "definition",
+      "causes",
+      "treatment"
+    ],
+    "notes": "Critical severity. Should mention respiratory and infectious body systems."
+  },
+  {
+    "id": "DEF-003",
+    "type": "definition",
+    "query": "What is asthma?",
+    "expected_diseases": [
+      "Asthma"
+    ],
+    "reference_answer": "Asthma comprises a group of recurrent inflammatory diseases in which the airways periodically spasm. It is a severe respiratory disease. Treatment goals include maintaining lung function and preventing serious symptoms. More than half of childhood asthma cases resolve by young adulthood.",
+    "required_fields": [
+      "definition",
+      "treatment",
+      "prognosis"
+    ],
+    "notes": "Well-known respiratory disease."
+  },
+  {
+    "id": "DEF-004",
+    "type": "definition",
+    "query": "What is epilepsy?",
+    "expected_diseases": [
+      "Epilepsy"
+    ],
+    "reference_answer": "Epilepsy is a chronic disorder of the nervous system. The primary symptom is seizures. No cure exists but a wide range of treatment programs are available. Prognosis depends on cause and severity.",
+    "required_fields": [
+      "definition",
+      "treatment",
+      "prognosis"
+    ],
+    "notes": "Neurological. Should mention seizures."
+  },
+  {
+    "id": "DEF-005",
+    "type": "definition",
+    "query": "What is hypertension?",
+    "expected_diseases": [
+      "Hypertension"
+    ],
+    "reference_answer": "Hypertension is high blood pressure — the force of blood pushing against the walls of arteries. It is a severe cardiovascular condition. There is no cure, but it can be well controlled with proper medication and lifestyle changes.",
+    "required_fields": [
+      "definition",
+      "prognosis"
+    ],
+    "notes": "Cardiovascular. Should mention blood pressure."
+  },
+  {
+    "id": "DEF-006",
+    "type": "definition",
+    "query": "What is pneumonia?",
+    "expected_diseases": [
+      "Pneumonia"
+    ],
+    "reference_answer": "Pneumonia is an infection of the lung caused by nearly any class of organism including bacteria, viruses, and fungi. It is a critical respiratory disease. Symptoms include fever, cough, chest pain, and shortness of breath. Recovery depends on the type of organism involved.",
+    "required_fields": [
+      "definition",
+      "symptoms",
+      "treatment"
+    ],
+    "notes": "Respiratory infectious disease."
+  },
+  {
+    "id": "DEF-007",
+    "type": "definition",
+    "query": "What is dengue fever?",
+    "expected_diseases": [
+      "Dengue fever"
+    ],
+    "reference_answer": "Dengue fever, also known as breakbone fever, is a disease caused by several closely related viruses transmitted by mosquitoes. It is a moderate severity infectious disease. No cure is available. Prognosis is generally good and most patients fully recover.",
+    "required_fields": [
+      "definition",
+      "treatment",
+      "prognosis"
+    ],
+    "notes": "Vector-borne infectious disease. Should mention mosquito transmission."
+  },
+  {
+    "id": "DEF-008",
+    "type": "definition",
+    "query": "What is appendicitis?",
+    "expected_diseases": [
+      "Appendicitis"
+    ],
+    "reference_answer": "Appendicitis is an inflammation of the appendix. It is a critical gastrointestinal condition with symptoms including pain, fever, nausea, and loss of appetite. Most people do very well after appendectomy if the appendix is removed before it ruptures.",
+    "required_fields": [
+      "definition",
+      "symptoms",
+      "treatment",
+      "prognosis"
+    ],
+    "notes": "Should mention HAS_SYMPTOM: pain, fever, nausea."
+  },
+  {
+    "id": "DEF-009",
+    "type": "definition",
+    "query": "Explain Alzheimer's disease",
+    "expected_diseases": [
+      "Alzheimer's disease"
+    ],
+    "reference_answer": "Alzheimer's disease is a progressive neurological disorder characterized by inflammation, depression, and confusion. It causes memory loss and cognitive decline. The disease has no cure and worsens over time.",
+    "required_fields": [
+      "definition",
+      "symptoms",
+      "prognosis"
+    ],
+    "notes": "Uses 'explain' trigger. Should match Alzheimer's HAS_SYMPTOM edges: inflammation, depression, confusion."
+  },
+  {
+    "id": "DEF-010",
+    "type": "definition",
+    "query": "Tell me about agoraphobia",
+    "expected_diseases": [
+      "Agoraphobia"
+    ],
+    "reference_answer": "Agoraphobia is a psychiatric anxiety disorder involving fear of open or public spaces. Symptoms include fatigue, nausea, and palpitations. Treatment typically involves both medication and psychotherapy.",
+    "required_fields": [
+      "definition",
+      "symptoms",
+      "treatment"
+    ],
+    "notes": "Uses 'tell me about' trigger."
+  },
+  {
+    "id": "DEF-011",
+    "type": "definition",
+    "query": "What is anemia?",
+    "expected_diseases": [
+      "Anemias"
+    ],
+    "reference_answer": "Anemia is a hematological condition characterized by fatigue, weakness, bleeding, and loss of appetite. It affects red blood cell count or hemoglobin levels. Prognosis depends on the underlying cause; iron and folic acid deficiency anemias have good outcomes with treatment.",
+    "required_fields": [
+      "definition",
+      "symptoms",
+      "prognosis"
+    ],
+    "notes": "Partial label match — 'anemia' maps to 'Anemias'."
+  },
+  {
+    "id": "DEF-012",
+    "type": "definition",
+    "query": "What is malaria?",
+    "expected_diseases": [
+      "Malaria"
+    ],
+    "reference_answer": "Malaria is a serious infectious disease spread by certain mosquitoes. It is most common in tropical regions. Falciparum malaria is a medical emergency requiring hospitalization.",
+    "required_fields": [
+      "definition",
+      "treatment"
+    ],
+    "notes": "Should retrieve the Malaria encyclopedia row."
+  },
+  {
+    "id": "DEF-013",
+    "type": "definition",
+    "query": "Define abscess",
+    "expected_diseases": [
+      "Abscess"
+    ],
+    "reference_answer": "An abscess is a localized infection where the body's immune response causes tissue liquefaction and pus accumulation. Common findings include heat, redness, swelling, and pain. Abscesses can spread throughout the body if untreated.",
+    "required_fields": [
+      "definition",
+      "symptoms"
+    ],
+    "notes": "Uses 'define' trigger."
+  },
+  {
+    "id": "DEF-014",
+    "type": "definition",
+    "query": "What is allergic rhinitis?",
+    "expected_diseases": [
+      "Allergic rhinitis"
+    ],
+    "reference_answer": "Allergic rhinitis is an immunological condition characterized by swelling, inflammation, itching, and runny nose triggered by allergens. Most people achieve adequate relief with a combination of preventive measures and treatment.",
+    "required_fields": [
+      "definition",
+      "symptoms",
+      "prognosis"
+    ],
+    "notes": "Should match HAS_SYMPTOM: swelling, inflammation, itching, runny nose."
+  },
+  {
+    "id": "DEF-015",
+    "type": "definition",
+    "query": "What is bacteremia?",
+    "expected_diseases": [
+      "Bacteremia"
+    ],
+    "reference_answer": "Bacteremia is the presence of bacteria in the bloodstream. It is a critical infectious and cardiovascular condition. Symptoms include pain, fever, nausea, vomiting, confusion, and chills. If detected and treated promptly, most individuals recover.",
+    "required_fields": [
+      "definition",
+      "symptoms",
+      "prognosis"
+    ],
+    "notes": "Should match many HAS_SYMPTOM edges."
+  },
+  {
+    "id": "DEF-016",
+    "type": "definition",
+    "query": "What is anorexia nervosa?",
+    "expected_diseases": [
+      "Anorexia nervosa"
+    ],
+    "reference_answer": "Anorexia nervosa is a critical psychiatric and gastrointestinal eating disorder. Symptoms include pain, fatigue, headache, dizziness, weight loss, and constipation. Treatment depends on the degree of physical damage.",
+    "required_fields": [
+      "definition",
+      "symptoms",
+      "treatment"
+    ],
+    "notes": "Psychiatric/eating disorder. Should match multiple HAS_SYMPTOM edges."
+  },
+  {
+    "id": "DEF-017",
+    "type": "definition",
+    "query": "What is amyloidosis?",
+    "expected_diseases": [
+      "Amyloidosis"
+    ],
+    "reference_answer": "Amyloidosis is a condition where abnormal protein deposits accumulate in organs. Symptoms include pain, diarrhea, bleeding, constipation, and abdominal pain. The disease has multiple forms affecting different organ systems.",
+    "required_fields": [
+      "definition",
+      "symptoms"
+    ],
+    "notes": "Less common disease with rich HAS_SYMPTOM edges."
+  },
+  {
+    "id": "DEF-018",
+    "type": "definition",
+    "query": "Information on alagille syndrome",
+    "expected_diseases": [
+      "Alagille syndrome"
+    ],
+    "reference_answer": "Alagille syndrome is a genetic liver disorder characterized by itching, jaundice, and pruritus. It involves bile duct abnormalities and affects multiple organ systems.",
+    "required_fields": [
+      "definition",
+      "symptoms"
+    ],
+    "notes": "Uses 'information on' trigger."
+  },
+  {
+    "id": "DEF-019",
+    "type": "definition",
+    "query": "What is amebiasis?",
+    "expected_diseases": [
+      "Amebiasis"
+    ],
+    "reference_answer": "Amebiasis is an intestinal infection caused by the parasite Entamoeba histolytica. Symptoms include fever, diarrhea, and cramps. It is common in tropical and subtropical regions.",
+    "required_fields": [
+      "definition",
+      "symptoms"
+    ],
+    "notes": "Parasitic infectious disease."
+  },
+  {
+    "id": "DEF-020",
+    "type": "definition",
+    "query": "What is aortic valve insufficiency?",
+    "expected_diseases": [
+      "Aortic valve insufficiency"
+    ],
+    "reference_answer": "Aortic valve insufficiency is a cardiovascular condition where the aortic valve does not close properly, causing blood to leak back into the heart. Symptoms include fever, swelling, and inflammation.",
+    "required_fields": [
+      "definition",
+      "symptoms"
+    ],
+    "notes": "Cardiovascular. Should match HAS_SYMPTOM: fever, swelling, inflammation."
+  },
+  {
+    "id": "SYM-001",
+    "type": "symptom",
+    "query": "I have fever, pain, swelling, and inflammation",
+    "expected_diseases": [
+      "Abscess",
+      "Appendicitis",
+      "Aortic valve insufficiency"
+    ],
+    "reference_answer": "Fever combined with pain, swelling, and inflammation is characteristic of infectious and inflammatory conditions. Abscess is a common cause — it is defined by these four classic signs. Appendicitis also presents with these symptoms along with nausea and loss of appetite. A clinician should be consulted for proper diagnosis.",
+    "required_fields": [],
+    "notes": "Four exact HAS_SYMPTOM labels for Abscess. Top ranked disease should include Abscess."
+  },
+  {
+    "id": "SYM-002",
+    "type": "symptom",
+    "query": "I have itching, runny nose, and swelling",
+    "expected_diseases": [
+      "Allergic rhinitis"
+    ],
+    "reference_answer": "Itching, runny nose, and swelling are hallmark symptoms of allergic rhinitis. This immunological condition is triggered by allergens. Treatment includes antihistamines and preventive measures.",
+    "required_fields": [],
+    "notes": "Three exact HAS_SYMPTOM labels for Allergic rhinitis."
+  },
+  {
+    "id": "SYM-003",
+    "type": "symptom",
+    "query": "I have depression, confusion, and memory problems",
+    "expected_diseases": [
+      "Alzheimer's disease"
+    ],
+    "reference_answer": "Depression, confusion, and memory loss are characteristic symptoms of Alzheimer's disease, a progressive neurological disorder. These symptoms may also be seen in other neurological conditions. A clinical evaluation is essential.",
+    "required_fields": [],
+    "notes": "Maps to Alzheimer HAS_SYMPTOM: inflammation, depression, confusion."
+  },
+  {
+    "id": "SYM-004",
+    "type": "symptom",
+    "query": "I feel fatigue, nausea, and palpitations",
+    "expected_diseases": [
+      "Agoraphobia"
+    ],
+    "reference_answer": "Fatigue, nausea, and palpitations together can be signs of anxiety-related disorders such as agoraphobia. These symptoms may also indicate cardiac or gastrointestinal conditions. Please consult a clinician.",
+    "required_fields": [],
+    "notes": "Exact HAS_SYMPTOM match for Agoraphobia."
+  },
+  {
+    "id": "SYM-005",
+    "type": "symptom",
+    "query": "I have headache, dizziness, weakness, and vomiting",
+    "expected_diseases": [
+      "Arteriovenous malformations"
+    ],
+    "reference_answer": "Headache, dizziness, weakness, and vomiting can be signs of serious neurological conditions including arteriovenous malformations (AVM). Seizures, paralysis, and blurred vision may also accompany these. Immediate medical attention is recommended.",
+    "required_fields": [],
+    "notes": "Maps to AVM HAS_SYMPTOM: vomiting, headache, dizziness, weakness."
+  },
+  {
+    "id": "SYM-006",
+    "type": "symptom",
+    "query": "I have fever, diarrhea, and cramps",
+    "expected_diseases": [
+      "Amebiasis",
+      "Appendicitis"
+    ],
+    "reference_answer": "Fever, diarrhea, and cramps suggest intestinal infection. Amebiasis is a parasitic cause of exactly these three symptoms. Appendicitis also presents with fever, diarrhea, and abdominal cramps alongside pain.",
+    "required_fields": [],
+    "notes": "Amebiasis HAS_SYMPTOM: fever, diarrhea, cramps — exact match."
+  },
+  {
+    "id": "SYM-007",
+    "type": "symptom",
+    "query": "I have pain, fever, nausea, and diarrhea with loss of appetite",
+    "expected_diseases": [
+      "Appendicitis",
+      "Bacteremia"
+    ],
+    "reference_answer": "Pain, fever, nausea, diarrhea, and loss of appetite together are classic signs of appendicitis or a systemic infectious condition like bacteremia. Appendicitis requires prompt surgical evaluation. Bacteremia is a life-threatening condition requiring immediate treatment.",
+    "required_fields": [],
+    "notes": "Appendicitis HAS_SYMPTOM: pain, fever, nausea, diarrhea, loss of appetite — 5 of 7."
+  },
+  {
+    "id": "SYM-008",
+    "type": "symptom",
+    "query": "I have weight gain, high blood pressure, and shortness of breath",
+    "expected_diseases": [
+      "Ascites",
+      "Hypertension"
+    ],
+    "reference_answer": "Weight gain, hypertension, and shortness of breath may indicate fluid accumulation as in ascites, or cardiovascular conditions such as hypertension. Both require medical evaluation.",
+    "required_fields": [],
+    "notes": "Ascites HAS_SYMPTOM: weight gain, hypertension, shortness of breath — exact match."
+  },
+  {
+    "id": "SYM-009",
+    "type": "symptom",
+    "query": "I have high heart rate and high blood pressure",
+    "expected_diseases": [
+      "Anabolic steroid use",
+      "Hypertension"
+    ],
+    "reference_answer": "Elevated heart rate (tachycardia) and high blood pressure (hypertension) together can result from stimulant substances including anabolic steroids, or from primary cardiovascular conditions.",
+    "required_fields": [],
+    "notes": "Anabolic steroid use HAS_SYMPTOM: tachycardia, hypertension."
+  },
+  {
+    "id": "SYM-010",
+    "type": "symptom",
+    "query": "I have fatigue, weakness, and anemia with bleeding",
+    "expected_diseases": [
+      "Anemias"
+    ],
+    "reference_answer": "Fatigue, weakness, anemia, and bleeding are the core symptoms of anemias — a group of hematological conditions. Prognosis depends on the underlying cause. Iron or folic acid deficiency anemias respond well to supplementation.",
+    "required_fields": [],
+    "notes": "Anemias HAS_SYMPTOM: fatigue, swelling, weakness, bleeding, anemia — 4 exact."
+  },
+  {
+    "id": "SYM-011",
+    "type": "symptom",
+    "query": "I have a cough and fever with chest pain",
+    "expected_diseases": [
+      "Pneumonia",
+      "Tuberculosis"
+    ],
+    "reference_answer": "Cough, fever, and chest pain are classic symptoms of lower respiratory infections including pneumonia and tuberculosis. Pneumonia is suspected in patients with this combination plus shortness of breath. TB additionally involves night sweats and weight loss.",
+    "required_fields": [],
+    "notes": "Pneumonia matrix: cough, fever, chest pain. TB matrix: cough."
+  },
+  {
+    "id": "SYM-012",
+    "type": "symptom",
+    "query": "I have seizures and I feel confused",
+    "expected_diseases": [
+      "Epilepsy",
+      "Arteriovenous malformations"
+    ],
+    "reference_answer": "Seizures with confusion are primary neurological symptoms. Epilepsy is the most common cause of recurrent seizures. Arteriovenous malformations can also trigger seizures alongside confusion and other neurological signs.",
+    "required_fields": [],
+    "notes": "Epilepsy matrix: seizures. AVM HAS_SYMPTOM: seizures, confusion."
+  },
+  {
+    "id": "SYM-013",
+    "type": "symptom",
+    "query": "I have pain, fatigue, headache, weight loss, and dizziness",
+    "expected_diseases": [
+      "Anorexia nervosa"
+    ],
+    "reference_answer": "Pain, fatigue, headache, dizziness, and weight loss together are characteristic of anorexia nervosa — a critical eating disorder with both psychiatric and gastrointestinal involvement. Immediate clinical evaluation is strongly recommended.",
+    "required_fields": [],
+    "notes": "Anorexia HAS_SYMPTOM: pain, fatigue, headache, dizziness, weight loss — 5 exact."
+  },
+  {
+    "id": "SYM-014",
+    "type": "symptom",
+    "query": "I have itching and jaundice",
+    "expected_diseases": [
+      "Alagille syndrome"
+    ],
+    "reference_answer": "Itching and jaundice together suggest liver or bile duct disease. Alagille syndrome is a genetic condition that causes exactly these symptoms due to bile duct abnormalities. Hepatitis and cholestasis are other conditions to consider.",
+    "required_fields": [],
+    "notes": "Alagille HAS_SYMPTOM: itching, jaundice, pruritus."
+  },
+  {
+    "id": "SYM-015",
+    "type": "symptom",
+    "query": "I have fever, headache, rash, and loss of appetite",
+    "expected_diseases": [
+      "Allergic purpura",
+      "Dengue fever"
+    ],
+    "reference_answer": "Fever, headache, rash, and loss of appetite are symptoms of allergic purpura and dengue fever. Dengue often presents with this combination in tropical regions. Allergic purpura is an immune-mediated vasculitis with the same symptom cluster.",
+    "required_fields": [],
+    "notes": "Allergic purpura HAS_SYMPTOM: fever, headache, rash, loss of appetite — exact 4."
+  },
+  {
+    "id": "SYM-016",
+    "type": "symptom",
+    "query": "I have pain, diarrhea, bleeding, and abdominal pain",
+    "expected_diseases": [
+      "Amyloidosis",
+      "Appendicitis"
+    ],
+    "reference_answer": "Pain, diarrhea, bleeding, and abdominal pain suggest gastrointestinal pathology. Amyloidosis presents with exactly this combination due to organ infiltration. Appendicitis also causes abdominal pain and related symptoms.",
+    "required_fields": [],
+    "notes": "Amyloidosis HAS_SYMPTOM: pain, diarrhea, bleeding, constipation, abdominal pain."
+  },
+  {
+    "id": "SYM-017",
+    "type": "symptom",
+    "query": "I am having trouble breathing and wheezing",
+    "expected_diseases": [
+      "Asthma",
+      "Allergic rhinitis"
+    ],
+    "reference_answer": "Breathing difficulty and wheezing are hallmark signs of asthma — a respiratory condition involving airway spasm and inflammation. Allergic rhinitis can also contribute to respiratory symptoms. Immediate bronchodilator use may be needed.",
+    "required_fields": [],
+    "notes": "Tests RESPIRATORY_EXPERIENCE_TOKENS handling in medibot.py."
+  },
+  {
+    "id": "SYM-018",
+    "type": "symptom",
+    "query": "I have headache and high fever",
+    "expected_diseases": [
+      "Dengue fever",
+      "Bacteremia",
+      "Allergic purpura"
+    ],
+    "reference_answer": "Headache and high fever together are common in dengue fever, bacteremia, and other systemic infections. In dengue, these symptoms accompany severe body aches. Bacteremia may present similarly with added confusion and chills.",
+    "required_fields": [],
+    "notes": "Broad symptom query — tests ranking."
+  },
+  {
+    "id": "SYM-019",
+    "type": "symptom",
+    "query": "I feel very anxious in crowded places with nausea and rapid heartbeat",
+    "expected_diseases": [
+      "Agoraphobia"
+    ],
+    "reference_answer": "Anxiety in crowded places with nausea and palpitations (rapid heartbeat) is characteristic of agoraphobia. This psychiatric condition is treated with medication and psychotherapy. Panic disorder should also be considered.",
+    "required_fields": [],
+    "notes": "Natural language symptom description. Tests alias handling for palpitations."
+  },
+  {
+    "id": "SYM-020",
+    "type": "symptom",
+    "query": "I have swelling, constipation, and abdominal discomfort",
+    "expected_diseases": [
+      "Adhesions",
+      "Amyloidosis",
+      "Appendicitis"
+    ],
+    "reference_answer": "Swelling, constipation, and abdominal discomfort can result from adhesions (scar tissue in the abdomen), amyloidosis, or early appendicitis. Adhesions directly map to swelling and constipation as their primary symptoms.",
+    "required_fields": [],
+    "notes": "Adhesions HAS_SYMPTOM: swelling, constipation — exact match."
+  },
+  {
+    "id": "SYM-021",
+    "type": "symptom",
+    "query": "chest tightness and shortness of breath",
+    "expected_diseases": [
+      "Asthma",
+      "Pneumonia",
+      "Hypertension"
+    ],
+    "reference_answer": "Chest tightness and shortness of breath are respiratory emergency symptoms. Asthma is a primary cause of airway spasm producing these. Pneumonia also presents with chest pain and breathing difficulty. Hypertension can cause shortness of breath.",
+    "required_fields": [],
+    "notes": "No subject pronoun — tests robustness of query parsing."
+  },
+  {
+    "id": "SYM-022",
+    "type": "symptom",
+    "query": "I have pain, fever, nausea and vomiting with headache and chills",
+    "expected_diseases": [
+      "Babesiosis",
+      "Bacteremia"
+    ],
+    "reference_answer": "Pain, fever, nausea, vomiting, headache, and chills together suggest tick-borne infection (babesiosis) or systemic bacteremia. Both are serious infectious conditions requiring prompt medical attention.",
+    "required_fields": [],
+    "notes": "Babesiosis HAS_SYMPTOM: pain, fever, nausea, vomiting, headache, chills — 6 exact."
+  },
+  {
+    "id": "SYM-023",
+    "type": "symptom",
+    "query": "stomach pain and loose stool with fever",
+    "expected_diseases": [
+      "Amebiasis",
+      "Appendicitis",
+      "Bacteremia"
+    ],
+    "reference_answer": "Stomach pain (abdominal pain), loose stool (diarrhea), and fever together strongly suggest intestinal infection. Amebiasis presents with fever, diarrhea, and cramps. Appendicitis also begins with these symptoms.",
+    "required_fields": [],
+    "notes": "Tests symptom alias mapping: 'stomach pain' -> 'abdominal pain', 'loose stool' -> 'diarrhea'."
+  },
+  {
+    "id": "SYM-024",
+    "type": "symptom",
+    "query": "memory loss and confusion in elderly",
+    "expected_diseases": [
+      "Alzheimer's disease"
+    ],
+    "reference_answer": "Memory loss and confusion are primary symptoms of Alzheimer's disease, a progressive neurological condition most common in the elderly. Depression and inflammation also accompany the disease. No cure exists.",
+    "required_fields": [],
+    "notes": "Tests token matching for 'memory' and 'confusion'."
+  },
+  {
+    "id": "SYM-025",
+    "type": "symptom",
+    "query": "blood in urine with pain",
+    "expected_diseases": [
+      "Bladder stones",
+      "Kidney stones",
+      "Urinary tract infection",
+      "Bladder cancer",
+      "Cystitis"
+    ],
+    "reference_answer": "Blood in urine (hematuria) with pain commonly indicates urinary tract or kidney conditions such as kidney stones, bladder stones, urinary tract infection, cystitis, or bladder cancer. A urological evaluation is essential.",
+    "required_fields": [],
+    "notes": "Updated ground truth: hematuria+pain maps to urological conditions, not Anemias."
+  },
+  {
+    "id": "MIX-001",
+    "type": "mixed",
+    "query": "What causes epilepsy and how is it treated?",
+    "expected_diseases": [
+      "Epilepsy"
+    ],
+    "reference_answer": "Epilepsy is a neurological condition with various causes. No cure exists but treatment programs include antiepileptic medications and in some cases surgery. Prognosis varies widely by cause and severity.",
+    "required_fields": [
+      "causes",
+      "treatment"
+    ],
+    "notes": "Mixed definition + treatment query."
+  },
+  {
+    "id": "MIX-002",
+    "type": "mixed",
+    "query": "How serious is tuberculosis and can it be cured?",
+    "expected_diseases": [
+      "Tuberculosis"
+    ],
+    "reference_answer": "Tuberculosis is a critical severity infectious disease. Most patients recover with appropriate medication over a sufficient treatment period. Drug-resistant TB is harder to treat. The disease is contagious.",
+    "required_fields": [
+      "severity_level",
+      "treatment",
+      "prognosis"
+    ],
+    "notes": "Severity and treatability focus."
+  },
+  {
+    "id": "MIX-003",
+    "type": "mixed",
+    "query": "What is the prognosis for dengue fever?",
+    "expected_diseases": [
+      "Dengue fever"
+    ],
+    "reference_answer": "The prognosis for dengue fever is very good. Almost all patients fully recover. No cure or specific antiviral is available, but supportive treatment manages the symptoms effectively.",
+    "required_fields": [
+      "prognosis",
+      "treatment"
+    ],
+    "notes": "Prognosis-focused mixed query."
+  },
+  {
+    "id": "MIX-004",
+    "type": "mixed",
+    "query": "Is diabetes mellitus contagious and who gets it?",
+    "expected_diseases": [
+      "Diabetes mellitus"
+    ],
+    "reference_answer": "Diabetes mellitus is not contagious. It affects people of all ages, particularly those with genetic predisposition, obesity, or sedentary lifestyle. It is a severe endocrine condition affecting the cardiovascular, gastrointestinal, and renal systems.",
+    "required_fields": [
+      "is_contagious",
+      "age_groups_affected"
+    ],
+    "notes": "Tests is_contagious and age_groups_affected fields."
+  },
+  {
+    "id": "MIX-005",
+    "type": "mixed",
+    "query": "What are the complications of pneumonia?",
+    "expected_diseases": [
+      "Pneumonia"
+    ],
+    "reference_answer": "Pneumonia complications depend on the causative organism and the patient's health. Severe cases can lead to respiratory failure, sepsis, and death. Recovery is generally possible with appropriate antibiotic treatment.",
+    "required_fields": [
+      "complications",
+      "prognosis"
+    ],
+    "notes": "Complications field focus."
+  },
+  {
+    "id": "MIX-006",
+    "type": "mixed",
+    "query": "What body system does asthma affect?",
+    "expected_diseases": [
+      "Asthma"
+    ],
+    "reference_answer": "Asthma primarily affects the respiratory system. It also has musculoskeletal, immunological, and psychiatric components. It causes airway spasm and inflammation.",
+    "required_fields": [
+      "body_systems"
+    ],
+    "notes": "body_systems field focus."
+  },
+  {
+    "id": "MIX-007",
+    "type": "mixed",
+    "query": "What is the treatment for anemia?",
+    "expected_diseases": [
+      "Anemias"
+    ],
+    "reference_answer": "Treatment for anemia depends on its cause. Iron deficiency anemia is treated with iron supplementation. Folic acid deficiency requires folate supplements. Severe cases may require blood transfusions.",
+    "required_fields": [
+      "treatment"
+    ],
+    "notes": "Treatment-focused query."
+  },
+  {
+    "id": "MIX-008",
+    "type": "mixed",
+    "query": "Can hypertension be cured?",
+    "expected_diseases": [
+      "Hypertension"
+    ],
+    "reference_answer": "Hypertension has no cure, but it can be well controlled with medication and lifestyle changes such as diet and exercise. Uncontrolled hypertension increases risk of stroke and heart disease.",
+    "required_fields": [
+      "prognosis"
+    ],
+    "notes": "Yes/no framed prognosis query."
+  },
+  {
+    "id": "MIX-009",
+    "type": "mixed",
+    "query": "I have appendicitis symptoms — what should I know?",
+    "expected_diseases": [
+      "Appendicitis"
+    ],
+    "reference_answer": "Appendicitis presents with pain, fever, nausea, diarrhea, and loss of appetite. It is a critical gastrointestinal emergency. Most people recover well after appendectomy if performed before rupture. Seek immediate medical attention.",
+    "required_fields": [
+      "symptoms",
+      "treatment",
+      "prognosis"
+    ],
+    "notes": "Mixed user concern + definition."
+  },
+  {
+    "id": "MIX-010",
+    "type": "mixed",
+    "query": "What is bacteremia and how dangerous is it?",
+    "expected_diseases": [
+      "Bacteremia"
+    ],
+    "reference_answer": "Bacteremia is the presence of bacteria in the bloodstream — a critical infectious condition. Symptoms include fever, pain, nausea, vomiting, and confusion. If untreated, it can lead to sepsis and organ failure. Most individuals recover if treated promptly.",
+    "required_fields": [
+      "definition",
+      "severity_level",
+      "prognosis"
+    ],
+    "notes": "Definition + severity query."
+  },
+  {
+    "id": "EDGE-001",
+    "type": "edge",
+    "query": "What is abdominal pain",
+    "expected_diseases": [],
+    "reference_answer": "Abdominal pain is a symptom, not a disease itself. It is associated with many conditions including appendicitis, amebiasis, and amyloidosis. A clinical evaluation is needed to determine the underlying cause.",
+    "required_fields": [],
+    "notes": "Query about a symptom node rather than a disease. Should not crash."
+  },
+  {
+    "id": "EDGE-002",
+    "type": "edge",
+    "query": "xyzzy123 disease",
+    "expected_diseases": [],
+    "reference_answer": "No matching information found in the dataset for this query.",
+    "required_fields": [],
+    "notes": "Nonsense query — system should not crash, should report no match."
+  },
+  {
+    "id": "EDGE-003",
+    "type": "edge",
+    "query": "What is diabetis",
+    "expected_diseases": [
+      "Diabetes mellitus"
+    ],
+    "reference_answer": "Diabetes mellitus is a condition in which the pancreas no longer produces enough insulin. It is a severe endocrine disease. Management includes medication and diet control.",
+    "required_fields": [
+      "definition"
+    ],
+    "notes": "Misspelling test — current code will fail this (no fuzzy match). Documented as known gap."
+  },
+  {
+    "id": "EDGE-004",
+    "type": "edge",
+    "query": "I feel fine",
+    "expected_diseases": [],
+    "reference_answer": "No symptoms described. Please describe your symptoms or ask about a specific medical condition.",
+    "required_fields": [],
+    "notes": "Vacuous query — should not crash."
+  },
+  {
+    "id": "EDGE-005",
+    "type": "edge",
+    "query": "fever",
+    "expected_diseases": [
+      "Abscess",
+      "Dengue fever",
+      "Bacteremia",
+      "Appendicitis"
+    ],
+    "reference_answer": "Fever alone is a non-specific symptom associated with many conditions including abscess, dengue fever, bacteremia, appendicitis, and others. Additional symptoms are needed to narrow the differential.",
+    "required_fields": [],
+    "notes": "Single-token symptom. Tests BFS breadth."
+  }
+]

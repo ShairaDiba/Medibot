@@ -1,0 +1,1808 @@
+{
+  "summary": {
+    "total_queries": 60,
+    "scored_queries": 57,
+    "edge_case_queries": 3,
+    "hit1": 0.807,
+    "hit3": 0.9123,
+    "hit5": 0.9298,
+    "mrr": 0.8618,
+    "seed_found_rate": 0.9825,
+    "avg_elapsed_sec": 20.218,
+    "by_type": {
+      "definition": {
+        "n": 20,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "mrr": 1.0,
+        "seed_found": 1.0
+      },
+      "symptom": {
+        "n": 25,
+        "hit1": 0.64,
+        "hit3": 0.88,
+        "hit5": 0.92,
+        "mrr": 0.765,
+        "seed_found": 1.0
+      },
+      "mixed": {
+        "n": 10,
+        "hit1": 1.0,
+        "hit3": 1.0,
+        "hit5": 1.0,
+        "mrr": 1.0,
+        "seed_found": 1.0
+      }
+    },
+    "rouge1": 0.1973,
+    "rouge2": 0.0806,
+    "rougeL": 0.1529,
+    "bleu1": 0.1208,
+    "bleu2": 0.0747,
+    "bleu3": 0.0532,
+    "bleu4": 0.0402,
+    "edge_crashes": 0,
+    "edge_crash_ids": [],
+    "errors": 0,
+    "error_ids": []
+  },
+  "per_query": [
+    {
+      "qid": "DEF-001",
+      "type": "definition",
+      "query": "What is diabetes mellitus?",
+      "expected_diseases": [
+        "Diabetes mellitus"
+      ],
+      "ranked_top5": [
+        "Diabetes mellitus"
+      ],
+      "seed_count": 5,
+      "seed_found": true,
+      "elapsed_sec": 5.99,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 81,
+      "rouge1": 0.5074626865671641,
+      "rouge2": 0.2272727272727273,
+      "rougeL": 0.35820895522388063,
+      "bleu1": 0.35294117647058826,
+      "bleu2": 0.22118440115151616,
+      "bleu3": 0.1639018416448897,
+      "bleu4": 0.12211572086974172
+    },
+    {
+      "qid": "DEF-002",
+      "type": "definition",
+      "query": "What is tuberculosis?",
+      "expected_diseases": [
+        "Tuberculosis"
+      ],
+      "ranked_top5": [
+        "Tuberculosis"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 6.31,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 61,
+      "rouge1": 0.4842105263157894,
+      "rouge2": 0.3870967741935483,
+      "rougeL": 0.4631578947368421,
+      "bleu1": 0.3815789473684211,
+      "bleu2": 0.34207827153978826,
+      "bleu3": 0.3162397209103038,
+      "bleu4": 0.29295022024838735
+    },
+    {
+      "qid": "DEF-003",
+      "type": "definition",
+      "query": "What is asthma?",
+      "expected_diseases": [
+        "Asthma"
+      ],
+      "ranked_top5": [
+        "Asthma"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 12.83,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 312,
+      "rouge1": 0.209366391184573,
+      "rouge2": 0.14404432132963987,
+      "rougeL": 0.1873278236914601,
+      "bleu1": 0.10129870129870129,
+      "bleu2": 0.07618117502750549,
+      "bleu3": 0.0610280190351968,
+      "bleu4": 0.05058005361087156
+    },
+    {
+      "qid": "DEF-004",
+      "type": "definition",
+      "query": "What is epilepsy?",
+      "expected_diseases": [
+        "Epilepsy"
+      ],
+      "ranked_top5": [
+        "Epilepsy"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 19.56,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 215,
+      "rouge1": 0.256,
+      "rouge2": 0.19354838709677422,
+      "rougeL": 0.24800000000000003,
+      "bleu1": 0.13257575757575757,
+      "bleu2": 0.10767579885339344,
+      "bleu3": 0.09094830544883542,
+      "bleu4": 0.07823870798564053
+    },
+    {
+      "qid": "DEF-005",
+      "type": "definition",
+      "query": "What is hypertension?",
+      "expected_diseases": [
+        "Hypertension"
+      ],
+      "ranked_top5": [
+        "Hypertension"
+      ],
+      "seed_count": 4,
+      "seed_found": true,
+      "elapsed_sec": 6.83,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 187,
+      "rouge1": 0.30088495575221236,
+      "rouge2": 0.17857142857142855,
+      "rougeL": 0.24778761061946902,
+      "bleu1": 0.15481171548117154,
+      "bleu2": 0.11405870355023606,
+      "bleu3": 0.09372740469077151,
+      "bleu4": 0.0787082242367594
+    },
+    {
+      "qid": "DEF-006",
+      "type": "definition",
+      "query": "What is pneumonia?",
+      "expected_diseases": [
+        "Pneumonia"
+      ],
+      "ranked_top5": [
+        "Pneumonia"
+      ],
+      "seed_count": 5,
+      "seed_found": true,
+      "elapsed_sec": 8.82,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 96,
+      "rouge1": 0.42857142857142855,
+      "rouge2": 0.21739130434782608,
+      "rougeL": 0.34285714285714286,
+      "bleu1": 0.312,
+      "bleu2": 0.23527609039100725,
+      "bleu3": 0.18899366445309837,
+      "bleu4": 0.15707014618842785
+    },
+    {
+      "qid": "DEF-007",
+      "type": "definition",
+      "query": "What is dengue fever?",
+      "expected_diseases": [
+        "Dengue fever"
+      ],
+      "ranked_top5": [
+        "Dengue fever"
+      ],
+      "seed_count": 16,
+      "seed_found": true,
+      "elapsed_sec": 9.0,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 252,
+      "rouge1": 0.21333333333333332,
+      "rouge2": 0.10067114093959732,
+      "rougeL": 0.1933333333333333,
+      "bleu1": 0.1153846153846154,
+      "bleu2": 0.07941786716807245,
+      "bleu3": 0.060714041545838725,
+      "bleu4": 0.05052866977729317
+    },
+    {
+      "qid": "DEF-008",
+      "type": "definition",
+      "query": "What is appendicitis?",
+      "expected_diseases": [
+        "Appendicitis"
+      ],
+      "ranked_top5": [
+        "Appendicitis"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 12.19,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 197,
+      "rouge1": 0.27615062761506276,
+      "rouge2": 0.10126582278481011,
+      "rougeL": 0.200836820083682,
+      "bleu1": 0.148,
+      "bleu2": 0.09751943478426527,
+      "bleu3": 0.06744351848013527,
+      "bleu4": 0.04721129614780125
+    },
+    {
+      "qid": "DEF-009",
+      "type": "definition",
+      "query": "Explain Alzheimer's disease",
+      "expected_diseases": [
+        "Alzheimer's disease"
+      ],
+      "ranked_top5": [
+        "Alzheimer’s disease"
+      ],
+      "seed_count": 25,
+      "seed_found": true,
+      "elapsed_sec": 16.6,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 311,
+      "rouge1": 0.13675213675213674,
+      "rouge2": 0.051575931232091685,
+      "rougeL": 0.10826210826210826,
+      "bleu1": 0.06862745098039216,
+      "bleu2": 0.04106309969749472,
+      "bleu3": 0.025515992878042567,
+      "bleu4": 0.018729488287033254
+    },
+    {
+      "qid": "DEF-010",
+      "type": "definition",
+      "query": "Tell me about agoraphobia",
+      "expected_diseases": [
+        "Agoraphobia"
+      ],
+      "ranked_top5": [
+        "Agoraphobia"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 12.66,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 244,
+      "rouge1": 0.14814814814814814,
+      "rouge2": 0.014925373134328358,
+      "rougeL": 0.0962962962962963,
+      "bleu1": 0.0648967551622419,
+      "bleu2": 0.03394132297431699,
+      "bleu3": 0.015064077591109878,
+      "bleu4": 0.0056477061020751085
+    },
+    {
+      "qid": "DEF-011",
+      "type": "definition",
+      "query": "What is anemia?",
+      "expected_diseases": [
+        "Anemias"
+      ],
+      "ranked_top5": [
+        "Anemias"
+      ],
+      "seed_count": 7,
+      "seed_found": true,
+      "elapsed_sec": 14.71,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 241,
+      "rouge1": 0.23448275862068968,
+      "rouge2": 0.09722222222222224,
+      "rougeL": 0.16551724137931034,
+      "bleu1": 0.11214953271028037,
+      "bleu2": 0.07004671338524573,
+      "bleu3": 0.042525714155218275,
+      "bleu4": 0.022175934580426566
+    },
+    {
+      "qid": "DEF-012",
+      "type": "definition",
+      "query": "What is malaria?",
+      "expected_diseases": [
+        "Malaria"
+      ],
+      "ranked_top5": [
+        "Malaria"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 16.79,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 218,
+      "rouge1": 0.1795918367346939,
+      "rouge2": 0.12345679012345677,
+      "rougeL": 0.163265306122449,
+      "bleu1": 0.08614232209737827,
+      "bleu2": 0.067333546068641,
+      "bleu3": 0.05551440634053136,
+      "bleu4": 0.047717292097031704
+    },
+    {
+      "qid": "DEF-013",
+      "type": "definition",
+      "query": "Define abscess",
+      "expected_diseases": [
+        "Abscess"
+      ],
+      "ranked_top5": [
+        "Abscess"
+      ],
+      "seed_count": 3,
+      "seed_found": true,
+      "elapsed_sec": 68.73,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 100,
+      "rouge1": 0.3088235294117647,
+      "rouge2": 0.10447761194029853,
+      "rougeL": 0.2205882352941176,
+      "bleu1": 0.20930232558139536,
+      "bleu2": 0.14579872236017868,
+      "bleu3": 0.11022105598565958,
+      "bleu4": 0.08074595719280797
+    },
+    {
+      "qid": "DEF-014",
+      "type": "definition",
+      "query": "What is allergic rhinitis?",
+      "expected_diseases": [
+        "Allergic rhinitis"
+      ],
+      "ranked_top5": [
+        "Allergic rhinitis"
+      ],
+      "seed_count": 5,
+      "seed_found": true,
+      "elapsed_sec": 10.91,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 238,
+      "rouge1": 0.19330855018587362,
+      "rouge2": 0.0898876404494382,
+      "rougeL": 0.1338289962825279,
+      "bleu1": 0.10437710437710436,
+      "bleu2": 0.07742500238702608,
+      "bleu3": 0.056762430448671415,
+      "bleu4": 0.04199536938045396
+    },
+    {
+      "qid": "DEF-015",
+      "type": "definition",
+      "query": "What is bacteremia?",
+      "expected_diseases": [
+        "Bacteremia"
+      ],
+      "ranked_top5": [
+        "Bacteremia"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 13.16,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 164,
+      "rouge1": 0.29145728643216084,
+      "rouge2": 0.07106598984771573,
+      "rougeL": 0.1809045226130653,
+      "bleu1": 0.17674418604651163,
+      "bleu2": 0.10753001329885606,
+      "bleu3": 0.06880347108973932,
+      "bleu4": 0.04633446042605228
+    },
+    {
+      "qid": "DEF-016",
+      "type": "definition",
+      "query": "What is anorexia nervosa?",
+      "expected_diseases": [
+        "Anorexia nervosa"
+      ],
+      "ranked_top5": [
+        "Anorexia nervosa"
+      ],
+      "seed_count": 4,
+      "seed_found": true,
+      "elapsed_sec": 33.46,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 200,
+      "rouge1": 0.20869565217391303,
+      "rouge2": 0.07017543859649122,
+      "rougeL": 0.13043478260869568,
+      "bleu1": 0.12698412698412698,
+      "bleu2": 0.08109788612927007,
+      "bleu3": 0.05689302597366634,
+      "bleu4": 0.041472425530570275
+    },
+    {
+      "qid": "DEF-017",
+      "type": "definition",
+      "query": "What is amyloidosis?",
+      "expected_diseases": [
+        "Amyloidosis"
+      ],
+      "ranked_top5": [
+        "Amyloidosis"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 43.11,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 156,
+      "rouge1": 0.2553191489361702,
+      "rouge2": 0.05376344086021506,
+      "rougeL": 0.1595744680851064,
+      "bleu1": 0.1487179487179487,
+      "bleu2": 0.08755497498860408,
+      "bleu3": 0.04920869722234565,
+      "bleu4": 0.028067652656840858
+    },
+    {
+      "qid": "DEF-018",
+      "type": "definition",
+      "query": "Information on alagille syndrome",
+      "expected_diseases": [
+        "Alagille syndrome"
+      ],
+      "ranked_top5": [
+        "Alagille syndrome"
+      ],
+      "seed_count": 25,
+      "seed_found": true,
+      "elapsed_sec": 90.84,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 229,
+      "rouge1": 0.13438735177865613,
+      "rouge2": 0.02390438247011952,
+      "rougeL": 0.08695652173913043,
+      "bleu1": 0.06109324758842444,
+      "bleu2": 0.03139068271165219,
+      "bleu3": 0.014719091814265527,
+      "bleu4": 0.0056724814145349585
+    },
+    {
+      "qid": "DEF-019",
+      "type": "definition",
+      "query": "What is amebiasis?",
+      "expected_diseases": [
+        "Amebiasis"
+      ],
+      "ranked_top5": [
+        "Amebiasis"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 25.68,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 130,
+      "rouge1": 0.3037974683544304,
+      "rouge2": 0.14102564102564102,
+      "rougeL": 0.20253164556962025,
+      "bleu1": 0.17419354838709675,
+      "bleu2": 0.1258402841942901,
+      "bleu3": 0.07453083390294227,
+      "bleu4": 0.04062478619623357
+    },
+    {
+      "qid": "DEF-020",
+      "type": "definition",
+      "query": "What is aortic valve insufficiency?",
+      "expected_diseases": [
+        "Aortic valve insufficiency"
+      ],
+      "ranked_top5": [
+        "Aortic valve insufficiency"
+      ],
+      "seed_count": 13,
+      "seed_found": true,
+      "elapsed_sec": 28.36,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 140,
+      "rouge1": 0.2441860465116279,
+      "rouge2": 0.09411764705882353,
+      "rougeL": 0.1744186046511628,
+      "bleu1": 0.14450867052023122,
+      "bleu2": 0.09166060708238366,
+      "bleu3": 0.052823868239254966,
+      "bleu4": 0.017159728824213273
+    },
+    {
+      "qid": "SYM-001",
+      "type": "symptom",
+      "query": "I have fever, pain, swelling, and inflammation",
+      "expected_diseases": [
+        "Abscess",
+        "Appendicitis",
+        "Aortic valve insufficiency"
+      ],
+      "ranked_top5": [
+        "Abscess",
+        "SAPHO syndrome",
+        "Clenched fist injury",
+        "Pseudogout",
+        "Aortic valve insufficiency"
+      ],
+      "seed_count": 36,
+      "seed_found": true,
+      "elapsed_sec": 8.18,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 360,
+      "rouge1": 0.14925373134328357,
+      "rouge2": 0.035,
+      "rougeL": 0.0845771144278607,
+      "bleu1": 0.07964601769911504,
+      "bleu2": 0.03758709447320634,
+      "bleu3": 0.018448667245251803,
+      "bleu4": 0.010874571747898057
+    },
+    {
+      "qid": "SYM-002",
+      "type": "symptom",
+      "query": "I have itching, runny nose, and swelling",
+      "expected_diseases": [
+        "Allergic rhinitis"
+      ],
+      "ranked_top5": [
+        "Lice infestation",
+        "Canker sores",
+        "Traumatic brain injury",
+        "Lymphedema",
+        "Allergic rhinitis"
+      ],
+      "seed_count": 7,
+      "seed_found": true,
+      "elapsed_sec": 10.16,
+      "error": "",
+      "hit1": false,
+      "hit3": false,
+      "hit5": true,
+      "mrr": 0.2,
+      "llm_response_len": 332,
+      "rouge1": 0.09116809116809116,
+      "rouge2": 0.028653295128939826,
+      "rougeL": 0.07407407407407407,
+      "bleu1": 0.052109181141439205,
+      "bleu2": 0.032202463099588866,
+      "bleu3": 0.024941832217474497,
+      "bleu4": 0.0198470637678139
+    },
+    {
+      "qid": "SYM-003",
+      "type": "symptom",
+      "query": "I have depression, confusion, and memory problems",
+      "expected_diseases": [
+        "Alzheimer's disease"
+      ],
+      "ranked_top5": [
+        "Alzheimer’s disease",
+        "Memory loss",
+        "disease",
+        "Mood disorders",
+        "Amblyopia"
+      ],
+      "seed_count": 7,
+      "seed_found": true,
+      "elapsed_sec": 42.78,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 314,
+      "rouge1": 0.1440922190201729,
+      "rouge2": 0.0463768115942029,
+      "rougeL": 0.09798270893371759,
+      "bleu1": 0.07341772151898734,
+      "bleu2": 0.038609780596967076,
+      "bleu3": 0.026668016007125685,
+      "bleu4": 0.020974253438978914
+    },
+    {
+      "qid": "SYM-004",
+      "type": "symptom",
+      "query": "I feel fatigue, nausea, and palpitations",
+      "expected_diseases": [
+        "Agoraphobia"
+      ],
+      "ranked_top5": [
+        "Agoraphobia",
+        "Tricuspid valve stenosis",
+        "Renal tubular acidosis",
+        "Hepatitis, autoimmune",
+        "Hyperthyroidism"
+      ],
+      "seed_count": 7,
+      "seed_found": true,
+      "elapsed_sec": 17.85,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 290,
+      "rouge1": 0.11221122112211221,
+      "rouge2": 0.0398671096345515,
+      "rougeL": 0.08580858085808582,
+      "bleu1": 0.05737704918032786,
+      "bleu2": 0.0376135155912256,
+      "bleu3": 0.028570153496408252,
+      "bleu4": 0.02095260798964772
+    },
+    {
+      "qid": "SYM-005",
+      "type": "symptom",
+      "query": "I have headache, dizziness, weakness, and vomiting",
+      "expected_diseases": [
+        "Arteriovenous malformations"
+      ],
+      "ranked_top5": [
+        "Concussion",
+        "Arteriovenous malformations",
+        "Subarachnoid hemorrhage",
+        "Enterovirus infections",
+        "Pituitary dwarfism"
+      ],
+      "seed_count": 10,
+      "seed_found": true,
+      "elapsed_sec": 62.82,
+      "error": "",
+      "hit1": false,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 0.5,
+      "llm_response_len": 262,
+      "rouge1": 0.15602836879432622,
+      "rouge2": 0.05,
+      "rougeL": 0.1205673758865248,
+      "bleu1": 0.08595988538681947,
+      "bleu2": 0.05444386080042308,
+      "bleu3": 0.03910408531043174,
+      "bleu4": 0.0304887820089392
+    },
+    {
+      "qid": "SYM-006",
+      "type": "symptom",
+      "query": "I have fever, diarrhea, and cramps",
+      "expected_diseases": [
+        "Amebiasis",
+        "Appendicitis"
+      ],
+      "ranked_top5": [
+        "Amebiasis",
+        "Rotavirus infections",
+        "Calcium channel blockers",
+        "Gastroenteritis",
+        "Dehydration"
+      ],
+      "seed_count": 20,
+      "seed_found": true,
+      "elapsed_sec": 14.89,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 284,
+      "rouge1": 0.13636363636363635,
+      "rouge2": 0.0522875816993464,
+      "rougeL": 0.08441558441558443,
+      "bleu1": 0.07162534435261708,
+      "bleu2": 0.044481464372525197,
+      "bleu3": 0.030149051359776503,
+      "bleu4": 0.023490627132300632
+    },
+    {
+      "qid": "SYM-007",
+      "type": "symptom",
+      "query": "I have pain, fever, nausea, and diarrhea with loss of appetite",
+      "expected_diseases": [
+        "Appendicitis",
+        "Bacteremia"
+      ],
+      "ranked_top5": [
+        "Appendicitis",
+        "Cyclosporiasis",
+        "Gastroenteritis",
+        "Hepatitis D",
+        "Noroviruses"
+      ],
+      "seed_count": 36,
+      "seed_found": true,
+      "elapsed_sec": 9.19,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 339,
+      "rouge1": 0.13370473537604458,
+      "rouge2": 0.05042016806722689,
+      "rougeL": 0.10584958217270193,
+      "bleu1": 0.0702576112412178,
+      "bleu2": 0.04448693786492486,
+      "bleu3": 0.03194415311590991,
+      "bleu4": 0.024899726172041763
+    },
+    {
+      "qid": "SYM-008",
+      "type": "symptom",
+      "query": "I have weight gain, high blood pressure, and shortness of breath",
+      "expected_diseases": [
+        "Ascites",
+        "Hypertension"
+      ],
+      "ranked_top5": [
+        "Ascites",
+        "Heart failure",
+        "Hypertension",
+        "Myocarditis",
+        "Pleural effusion"
+      ],
+      "seed_count": 26,
+      "seed_found": true,
+      "elapsed_sec": 41.03,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 311,
+      "rouge1": 0.12422360248447205,
+      "rouge2": 0.0625,
+      "rougeL": 0.09937888198757763,
+      "bleu1": 0.06329113924050633,
+      "bleu2": 0.045697771500569154,
+      "bleu3": 0.03338093607246559,
+      "bleu4": 0.024820890827310493
+    },
+    {
+      "qid": "SYM-009",
+      "type": "symptom",
+      "query": "I have high heart rate and high blood pressure",
+      "expected_diseases": [
+        "Anabolic steroid use",
+        "Hypertension"
+      ],
+      "ranked_top5": [
+        "Anabolic steroid use",
+        "Heart failure",
+        "Renovascular hypertension",
+        "Hypokalemia",
+        "Women’s health"
+      ],
+      "seed_count": 34,
+      "seed_found": true,
+      "elapsed_sec": 21.78,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 252,
+      "rouge1": 0.12318840579710143,
+      "rouge2": 0.058394160583941604,
+      "rougeL": 0.08695652173913045,
+      "bleu1": 0.06191950464396285,
+      "bleu2": 0.04803706047707455,
+      "bleu3": 0.03859928565775325,
+      "bleu4": 0.03222439471695642
+    },
+    {
+      "qid": "SYM-010",
+      "type": "symptom",
+      "query": "I have fatigue, weakness, and anemia with bleeding",
+      "expected_diseases": [
+        "Anemias"
+      ],
+      "ranked_top5": [
+        "Anemias",
+        "Folic acid deficiency anemia",
+        "Infectious mononucleosis",
+        "Wounds",
+        "Fatigue"
+      ],
+      "seed_count": 24,
+      "seed_found": true,
+      "elapsed_sec": 21.1,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 326,
+      "rouge1": 0.1257142857142857,
+      "rouge2": 0.04597701149425287,
+      "rougeL": 0.10285714285714286,
+      "bleu1": 0.06483790523690773,
+      "bleu2": 0.036010527693136556,
+      "bleu3": 0.023513395863551015,
+      "bleu4": 0.015987230905065247
+    },
+    {
+      "qid": "SYM-011",
+      "type": "symptom",
+      "query": "I have a cough and fever with chest pain",
+      "expected_diseases": [
+        "Pneumonia",
+        "Tuberculosis"
+      ],
+      "ranked_top5": [
+        "Pneumocystis pneumonia",
+        "Pneumonia",
+        "Pneumococcal pneumonia",
+        "Hemophilus infections",
+        "Zika fever"
+      ],
+      "seed_count": 30,
+      "seed_found": true,
+      "elapsed_sec": 19.43,
+      "error": "",
+      "hit1": false,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 0.5,
+      "llm_response_len": 360,
+      "rouge1": 0.1473684210526316,
+      "rouge2": 0.05291005291005291,
+      "rougeL": 0.11578947368421053,
+      "bleu1": 0.06753812636165576,
+      "bleu2": 0.03840093201927286,
+      "bleu3": 0.021312261108770287,
+      "bleu4": 0.006787829665780097
+    },
+    {
+      "qid": "SYM-012",
+      "type": "symptom",
+      "query": "I have seizures and I feel confused",
+      "expected_diseases": [
+        "Epilepsy",
+        "Arteriovenous malformations"
+      ],
+      "ranked_top5": [
+        "Overhydration",
+        "Epilepsy",
+        "Lung cancer, small cell",
+        "Zellweger syndrome",
+        "Withdrawal syndromes"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 16.67,
+      "error": "",
+      "hit1": false,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 0.5,
+      "llm_response_len": 349,
+      "rouge1": 0.11956521739130437,
+      "rouge2": 0.016393442622950817,
+      "rougeL": 0.09239130434782608,
+      "bleu1": 0.05482456140350876,
+      "bleu2": 0.024545217614249538,
+      "bleu3": 0.005100655282541104,
+      "bleu4": 0.00232645646347449
+    },
+    {
+      "qid": "SYM-013",
+      "type": "symptom",
+      "query": "I have pain, fatigue, headache, weight loss, and dizziness",
+      "expected_diseases": [
+        "Anorexia nervosa"
+      ],
+      "ranked_top5": [
+        "Anorexia nervosa",
+        "Ménière’s disease",
+        "Zika fever",
+        "Hypertrophic cardiomyopathy",
+        "Chagas’ disease"
+      ],
+      "seed_count": 24,
+      "seed_found": true,
+      "elapsed_sec": 34.19,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 344,
+      "rouge1": 0.10439560439560439,
+      "rouge2": 0.049723756906077346,
+      "rougeL": 0.0879120879120879,
+      "bleu1": 0.051652892561983466,
+      "bleu2": 0.037285969011213116,
+      "bleu3": 0.02846937540035519,
+      "bleu4": 0.022130421534013015
+    },
+    {
+      "qid": "SYM-014",
+      "type": "symptom",
+      "query": "I have itching and jaundice",
+      "expected_diseases": [
+        "Alagille syndrome"
+      ],
+      "ranked_top5": [
+        "Alagille syndrome",
+        "Primary biliary cirrhosis",
+        "Scabies",
+        "Neonatal jaundice",
+        "Atopic dermatitis"
+      ],
+      "seed_count": 14,
+      "seed_found": true,
+      "elapsed_sec": 12.48,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 272,
+      "rouge1": 0.14617940199335547,
+      "rouge2": 0.046822742474916385,
+      "rougeL": 0.09966777408637872,
+      "bleu1": 0.07076923076923075,
+      "bleu2": 0.03620139928982457,
+      "bleu3": 0.015949585374858573,
+      "bleu4": 0.005957966820047311
+    },
+    {
+      "qid": "SYM-015",
+      "type": "symptom",
+      "query": "I have fever, headache, rash, and loss of appetite",
+      "expected_diseases": [
+        "Allergic purpura",
+        "Dengue fever"
+      ],
+      "ranked_top5": [
+        "Allergic purpura",
+        "Ehrlichiosis",
+        "Parrot fever",
+        "Pityriasis rosea",
+        "Ebola"
+      ],
+      "seed_count": 29,
+      "seed_found": true,
+      "elapsed_sec": 19.78,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 358,
+      "rouge1": 0.13020833333333331,
+      "rouge2": 0.041884816753926704,
+      "rougeL": 0.08854166666666667,
+      "bleu1": 0.06756756756756757,
+      "bleu2": 0.04096034649203699,
+      "bleu3": 0.029840150194055084,
+      "bleu4": 0.02342791325193704
+    },
+    {
+      "qid": "SYM-016",
+      "type": "symptom",
+      "query": "I have pain, diarrhea, bleeding, and abdominal pain",
+      "expected_diseases": [
+        "Amyloidosis",
+        "Appendicitis"
+      ],
+      "ranked_top5": [
+        "Amyloidosis",
+        "Gastrinoma",
+        "Bladder stones",
+        "Zika fever",
+        "Ovarian torsion"
+      ],
+      "seed_count": 16,
+      "seed_found": true,
+      "elapsed_sec": 9.17,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 381,
+      "rouge1": 0.08780487804878048,
+      "rouge2": 0.034313725490196074,
+      "rougeL": 0.06829268292682927,
+      "bleu1": 0.04670912951167727,
+      "bleu2": 0.03306346008551569,
+      "bleu3": 0.02651782590582258,
+      "bleu4": 0.022112089606671475
+    },
+    {
+      "qid": "SYM-017",
+      "type": "symptom",
+      "query": "I am having trouble breathing and wheezing",
+      "expected_diseases": [
+        "Asthma",
+        "Allergic rhinitis"
+      ],
+      "ranked_top5": [
+        "Fibrosis",
+        "Pleural effusion",
+        "Asbestosis",
+        "Wheezing",
+        "Endocarditis"
+      ],
+      "seed_count": 3,
+      "seed_found": true,
+      "elapsed_sec": 16.74,
+      "error": "",
+      "hit1": false,
+      "hit3": false,
+      "hit5": false,
+      "mrr": 0.0,
+      "llm_response_len": 346,
+      "rouge1": 0.09836065573770492,
+      "rouge2": 0.01098901098901099,
+      "rougeL": 0.06557377049180328,
+      "bleu1": 0.046189376443418015,
+      "bleu2": 0.017909761546007458,
+      "bleu3": 0.009062209800062936,
+      "bleu4": 0.003627091155739678
+    },
+    {
+      "qid": "SYM-018",
+      "type": "symptom",
+      "query": "I have headache and high fever",
+      "expected_diseases": [
+        "Dengue fever",
+        "Bacteremia",
+        "Allergic purpura"
+      ],
+      "ranked_top5": [
+        "Dengue fever",
+        "Temporal arteritis",
+        "Cat-scratch disease",
+        "Calcium channel blockers",
+        "Enterovirus infections"
+      ],
+      "seed_count": 21,
+      "seed_found": true,
+      "elapsed_sec": 13.15,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 287,
+      "rouge1": 0.11074918566775246,
+      "rouge2": 0.019672131147540982,
+      "rougeL": 0.09771986970684038,
+      "bleu1": 0.06267029972752045,
+      "bleu2": 0.0292600689613313,
+      "bleu3": 0.006167170312791478,
+      "bleu4": 0.0028332774862741598
+    },
+    {
+      "qid": "SYM-019",
+      "type": "symptom",
+      "query": "I feel very anxious in crowded places with nausea and rapid heartbeat",
+      "expected_diseases": [
+        "Agoraphobia"
+      ],
+      "ranked_top5": [
+        "Third-spacing",
+        "Agoraphobia",
+        "Ventricular tachycardia",
+        "Renal tubular acidosis",
+        "Myocarditis"
+      ],
+      "seed_count": 4,
+      "seed_found": true,
+      "elapsed_sec": 20.28,
+      "error": "",
+      "hit1": false,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 0.5,
+      "llm_response_len": 263,
+      "rouge1": 0.1413427561837456,
+      "rouge2": 0.028469750889679717,
+      "rougeL": 0.10600706713780919,
+      "bleu1": 0.07076923076923075,
+      "bleu2": 0.03910198028614657,
+      "bleu3": 0.024216167527642454,
+      "bleu4": 0.0144915584012896
+    },
+    {
+      "qid": "SYM-020",
+      "type": "symptom",
+      "query": "I have swelling, constipation, and abdominal discomfort",
+      "expected_diseases": [
+        "Adhesions",
+        "Amyloidosis",
+        "Appendicitis"
+      ],
+      "ranked_top5": [
+        "Adhesions",
+        "Hypothyroidism",
+        "Hemorrhoids",
+        "Traumatic brain injury",
+        "Lymphedema"
+      ],
+      "seed_count": 5,
+      "seed_found": true,
+      "elapsed_sec": 14.83,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 343,
+      "rouge1": 0.09497206703910616,
+      "rouge2": 0.03932584269662921,
+      "rougeL": 0.07821229050279328,
+      "bleu1": 0.057736720554272515,
+      "bleu2": 0.030586740798669142,
+      "bleu3": 0.01631322064687266,
+      "bleu4": 0.005636865454846193
+    },
+    {
+      "qid": "SYM-021",
+      "type": "symptom",
+      "query": "chest tightness and shortness of breath",
+      "expected_diseases": [
+        "Asthma",
+        "Pneumonia",
+        "Hypertension"
+      ],
+      "ranked_top5": [
+        "Pleural effusion",
+        "Myocarditis",
+        "Pneumonia",
+        "Pneumocystis pneumonia",
+        "Hypertrophic cardiomyopathy"
+      ],
+      "seed_count": 9,
+      "seed_found": true,
+      "elapsed_sec": 84.49,
+      "error": "",
+      "hit1": false,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 0.3333333333333333,
+      "llm_response_len": 357,
+      "rouge1": 0.13333333333333333,
+      "rouge2": 0.058981233243967826,
+      "rougeL": 0.10133333333333334,
+      "bleu1": 0.06407322654462243,
+      "bleu2": 0.0402060487710142,
+      "bleu3": 0.028145886233080966,
+      "bleu4": 0.01981385941502315
+    },
+    {
+      "qid": "SYM-022",
+      "type": "symptom",
+      "query": "I have pain, fever, nausea and vomiting with headache and chills",
+      "expected_diseases": [
+        "Babesiosis",
+        "Bacteremia"
+      ],
+      "ranked_top5": [
+        "Babesiosis",
+        "Lymphocytic choriomeningitis",
+        "Rickettsialpox",
+        "Bacteremia",
+        "Gastroenteritis"
+      ],
+      "seed_count": 32,
+      "seed_found": true,
+      "elapsed_sec": 65.08,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 330,
+      "rouge1": 0.10434782608695653,
+      "rouge2": 0.029154518950437316,
+      "rougeL": 0.08115942028985508,
+      "bleu1": 0.0552995391705069,
+      "bleu2": 0.03573689432431198,
+      "bleu3": 0.02870427741585675,
+      "bleu4": 0.024895173451403005
+    },
+    {
+      "qid": "SYM-023",
+      "type": "symptom",
+      "query": "stomach pain and loose stool with fever",
+      "expected_diseases": [
+        "Amebiasis",
+        "Appendicitis",
+        "Bacteremia"
+      ],
+      "ranked_top5": [
+        "Gastrinoma",
+        "Noroviruses",
+        "Gastroenteritis",
+        "Zika fever",
+        "Congenital ureter anomalies"
+      ],
+      "seed_count": 28,
+      "seed_found": true,
+      "elapsed_sec": 28.93,
+      "error": "",
+      "hit1": false,
+      "hit3": false,
+      "hit5": false,
+      "mrr": 0.09090909090909091,
+      "llm_response_len": 299,
+      "rouge1": 0.12025316455696201,
+      "rouge2": 0.03184713375796178,
+      "rougeL": 0.08227848101265824,
+      "bleu1": 0.07552083333333334,
+      "bleu2": 0.039717233787162104,
+      "bleu3": 0.02313868245832342,
+      "bleu4": 0.013428352269032707
+    },
+    {
+      "qid": "SYM-024",
+      "type": "symptom",
+      "query": "memory loss and confusion in elderly",
+      "expected_diseases": [
+        "Alzheimer's disease"
+      ],
+      "ranked_top5": [
+        "Ehrlichiosis",
+        "Alzheimer’s disease",
+        "Ménière’s disease",
+        "Memory loss",
+        "Creutzfeldt-Jakob disease"
+      ],
+      "seed_count": 8,
+      "seed_found": true,
+      "elapsed_sec": 47.27,
+      "error": "",
+      "hit1": false,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 0.5,
+      "llm_response_len": 274,
+      "rouge1": 0.14,
+      "rouge2": 0.060402684563758385,
+      "rougeL": 0.10666666666666667,
+      "bleu1": 0.06936416184971096,
+      "bleu2": 0.040105415254637636,
+      "bleu3": 0.02411698143102668,
+      "bleu4": 0.01422062492050315
+    },
+    {
+      "qid": "SYM-025",
+      "type": "symptom",
+      "query": "blood in urine with pain",
+      "expected_diseases": [
+        "Bladder stones",
+        "Kidney stones",
+        "Urinary tract infection",
+        "Bladder cancer",
+        "Cystitis"
+      ],
+      "ranked_top5": [
+        "Bladder stones",
+        "Ovarian torsion",
+        "Proctitis",
+        "Amyloidosis",
+        "Serum sickness"
+      ],
+      "seed_count": 25,
+      "seed_found": true,
+      "elapsed_sec": 6.24,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 240,
+      "rouge1": 0.1918819188191882,
+      "rouge2": 0.07434944237918215,
+      "rougeL": 0.14022140221402213,
+      "bleu1": 0.11149825783972127,
+      "bleu2": 0.07119060773078316,
+      "bleu3": 0.03288593384487221,
+      "bleu4": 0.018811700211578304
+    },
+    {
+      "qid": "MIX-001",
+      "type": "mixed",
+      "query": "What causes epilepsy and how is it treated?",
+      "expected_diseases": [
+        "Epilepsy"
+      ],
+      "ranked_top5": [
+        "Epilepsy"
+      ],
+      "seed_count": 2,
+      "seed_found": true,
+      "elapsed_sec": 14.81,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 139,
+      "rouge1": 0.2441860465116279,
+      "rouge2": 0.03529411764705882,
+      "rougeL": 0.12790697674418605,
+      "bleu1": 0.11578947368421055,
+      "bleu2": 0.04287106429420231,
+      "bleu3": 0.009924841056397325,
+      "bleu4": 0.00478169937577098
+    },
+    {
+      "qid": "MIX-002",
+      "type": "mixed",
+      "query": "How serious is tuberculosis and can it be cured?",
+      "expected_diseases": [
+        "Tuberculosis"
+      ],
+      "ranked_top5": [
+        "Tuberculosis"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 4.55,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 87,
+      "rouge1": 0.38655462184873945,
+      "rouge2": 0.13675213675213674,
+      "rougeL": 0.2857142857142857,
+      "bleu1": 0.2018348623853211,
+      "bleu2": 0.09666543638712344,
+      "bleu3": 0.044366266610165475,
+      "bleu4": 0.016941942256519467
+    },
+    {
+      "qid": "MIX-003",
+      "type": "mixed",
+      "query": "What is the prognosis for dengue fever?",
+      "expected_diseases": [
+        "Dengue fever"
+      ],
+      "ranked_top5": [
+        "Dengue fever"
+      ],
+      "seed_count": 17,
+      "seed_found": true,
+      "elapsed_sec": 3.63,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 53,
+      "rouge1": 0.425,
+      "rouge2": 0.30769230769230776,
+      "rougeL": 0.425,
+      "bleu1": 0.3442622950819672,
+      "bleu2": 0.26239752097989316,
+      "bleu3": 0.2268240747058694,
+      "bleu4": 0.2003006503040097
+    },
+    {
+      "qid": "MIX-004",
+      "type": "mixed",
+      "query": "Is diabetes mellitus contagious and who gets it?",
+      "expected_diseases": [
+        "Diabetes mellitus"
+      ],
+      "ranked_top5": [
+        "Diabetes mellitus"
+      ],
+      "seed_count": 5,
+      "seed_found": true,
+      "elapsed_sec": 8.61,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 82,
+      "rouge1": 0.2931034482758621,
+      "rouge2": 0.14035087719298248,
+      "rougeL": 0.25862068965517243,
+      "bleu1": 0.24,
+      "bleu2": 0.15569978883230456,
+      "bleu3": 0.12008331555763486,
+      "bleu4": 0.09719894931250395
+    },
+    {
+      "qid": "MIX-005",
+      "type": "mixed",
+      "query": "What are the complications of pneumonia?",
+      "expected_diseases": [
+        "Pneumonia"
+      ],
+      "ranked_top5": [
+        "Pneumonia"
+      ],
+      "seed_count": 5,
+      "seed_found": true,
+      "elapsed_sec": 5.06,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 17,
+      "rouge1": 0.1702127659574468,
+      "rouge2": 0.0,
+      "rougeL": 0.12765957446808512,
+      "bleu1": 0.17113903967753066,
+      "bleu2": 0.020960166113993737,
+      "bleu3": 0.010588523259449187,
+      "bleu4": 0.007628269120668021
+    },
+    {
+      "qid": "MIX-006",
+      "type": "mixed",
+      "query": "What body system does asthma affect?",
+      "expected_diseases": [
+        "Asthma"
+      ],
+      "ranked_top5": [
+        "Asthma"
+      ],
+      "seed_count": 6,
+      "seed_found": true,
+      "elapsed_sec": 4.05,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 15,
+      "rouge1": 0.2285714285714286,
+      "rouge2": 0.0,
+      "rougeL": 0.2285714285714286,
+      "bleu1": 0.23616155360692515,
+      "bleu2": 0.031241237003928647,
+      "bleu3": 0.016192976833446865,
+      "bleu4": 0.011816699867675442
+    },
+    {
+      "qid": "MIX-007",
+      "type": "mixed",
+      "query": "What is the treatment for anemia?",
+      "expected_diseases": [
+        "Anemias"
+      ],
+      "ranked_top5": [
+        "Anemias"
+      ],
+      "seed_count": 12,
+      "seed_found": true,
+      "elapsed_sec": 4.3,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 9,
+      "rouge1": 0.05555555555555555,
+      "rouge2": 0.0,
+      "rougeL": 0.05555555555555555,
+      "bleu1": 0.05778925308315676,
+      "bleu2": 0.010981647700041654,
+      "bleu3": 0.006499358644203198,
+      "bleu4": 0.005120591980338956
+    },
+    {
+      "qid": "MIX-008",
+      "type": "mixed",
+      "query": "Can hypertension be cured?",
+      "expected_diseases": [
+        "Hypertension"
+      ],
+      "ranked_top5": [
+        "Hypertension"
+      ],
+      "seed_count": 4,
+      "seed_found": true,
+      "elapsed_sec": 5.13,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 48,
+      "rouge1": 0.38961038961038963,
+      "rouge2": 0.18666666666666665,
+      "rougeL": 0.33766233766233766,
+      "bleu1": 0.3157894736842105,
+      "bleu2": 0.1986798535597566,
+      "bleu3": 0.14212429435129306,
+      "bleu4": 0.11237846994450511
+    },
+    {
+      "qid": "MIX-009",
+      "type": "mixed",
+      "query": "I have appendicitis symptoms — what should I know?",
+      "expected_diseases": [
+        "Appendicitis"
+      ],
+      "ranked_top5": [
+        "Appendicitis",
+        "Thrombophlebitis",
+        "Benzodiazepines",
+        "Portal vein bypass",
+        "Ascites"
+      ],
+      "seed_count": 2,
+      "seed_found": true,
+      "elapsed_sec": 8.12,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 438,
+      "rouge1": 0.10480349344978167,
+      "rouge2": 0.03947368421052631,
+      "rougeL": 0.07860262008733623,
+      "bleu1": 0.058076225045372055,
+      "bleu2": 0.038448717927205764,
+      "bleu3": 0.02997301702676203,
+      "bleu4": 0.023301856224410198
+    },
+    {
+      "qid": "MIX-010",
+      "type": "mixed",
+      "query": "What is bacteremia and how dangerous is it?",
+      "expected_diseases": [
+        "Bacteremia"
+      ],
+      "ranked_top5": [
+        "Bacteremia"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 7.88,
+      "error": "",
+      "hit1": true,
+      "hit3": true,
+      "hit5": true,
+      "mrr": 1.0,
+      "llm_response_len": 157,
+      "rouge1": 0.3384615384615384,
+      "rouge2": 0.1761658031088083,
+      "rougeL": 0.25641025641025644,
+      "bleu1": 0.2121212121212121,
+      "bleu2": 0.15391121883271508,
+      "bleu3": 0.11916192389365224,
+      "bleu4": 0.09400589840810225
+    },
+    {
+      "qid": "EDGE-001",
+      "type": "edge",
+      "query": "What is abdominal pain",
+      "expected_diseases": [],
+      "ranked_top5": [],
+      "seed_count": 8,
+      "seed_found": true,
+      "elapsed_sec": 3.67,
+      "error": "",
+      "hit1": null,
+      "hit3": null,
+      "hit5": null,
+      "mrr": null,
+      "no_crash": true,
+      "llm_response_len": 66,
+      "rouge1": 0.24742268041237114,
+      "rouge2": 0.02105263157894737,
+      "rougeL": 0.12371134020618557,
+      "bleu1": 0.21250000000000002,
+      "bleu2": 0.08983106507864946,
+      "bleu3": 0.021789779311827687,
+      "bleu4": 0.010766311536011727
+    },
+    {
+      "qid": "EDGE-002",
+      "type": "edge",
+      "query": "xyzzy123 disease",
+      "expected_diseases": [],
+      "ranked_top5": [
+        "Lyme disease",
+        "Liver disease",
+        "Tay-Sachs disease",
+        "Mosquito-borne disease",
+        "Ménière’s disease"
+      ],
+      "seed_count": 42,
+      "seed_found": true,
+      "elapsed_sec": 8.86,
+      "error": "",
+      "hit1": null,
+      "hit3": null,
+      "hit5": null,
+      "mrr": null,
+      "no_crash": true,
+      "llm_response_len": 175,
+      "rouge1": 0.07329842931937172,
+      "rouge2": 0.010582010582010583,
+      "rougeL": 0.041884816753926704,
+      "bleu1": 0.03167420814479638,
+      "bleu2": 0.016969011366926367,
+      "bleu3": 0.0050849847575309935,
+      "bleu4": 0.0027867827792906297
+    },
+    {
+      "qid": "EDGE-003",
+      "type": "edge",
+      "query": "What is diabetis",
+      "expected_diseases": [
+        "Diabetes mellitus"
+      ],
+      "ranked_top5": [],
+      "seed_count": 0,
+      "seed_found": false,
+      "elapsed_sec": 4.25,
+      "error": "",
+      "hit1": false,
+      "hit3": false,
+      "hit5": false,
+      "mrr": 0.0,
+      "llm_response_len": 13,
+      "rouge1": 0.04878048780487805,
+      "rouge2": 0.0,
+      "rougeL": 0.04878048780487805,
+      "bleu1": 0.06218710672644542,
+      "bleu2": 0.014286501847812693,
+      "bleu3": 0.008918167253790734,
+      "bleu4": 0.007153732611558957
+    },
+    {
+      "qid": "EDGE-004",
+      "type": "edge",
+      "query": "I feel fine",
+      "expected_diseases": [],
+      "ranked_top5": [
+        "Alzheimer’s disease",
+        "Anemias",
+        "Anxiety disorders",
+        "Contact dermatitis",
+        "Gambling disorder"
+      ],
+      "seed_count": 1,
+      "seed_found": true,
+      "elapsed_sec": 5.74,
+      "error": "",
+      "hit1": null,
+      "hit3": null,
+      "hit5": null,
+      "mrr": null,
+      "no_crash": true,
+      "llm_response_len": 202,
+      "rouge1": 0.09569377990430622,
+      "rouge2": 0.00966183574879227,
+      "rougeL": 0.04784688995215311,
+      "bleu1": 0.04562737642585551,
+      "bleu2": 0.013196601520912067,
+      "bleu3": 0.004055968433102489,
+      "bleu4": 0.0022507517046205516
+    },
+    {
+      "qid": "EDGE-005",
+      "type": "edge",
+      "query": "fever",
+      "expected_diseases": [
+        "Abscess",
+        "Dengue fever",
+        "Bacteremia",
+        "Appendicitis"
+      ],
+      "ranked_top5": [
+        "Typhoid fever",
+        "Fever of unknown origin",
+        "Fever",
+        "Trench fever",
+        "Paratyphoid fever"
+      ],
+      "seed_count": 15,
+      "seed_found": true,
+      "elapsed_sec": 9.37,
+      "error": "",
+      "hit1": false,
+      "hit3": false,
+      "hit5": false,
+      "mrr": 0.0,
+      "llm_response_len": 382,
+      "rouge1": 0.0794044665012407,
+      "rouge2": 0.019950124688279305,
+      "rougeL": 0.06451612903225806,
+      "bleu1": 0.04303278688524591,
+      "bleu2": 0.023025596029379196,
+      "bleu3": 0.014846893130768962,
+      "bleu4": 0.010778262367437437
+    }
+  ]
+}

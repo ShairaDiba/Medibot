@@ -59,6 +59,33 @@ REJECT_ENTRY_NAME = [
     r"Cengage Learning",
     r"PreMediaGlobal",
     r"^\(",
+    # Fix 4 (Bug 4): Filter garbage author/editor attribution strings leaked from Gale Encyclopedia
+    # e.g. "REVISED BY TISH DAVIDSON, AM", "UPDATED BY L. LEE CULVERT"
+    r"(?i)^(revised|updated|reviewed|written|edited)\s+by\b",
+    r"(?i)\b(M\.?D\.?|PH\.?D\.?|R\.?N\.?|D\.?O\.?)\s*$",
+    r"(?i)^[A-Z][A-Z\s\.,]{15,}(M\.D\.|PH\.D\.|AM|RN|DO)\s*$",
+    r"(?i)\bCengage\b",
+    r"(?i)\bThomson\b",
+    r"(?i)\bGale Encyclopedia\b",
+    # Fix 5: Additional garbage patterns found in eval results
+    # Author names: "Teresa G. Odle", "L. Lee Culvert" — First + middle initial + Last
+    r"(?i)^[A-Z][a-z]+\s+[A-Z]\.\s+[A-Z][a-z]+$",
+    # URL fragments: "org.uk.", "aafp.org/afp/2005/...", "www.something.com"
+    r"(?i)(https?://|www\.|\.org|\.com|\.net|\.uk|\.gov)[^\s]*",
+    r"(?i)^[a-z0-9\-]+\.(org|com|net|uk|gov|edu)[/\.]",
+    # Section headings from encyclopedia: "Causes and symptoms", "Resources", "Organizations"
+    r"(?i)^(causes\s+and\s+symptoms|resources|organizations|further\s+reading|other|normal\s+results|abnormal\s+results)$",
+    # Bullet/prefix character artifacts: "• chronic lymphocytic thyroiditis", "I Celiac disease"
+    r"^[•\-\*·]\s+",
+    r"^I\s+[A-Z]",  # OCR "I " prefix before a capital (common scan artifact)
+    # Bare lowercase single-concept words that are never disease names
+    r"^(infections|bleeding|arteries|veins|bacteria|viruses|fungi|symptoms|complications|treatment|diagnosis|prognosis|prevention)$",
+    # Sentence fragments and OCR garbage from Gale Encyclopedia
+    r"(?i)^bacteria\s+that\b",
+    r"(?i)\bimmediately\s*[:\.]?\s*$",
+    r"(?i)^(rapidly|slowly|usually|often|commonly|typically)\s+the\b",
+    r"(?i)\b(may be present|can be found|as described|as noted)\b",
+    r":\s*$",
 ]
 
 
@@ -142,6 +169,27 @@ def user_word_tokens(text: str) -> List[str]:
 def parse_definition_query(user_text: str) -> Optional[str]:
     low = norm_user(user_text)
     patterns = [
+        # Fix 2 (Bug 3): specific aspect-of-disease patterns MUST come before
+        # the generic "what is (.+)" pattern, otherwise "what is the treatment
+        # for Lyme disease" is swallowed by the generic rule and returns
+        # "the treatment for lyme disease" as the topic instead of "lyme disease".
+        r"^what\s+(?:is\s+the\s+|are\s+the\s+)?(?:prognosis|treatment|diagnosis|causes?|symptoms?|complications?|prevention|cure)\s+(?:of|for)\s+(.+?)\??$",
+        # Fix 6 (multi-intent): compound questions BEFORE their single-clause prefixes.
+        # "what causes epilepsy and how is it treated?" must match here (capturing "epilepsy")
+        # BEFORE the generic "what causes (.+)" rule swallows the whole tail.
+        # Similarly "how serious is TB and can it be cured?" must precede "how serious is (.+)".
+        r"^what\s+(?:causes?|is)\s+(.+?)\s+and\s+how\s+(?:is\s+it|can\s+it\s+be|do\s+you)\s+(?:treated?|diagnosed?|prevented?|cured?|managed?)\??$",
+        r"^how\s+(?:serious|dangerous|severe|deadly)\s+is\s+(.+?)\s+and\s+(?:can|is)\s+(?:it|this)\s+(?:be\s+)?(?:cured?|treated?|prevented?)\??$",
+        r"^what\s+is\s+(.+?)\s+and\s+how\s+(?:dangerous|serious|deadly|contagious|hereditary)\s+is\s+(?:it|this)\??$",
+        r"^what\s+is\s+(.+?)\s+and\s+(?:who|what\s+age|what\s+people)\s+(?:gets?|can\s+get|is\s+at\s+risk)\??$",
+        r"^(?:is|can)\s+(.+?)\s+(?:be\s+)?(?:cured?|treated?|prevented?|contagious|hereditary|genetic)\s+and\s+.+\??$",
+        # Single-clause patterns — must come AFTER multi-intent compound patterns above
+        r"^how\s+(?:is|are)\s+(.+?)\s+(?:treated?|diagnosed?|cured?|prevented?)\??$",
+        r"^(?:is|can)\s+(.+?)\s+(?:be\s+)?(?:cured?|treated?|prevented?|contagious|hereditary|genetic)\??$",
+        r"^how\s+(?:serious|dangerous|severe)\s+is\s+(.+?)\??$",
+        r"^what\s+(?:body\s+system|organ|part\s+of\s+the\s+body)\s+does\s+(.+?)\s+affect\??$",
+        r"^what\s+causes?\s+(.+?)\??$",
+        # Generic patterns last
         r"^what\s+is\s+(.+?)\??$",
         r"^what\s+are\s+(.+?)\??$",
         r"^define\s+(.+?)\??$",
@@ -160,8 +208,17 @@ def parse_definition_query(user_text: str) -> Optional[str]:
 
 def find_encyclopedia_row(entries: pd.DataFrame, topic: str) -> Optional[pd.Series]:
     t_low = topic.strip().lower()
+    # Fix 8: normalize apostrophe variants so "alzheimers disease" matches
+    # "alzheimer's disease" and vice versa. Strip possessive 's and curly quotes.
+    def norm_apos(s: str) -> str:
+        return re.sub(r"['\u2018\u2019]s?\b", "", s).replace("\u2018", "").replace("\u2019", "").strip()
+
+    t_norm = norm_apos(t_low)
     names = entries["entry_name"].astype(str)
-    exact = entries[names.str.lower() == t_low]
+    names_low = names.str.lower()
+    exact = entries[names_low == t_low]
+    if not len(exact):
+        exact = entries[names_low.apply(norm_apos) == t_norm]
     if len(exact) == 1:
         return exact.iloc[0]
     if len(exact) > 1:
@@ -176,6 +233,12 @@ def find_encyclopedia_row(entries: pd.DataFrame, topic: str) -> Optional[pd.Seri
     ]
     if len(contains):
         return contains.loc[contains["entry_name"].astype(str).str.len().idxmin()]
+    # Last resort: apostrophe-normalized match
+    if t_norm != t_low:
+        dis_norms = dis_only["entry_name"].astype(str).str.lower().apply(norm_apos)
+        norm_contains = dis_only[dis_norms.str.contains(re.escape(t_norm), na=False)]
+        if len(norm_contains):
+            return norm_contains.loc[norm_contains["entry_name"].astype(str).str.len().idxmin()]
     return None
 
 
@@ -467,8 +530,31 @@ def disease_scores_from_graph(
     seeds: Set[str],
     adj: DefaultDict[str, List[Tuple[str, str, str, str]]],
 ) -> List[Tuple[float, str]]:
-    """Score Disease nodes using distance + direct seed incidence on incident edges."""
+    """Score Disease nodes using distance + direct seed incidence on incident edges.
+
+    Fix 1 (hub-node bias): normalize the HAS_SYMPTOM seed-hit bonus by the
+    total number of HAS_SYMPTOM edges the disease has. This prevents
+    well-connected hub diseases (e.g. Zika fever) from dominating purely
+    because they happen to share many generic symptoms with the query seeds.
+    The normalized bonus = 25 * (seed_hits / total_has_symptom_edges) * 10,
+    capped so a perfect-overlap disease (all its symptoms in seeds) still
+    scores high, but a hub disease that matches 3/50 symptoms is penalised.
+    """
     disease_nid_score: DefaultDict[str, float] = defaultdict(float)
+    # Pre-count total HAS_SYMPTOM edges per disease node for normalization.
+    has_symptom_total: DefaultDict[str, int] = defaultdict(int)
+    has_symptom_seed_hits: DefaultDict[str, int] = defaultdict(int)
+
+    for nid in visited:
+        info = by_id.get(nid)
+        if not info or info["node_type"] != "Disease":
+            continue
+        for nb, rel, _, _ in adj.get(nid, []):
+            if rel == "HAS_SYMPTOM":
+                has_symptom_total[nid] += 1
+                if nb in seeds:
+                    has_symptom_seed_hits[nid] += 1
+
     for nid in visited:
         info = by_id.get(nid)
         if not info or info["node_type"] != "Disease":
@@ -479,16 +565,32 @@ def disease_scores_from_graph(
         for nb, rel, _, _ in adj.get(nid, []):
             if nb in seeds:
                 if rel == "HAS_SYMPTOM":
-                    disease_nid_score[nid] += 25.0
+                    # Normalized bonus: reward diseases where seeds cover a large
+                    # fraction of their symptom profile, not just absolute count.
+                    total_hs = max(has_symptom_total[nid], 1)
+                    seed_hits = has_symptom_seed_hits[nid]
+                    coverage = seed_hits / total_hs  # 0.0 – 1.0
+                    disease_nid_score[nid] += 25.0 * coverage * 10.0
                 elif rel == "AFFECTS":
                     disease_nid_score[nid] += 12.0
                 elif rel == "TREATS":
-                    disease_nid_score[nid] += 2.0
+                    # TREATS edges are known-noisy (44k+ edges, 88% of graph).
+                    # Reduced from 2.0 to 0.5 to suppress drug-hub flooding.
+                    disease_nid_score[nid] += 0.5
 
     ranked = [
         (sc, by_id[nid]["label"])
         for nid, sc in disease_nid_score.items()
         if is_valid_graph_label(by_id[nid]["label"])
+        # Fix 7: Only emit Disease-type nodes in the ranked list.
+        # Symptom, Drug, Procedure, and BodySystem nodes (e.g. "Memory loss",
+        # "arteries", "bleeding") were winning over real Disease nodes because
+        # they happen to be graph seeds — they score base=100 at distance 0.
+        # The scoring loop already restricts scoring to Disease nodes, so this
+        # filter is belt-and-suspenders: disease_nid_score only has Disease nids
+        # after the loop above, but by_id lookup could still return non-Disease
+        # if a label collision occurred. This makes the intent explicit.
+        and by_id[nid]["node_type"] == "Disease"
     ]
     ranked.sort(key=lambda x: -x[0])
     return ranked
@@ -529,6 +631,172 @@ def matrix_row_blurb(matrix: pd.DataFrame, disease_name: str) -> str:
     return "matrix positives (1): " + ", ".join(pos[:40]) + (" ..." if len(pos) > 40 else "")
 
 
+ENC_SYMPTOM_BOOST = 400.0   # score per-concept match; must beat noisy BFS scores (seen up to 300+)
+ENC_SYMPTOM_MIN_HITS = 2    # minimum symptom token matches required
+ENC_SEARCH_COLUMNS = ["symptoms", "definition", "description", "causes", "key_terms"]
+ENC_TOP_N = 5               # max encyclopedia-direct hits to inject per query
+
+# Columns searched by boost_ranking_with_encyclopedia (broader than ENC_SEARCH_COLUMNS
+# because definition often contains the symptom list when symptoms column is truncated)
+ENC_BOOST_COLUMNS = ["definition", "symptoms", "description", "causes"]
+
+_BOOST_STOPWORDS = {
+    "the", "and", "for", "with", "have", "has", "what", "that", "this",
+    "from", "are", "can", "been", "not", "but", "its", "also", "some",
+    "when", "which", "who", "how", "does", "did", "was", "will", "very",
+    "about", "into", "more", "like", "feel", "i", "me", "my", "is", "in",
+    "of", "to", "a", "an", "or", "do", "at", "by", "on", "up", "it",
+}
+
+
+def boost_ranking_with_encyclopedia(
+    user_text: str,
+    ranked: List[Tuple[float, str]],
+    entries: pd.DataFrame,
+) -> List[Tuple[float, str]]:
+    """Boost or inject diseases whose encyclopedia *symptoms* column matches
+    the user's symptom tokens.
+
+    This fixes the case where a disease (e.g. Diabetes mellitus) has no
+    HAS_SYMPTOM edges in the KG and no flags in the disease-symptom matrix,
+    so BFS never scores it — even though its encyclopedia symptoms column
+    clearly lists the user's symptoms.
+
+    Steps:
+    1. Build an expanded token set from the user text using symptom_aliases.
+    2. For every Disease entry in the encyclopedia, score by how many expanded
+       tokens appear in its symptoms column.
+    3. Any disease with score >= ENC_SYMPTOM_MIN_HITS gets:
+       - a BOOST added to its existing graph score if already ranked, OR
+       - injected at ENC_SYMPTOM_BOOST if not in ranked at all.
+    4. Re-sort and return.
+    """
+    low = norm_user(user_text)
+
+    # Use RAW meaningful tokens from the query only (not expanded aliases).
+    # Expanded aliases inflate the denominator, making the score too low.
+    # Raw tokens like "urination", "thirst", "hunger", "lethargy" directly
+    # appear in encyclopedia definition/symptoms text.
+    raw_tokens = {
+        t for t in re.findall(r"[a-z]+", low)
+        if len(t) >= 4 and t not in _BOOST_STOPWORDS
+    }
+    if not raw_tokens:
+        return ranked
+
+    # Index current ranked list for O(1) lookup
+    ranked_dict: Dict[str, float] = {label: sc for sc, label in ranked}
+
+    # Search ENC_BOOST_COLUMNS (definition + symptoms + description) per entry.
+    # definition is first because it often contains a concise symptom summary
+    # even when the symptoms column is truncated.
+    disease_entries = entries[
+        entries["entry_type"].astype(str).str.contains("Disease|Disorder|Syndrome", na=False, case=False)
+    ]
+
+    injections: List[Tuple[float, str]] = []
+    for _, row in disease_entries.iterrows():
+        name = str(row.get("entry_name", "")).strip()
+        if not name or not is_valid_entry_name(name):
+            continue
+
+        # Concatenate boost columns into one searchable text
+        combined = " ".join(
+            str(row.get(col, "")).lower()
+            for col in ENC_BOOST_COLUMNS
+            if col in row.index and not pd.isna(row.get(col))
+        )
+        if not combined.strip():
+            continue
+
+        hits = sum(1 for t in raw_tokens if t in combined)
+        if hits < ENC_SYMPTOM_MIN_HITS:
+            continue
+
+        # Score = boost × (hits / total meaningful query tokens)
+        # Using raw_tokens as denominator keeps scoring proportional to query length
+        enc_score = ENC_SYMPTOM_BOOST * (hits / len(raw_tokens))
+
+        if name in ranked_dict:
+            ranked_dict[name] += enc_score
+        else:
+            injections.append((enc_score, name))
+
+    merged = [(sc, lab) for lab, sc in ranked_dict.items()] + injections
+    merged.sort(key=lambda x: -x[0])
+    return merged
+
+
+
+
+
+def search_encyclopedia_direct(
+    user_text: str,
+    entries: pd.DataFrame,
+    top_n: int = ENC_TOP_N,
+    already_ranked: Optional[Set[str]] = None,
+) -> List[Tuple[float, str]]:
+    """Score every encyclopedia entry by keyword overlap with the user query.
+
+    Uses the symptom/definition/description/causes/key_terms columns so that
+    diseases whose encyclopedia text mentions the user's symptoms surface even
+    when the knowledge graph BFS fails to rank them.
+
+    Returns a list of (score, entry_name) sorted descending, excluding any
+    names already covered by graph ranking (already_ranked).
+    """
+    already_ranked = already_ranked or set()
+
+    # Build a set of meaningful tokens from the user query (≥3 chars, no stopwords)
+    _STOPWORDS = {
+        "the", "and", "for", "with", "have", "has", "what", "that", "this",
+        "from", "are", "can", "been", "not", "but", "its", "also", "some",
+        "when", "which", "who", "how", "does", "did", "was", "will", "very",
+        "about", "into", "more", "like", "feel", "i", "me", "my", "is", "in",
+        "of", "to", "a", "an", "or", "do", "at", "by", "on", "up", "it",
+    }
+    tokens = {
+        t for t in re.findall(r"[a-z]+", user_text.lower())
+        if len(t) >= 3 and t not in _STOPWORDS
+    }
+    if not tokens:
+        return []
+
+    # Build a single searchable text column per entry (only ENC_SEARCH_COLUMNS)
+    def _entry_text(row: pd.Series) -> str:
+        parts = []
+        for col in ENC_SEARCH_COLUMNS:
+            if col in row.index:
+                val = row.get(col)
+                if not pd.isna(val) and str(val).strip():
+                    parts.append(str(val).lower())
+        return " ".join(parts)
+
+    results: List[Tuple[float, str]] = []
+    for _, row in entries.iterrows():
+        name = str(row.get("entry_name", "")).strip()
+        if not name or name in already_ranked:
+            continue
+        if not is_valid_entry_name(name):
+            continue
+        # Only include Disease-type entries for symptom retrieval
+        etype = str(row.get("entry_type", "")).lower()
+        if "disease" not in etype and "disorder" not in etype and "syndrome" not in etype:
+            continue
+        text = _entry_text(row)
+        if not text:
+            continue
+        hits = sum(1 for t in tokens if t in text)
+        if hits == 0:
+            continue
+        # Normalise by token count so short queries aren't penalised
+        score = hits / len(tokens)
+        results.append((score, name))
+
+    results.sort(key=lambda x: -x[0])
+    return results[:top_n]
+
+
 def build_evidence_prompt(
     user_text: str,
     seed_reasons: List[str],
@@ -539,7 +807,9 @@ def build_evidence_prompt(
     visited_summary: str,
 ) -> str:
     dis_blocks: List[str] = []
+    graph_labels: Set[str] = set()
     for score, dlabel in ranked_diseases[:TOP_CANDIDATE_EXCERPTS]:
+        graph_labels.add(dlabel)
         sub = entries[entries["entry_name"].astype(str) == dlabel]
         enc = (
             format_encyclopedia_context(sub.iloc[0])
@@ -551,6 +821,26 @@ def build_evidence_prompt(
         dis_blocks.append(
             f"### Disease: {dlabel} (graph score {score:.1f})\n**Local graph edges:**\n{eblk}\n**Encyclopedia:**\n{enc}\n**{mblk}**\n"
         )
+
+    # --- Encyclopedia-direct hits (keyword search over symptom/description text) ---
+    enc_hits = search_encyclopedia_direct(user_text, entries, already_ranked=graph_labels)
+    if enc_hits:
+        enc_extra_blocks: List[str] = []
+        for enc_score, dlabel in enc_hits:
+            sub = entries[entries["entry_name"].astype(str) == dlabel]
+            if not len(sub):
+                continue
+            enc = format_encyclopedia_context(sub.iloc[0])
+            eblk = format_edges_for_disease(dlabel, edges)
+            mblk = matrix_row_blurb(matrix, dlabel)
+            enc_extra_blocks.append(
+                f"### Disease: {dlabel} (encyclopedia-direct score {enc_score:.2f})\n**Local graph edges:**\n{eblk}\n**Encyclopedia:**\n{enc}\n**{mblk}**\n"
+            )
+        if enc_extra_blocks:
+            dis_blocks.append(
+                "\n--- Additional candidates from direct encyclopedia search ---\n"
+                + "\n".join(enc_extra_blocks)
+            )
     body = "\n".join(dis_blocks)
     seed_txt = "\n".join(seed_reasons[:40]) if seed_reasons else "(no direct node label hits - BFS may still reach diseases)"
 
@@ -779,6 +1069,7 @@ def main() -> None:
         dist, visited = bfs_context(seeds, adj, by_id)
         print("\n=== Graph backend ===\ncsv")
     ranked = disease_scores_from_graph(dist, visited, by_id, seeds, adj)
+    ranked = boost_ranking_with_encyclopedia(user_in, ranked, entries)
 
     if not ranked and seeds:
         for nid in list(seeds)[:5]:
@@ -821,6 +1112,12 @@ def main() -> None:
 
     if args.no_llm:
         print("\n(--no-llm: skipping model)")
+        # Print encyclopedia-direct hits so evaluate.py can merge them
+        enc_hits = search_encyclopedia_direct(user_in, entries, already_ranked=set(lab for _, lab in ranked))
+        if enc_hits:
+            print("\n=== Encyclopedia-direct hits ===")
+            for sc, lab in enc_hits:
+                print(f"{lab[:70]:<70} {sc:.2f}")
         return
 
     prompt = build_evidence_prompt(

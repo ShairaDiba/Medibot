@@ -1,0 +1,1211 @@
+{
+  "summary": {
+    "total_queries": 60,
+    "scored_queries": 57,
+    "model": "openai/gpt-oss-120b",
+    "temperature": 0.25,
+    "retrieval": "none (unconstrained LLM baseline)",
+    "rouge1": 0.2032,
+    "rouge2": 0.056,
+    "rougeL": 0.1395,
+    "bleu1": 0.1129,
+    "bleu2": 0.0599,
+    "bleu3": 0.0342,
+    "bleu4": 0.0214,
+    "avg_elapsed_sec": 9.9628,
+    "by_type": {
+      "definition": {
+        "n": 20,
+        "rouge1": 0.2366,
+        "rouge2": 0.0732,
+        "rougeL": 0.173,
+        "bleu1": 0.1392,
+        "bleu4": 0.0293,
+        "avg_elapsed_sec": 7.699
+      },
+      "symptom": {
+        "n": 25,
+        "rouge1": 0.1802,
+        "rouge2": 0.0428,
+        "rougeL": 0.1151,
+        "bleu1": 0.0955,
+        "bleu4": 0.0192,
+        "avg_elapsed_sec": 12.8908
+      },
+      "mixed": {
+        "n": 10,
+        "rouge1": 0.2026,
+        "rouge2": 0.0583,
+        "rougeL": 0.1375,
+        "bleu1": 0.1099,
+        "bleu4": 0.0127,
+        "avg_elapsed_sec": 5.862
+      }
+    },
+    "errors": 0,
+    "error_ids": []
+  },
+  "per_query": [
+    {
+      "qid": "DEF-001",
+      "type": "definition",
+      "query": "What is diabetes mellitus?",
+      "expected_diseases": [
+        "Diabetes mellitus"
+      ],
+      "llm_response": "Diabetes mellitus is a chronic metabolic disorder in which the body cannot properly regulate blood‑glucose levels. It occurs because either (1) the pancreas produces insufficient insulin (type 1 diabetes), an autoimmune destruction of β‑cells, or (2) the body’s cells become resistant to insulin and the pancreas cannot keep up with the demand (type 2 diabetes). Less common forms include gestational diabetes (develops during pregnancy) and other specific types linked to genetic mutations, drugs, or other diseases.\n\nElevated glucose leads to classic symptoms such as excessive thirst, frequent urination, unexplained weight loss, and fatigue. Over time, high blood sugar damages blood vessels and nerves, increasing the risk of cardiovascular disease, kidney failure, vision loss, and foot ulcers.\n\nManagement focuses on lifestyle changes (diet, exercise, weight control) and, when needed, medications or insulin to keep glucose within target ranges and to prevent complications.\n\nThis is educational information, not",
+      "llm_response_len": 146,
+      "elapsed_sec": 1.8,
+      "error": "",
+      "rouge1": 0.331658,
+      "rouge2": 0.111675,
+      "rougeL": 0.231156,
+      "bleu1": 0.189189,
+      "bleu2": 0.111078,
+      "bleu3": 0.058701,
+      "bleu4": 0.032469
+    },
+    {
+      "qid": "DEF-002",
+      "type": "definition",
+      "query": "What is tuberculosis?",
+      "expected_diseases": [
+        "Tuberculosis"
+      ],
+      "llm_response": "Tuberculosis (TB) is an infectious disease caused by the bacterium *Mycobacterium tuberculosis*. It most commonly affects the lungs (pulmonary TB) but can involve other organs (extrapulmonary TB). Transmission occurs through inhalation of airborne droplets expelled when a person with active pulmonary TB coughs, sneezes, or talks. After infection, most people develop a latent (inactive) form with no symptoms; about 5–10 % will progress to active disease, especially if their immune system is weakened. Symptoms of active pulmonary TB include a persistent cough (often with blood‑tinged sputum), fever, night sweats, weight loss, and fatigue. Diagnosis is made with a combination of skin or blood tests for infection, chest imaging, and microbiologic confirmation (sputum smear, culture, or nucleic‑acid amplification). Treatment requires multiple antibiotics (e.g., isoniazid, rifampin, ethambutol, pyrazinamide) for at least 6 months to prevent resistance.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 141,
+      "elapsed_sec": 5.21,
+      "error": "",
+      "rouge1": 0.235955,
+      "rouge2": 0.068182,
+      "rougeL": 0.134831,
+      "bleu1": 0.145946,
+      "bleu2": 0.084491,
+      "bleu3": 0.053836,
+      "bleu4": 0.036186
+    },
+    {
+      "qid": "DEF-003",
+      "type": "definition",
+      "query": "What is asthma?",
+      "expected_diseases": [
+        "Asthma"
+      ],
+      "llm_response": "Asthma is a chronic inflammatory disease of the airways that causes them to become overly sensitive and prone to narrowing. In response to triggers such as allergens, cold air, exercise, or respiratory infections, the airway lining swells, the smooth‑muscle contracts, and excess mucus is produced. This leads to symptoms of wheezing, shortness of breath, chest tightness, and coughing, which often worsen at night or early morning. Diagnosis is made by clinical history and lung‑function tests (e.g., spirometry showing reversible airflow obstruction). Management includes long‑term controller medications (inhaled corticosteroids, leukotriene modifiers) to reduce inflammation, and quick‑relief bronchodilators (short‑acting β₂‑agonists) for acute symptoms. Avoiding known triggers and having an individualized asthma action plan are also essential.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 121,
+      "elapsed_sec": 12.57,
+      "error": "",
+      "rouge1": 0.238095,
+      "rouge2": 0.048193,
+      "rougeL": 0.154762,
+      "bleu1": 0.141892,
+      "bleu2": 0.053812,
+      "bleu3": 0.012564,
+      "bleu4": 0.006081
+    },
+    {
+      "qid": "DEF-004",
+      "type": "definition",
+      "query": "What is epilepsy?",
+      "expected_diseases": [
+        "Epilepsy"
+      ],
+      "llm_response": "Epilepsy is a chronic neurological disorder characterized by a tendency to have recurrent, unprovoked seizures. A seizure is a sudden, excessive burst of electrical activity in the brain that can cause a range of symptoms—from brief lapses in awareness to convulsions and loss of consciousness. To be diagnosed with epilepsy, a person typically must have had at least two unprovoked seizures more than 24 hours apart, or one seizure with a high risk of recurrence (e.g., after a brain injury). Causes are diverse and include genetic mutations, structural brain abnormalities, infections, head trauma, and metabolic disturbances. Seizure types are broadly classified as focal (originating in one brain region) or generalized (involving both hemispheres). Diagnosis relies on clinical history, electroencephalography (EEG), and imaging such as MRI. Treatment options include antiepileptic medications, lifestyle modifications, and, in some cases, surgery or neurostimulation. This is educational information, not a diagnosis.",
+      "llm_response_len": 146,
+      "elapsed_sec": 5.96,
+      "error": "",
+      "rouge1": 0.2,
+      "rouge2": 0.044944,
+      "rougeL": 0.155556,
+      "bleu1": 0.116667,
+      "bleu2": 0.057086,
+      "bleu3": 0.033207,
+      "bleu4": 0.021327
+    },
+    {
+      "qid": "DEF-005",
+      "type": "definition",
+      "query": "What is hypertension?",
+      "expected_diseases": [
+        "Hypertension"
+      ],
+      "llm_response": "Hypertension, or high blood pressure, is a chronic condition in which the force of blood against the walls of the arteries is consistently elevated. It is diagnosed when a person’s average blood pressure readings are ≥ 130 mm Hg systolic or ≥ 80 mm Hg diastolic (according to current guidelines). The condition often has no symptoms, earning it the nickname “the silent killer,” but over time it can damage the heart, kidneys, brain, and blood vessels, increasing the risk of heart attack, stroke, kidney disease, and vision loss. Risk factors include age, family history, obesity, excess sodium intake, physical inactivity, excessive alcohol use, and certain chronic conditions such as diabetes. Management involves lifestyle changes (dietary sodium reduction, weight loss, regular exercise, limiting alcohol) and, when needed, antihypertensive medications.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 135,
+      "elapsed_sec": 1.69,
+      "error": "",
+      "rouge1": 0.315789,
+      "rouge2": 0.142012,
+      "rougeL": 0.280702,
+      "bleu1": 0.174419,
+      "bleu2": 0.115152,
+      "bleu3": 0.077639,
+      "bleu4": 0.048512
+    },
+    {
+      "qid": "DEF-006",
+      "type": "definition",
+      "query": "What is pneumonia?",
+      "expected_diseases": [
+        "Pneumonia"
+      ],
+      "llm_response": "Pneumonia is an infection that inflames the air sacs (alveoli) in one or both lungs. The alveoli may fill with fluid or pus, reducing oxygen exchange and causing symptoms such as cough, fever, chills, shortness of breath, chest pain, and fatigue.  \n\n**Common causes**  \n- **Bacteria** (e.g., *Streptococcus pneumoniae*) – most frequent in adults.  \n- **Viruses** (influenza, RSV, COVID‑19) – common in children and older adults.  \n- **Atypical organisms** (Mycoplasma, Chlamydophila, Legionella).  \n- **Fungi** (especially in immunocompromised patients).  \n\n**Risk factors** include age > 65, smoking, chronic lung disease, heart disease, weakened immune system, and recent hospitalization or mechanical ventilation.  \n\n**Diagnosis** is usually made by clinical exam plus a chest X‑ray; labs (CBC, sputum culture, blood cultures) may identify the pathogen.  \n\n**Treatment** depends on the cause:  \n- Bacterial pneumonia → antibiotics (e.g., macrolides, fluoroquinolones, β‑lactams).  \n- Viral pneumonia → supportive care; antivirals for influenza or COVID‑19 when indicated.  \n- Severe cases may need hospitalization, oxygen therapy, or intensive care.  \n\nPrevention includes vaccination (influenza, pneumococcal), hand hygiene, smoking cessation, and managing chronic illnesses.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 177,
+      "elapsed_sec": 4.35,
+      "error": "",
+      "rouge1": 0.28169,
+      "rouge2": 0.085308,
+      "rougeL": 0.169014,
+      "bleu1": 0.132841,
+      "bleu2": 0.082994,
+      "bleu3": 0.056383,
+      "bleu4": 0.037636
+    },
+    {
+      "qid": "DEF-007",
+      "type": "definition",
+      "query": "What is dengue fever?",
+      "expected_diseases": [
+        "Dengue fever"
+      ],
+      "llm_response": "Dengue fever is an acute viral illness caused by one of four dengue virus serotypes (DENV‑1 to DENV‑4). It is transmitted to humans through the bite of infected *Aedes* mosquitoes, primarily *Aedes aegypti* and *Aedes albopictus*. After an incubation period of 4–10 days, infection typically produces sudden high fever, severe headache, pain behind the eyes, muscle and joint aches, rash, and mild bleeding (e.g., gum or nosebleeds). Most cases are self‑limited, but a minority progress to severe dengue (formerly dengue hemorrhagic fever or dengue shock syndrome), characterized by plasma leakage, severe bleeding, organ impairment, and potentially fatal shock. There is no specific antiviral treatment; care is supportive—hydration, pain control with acetaminophen (avoid NSAIDs), and close monitoring for warning signs. Prevention relies on mosquito control and personal protection (repellents, screens, clothing).  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 137,
+      "elapsed_sec": 1.55,
+      "error": "",
+      "rouge1": 0.230769,
+      "rouge2": 0.044444,
+      "rougeL": 0.131868,
+      "bleu1": 0.131148,
+      "bleu2": 0.060025,
+      "bleu3": 0.027102,
+      "bleu4": 0.010255
+    },
+    {
+      "qid": "DEF-008",
+      "type": "definition",
+      "query": "What is appendicitis?",
+      "expected_diseases": [
+        "Appendicitis"
+      ],
+      "llm_response": "Appendicitis is an inflammation of the appendix, a small, finger‑shaped pouch attached to the large intestine. It most often occurs when the appendix becomes blocked by stool, a foreign body, or infection, leading to bacterial overgrowth, swelling, and pain. Typical symptoms include sudden abdominal pain that often starts near the belly button and then shifts to the lower right side, loss of appetite, nausea, vomiting, low‑grade fever, and sometimes constipation or diarrhea. Because a ruptured appendix can cause serious infection (peritonitis), prompt medical evaluation is essential. Diagnosis is made through physical examination, blood tests (showing elevated white‑blood‑cell count), imaging such as an abdominal ultrasound or CT scan, and sometimes a diagnostic laparoscopy. Treatment is usually surgical removal of the appendix (appendectomy), either open or laparoscopic, and may include antibiotics before and after surgery.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 140,
+      "elapsed_sec": 2.51,
+      "error": "",
+      "rouge1": 0.307692,
+      "rouge2": 0.111111,
+      "rougeL": 0.21978,
+      "bleu1": 0.180233,
+      "bleu2": 0.121474,
+      "bleu3": 0.084698,
+      "bleu4": 0.061581
+    },
+    {
+      "qid": "DEF-009",
+      "type": "definition",
+      "query": "Explain Alzheimer's disease",
+      "expected_diseases": [
+        "Alzheimer's disease"
+      ],
+      "llm_response": "Alzheimer’s disease is a progressive neurodegenerative disorder that impairs memory, thinking, and behavior. It is characterized by the accumulation of beta‑amyloid plaques outside neurons and tau protein tangles inside them, leading to loss of synaptic connections and brain cell death, especially in the hippocampus and cortex.\n\nTypical early signs include difficulty recalling recent events, misplacing items, and subtle language problems. As the disease advances, patients develop disorientation, impaired judgment, personality changes, loss of independence, and eventually severe cognitive and functional decline.\n\nRisk factors are age (most cases after 65), family history, certain genetic variants (e.g., APOE‑ε4), cardiovascular disease, low education, and lifestyle factors such as smoking or inactivity. Diagnosis combines clinical assessment, neuropsychological testing, and imaging to rule out other causes.\n\nThere is no cure; approved medications (cholinesterase inhibitors, memantine) modestly slow symptoms, while lifestyle interventions, cognitive stimulation, and support services improve quality of life.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 152,
+      "elapsed_sec": 6.5,
+      "error": "",
+      "rouge1": 0.236559,
+      "rouge2": 0.086957,
+      "rougeL": 0.193548,
+      "bleu1": 0.134715,
+      "bleu2": 0.079466,
+      "bleu3": 0.040438,
+      "bleu4": 0.024288
+    },
+    {
+      "qid": "DEF-010",
+      "type": "definition",
+      "query": "Tell me about agoraphobia",
+      "expected_diseases": [
+        "Agoraphobia"
+      ],
+      "llm_response": "Agoraphobia is an anxiety disorder characterized by intense fear or avoidance of places or situations where escape might be difficult, help unavailable, or embarrassment might occur if panic symptoms arise. Common triggers include crowded public spaces, open areas, standing in line, traveling alone, or using public transportation. People may experience panic‑like symptoms (rapid heartbeat, shortness of breath, dizziness) and may rely on a “safety person” or stay home to feel secure.\n\nRisk factors include a prior panic‑disorder episode, genetic predisposition, stressful life events, and certain personality traits (e.g., high neuroticism). The condition can develop gradually, often after repeated panic attacks.\n\nTreatment typically involves cognitive‑behavioral therapy (CBT) with exposure techniques, sometimes combined with medications such as selective serotonin reuptake inhibitors (SSRIs) or benzodiazepines for short‑term relief. Lifestyle strategies—regular exercise, relaxation training, and supportive social networks—also help.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 142,
+      "elapsed_sec": 12.43,
+      "error": "",
+      "rouge1": 0.217143,
+      "rouge2": 0.057803,
+      "rougeL": 0.194286,
+      "bleu1": 0.127072,
+      "bleu2": 0.070297,
+      "bleu3": 0.038079,
+      "bleu4": 0.0236
+    },
+    {
+      "qid": "DEF-011",
+      "type": "definition",
+      "query": "What is anemia?",
+      "expected_diseases": [
+        "Anemias"
+      ],
+      "llm_response": "Anemia is a condition in which the blood lacks enough healthy red blood cells or hemoglobin—the protein that carries oxygen—to meet the body’s needs. This results in reduced oxygen delivery to tissues, causing fatigue, weakness, shortness of breath, pale skin, and sometimes dizziness or rapid heartbeat. Anemia can arise from:\n\n* **Blood loss** (e.g., heavy menstrual periods, gastrointestinal bleeding)  \n* **Decreased red‑cell production** (iron, vitamin B12, or folate deficiency; chronic kidney disease; bone‑marrow disorders)  \n* **Increased red‑cell destruction** (hemolytic anemias, sickle‑cell disease, autoimmune disorders)\n\nDiagnosis is made with a complete blood count (CBC) and further tests to identify the underlying cause, guiding appropriate treatment such as supplements, dietary changes, medications, or procedures.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 119,
+      "elapsed_sec": 5.63,
+      "error": "",
+      "rouge1": 0.304878,
+      "rouge2": 0.098765,
+      "rougeL": 0.195122,
+      "bleu1": 0.184524,
+      "bleu2": 0.105116,
+      "bleu3": 0.064332,
+      "bleu4": 0.035641
+    },
+    {
+      "qid": "DEF-012",
+      "type": "definition",
+      "query": "What is malaria?",
+      "expected_diseases": [
+        "Malaria"
+      ],
+      "llm_response": "Malaria is an infectious disease caused by *Plasmodium* parasites (most commonly *P. falciparum*, *P. vivax*, *P. ovale*, *P. malariae*, and *P. knowlesi*) that are transmitted to humans through the bite of infected female *Anopheles* mosquitoes. After entering the bloodstream, the parasites travel to the liver, multiply, and then infect red blood cells, leading to cycles of fever, chills, headache, muscle aches, and anemia. Severe malaria can cause organ failure, cerebral involvement, and death, especially with *P. falciparum*. Risk is highest in tropical and subtropical regions of Africa, Asia, and Latin America. Prevention includes mosquito control (bed nets, insect repellents), prophylactic antimalarial drugs for travelers, and prompt diagnosis with rapid tests or microscopy followed by appropriate antimalarial therapy.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 124,
+      "elapsed_sec": 4.99,
+      "error": "",
+      "rouge1": 0.201342,
+      "rouge2": 0.040816,
+      "rougeL": 0.161074,
+      "bleu1": 0.105263,
+      "bleu2": 0.049767,
+      "bleu3": 0.011359,
+      "bleu4": 0.005435
+    },
+    {
+      "qid": "DEF-013",
+      "type": "definition",
+      "query": "Define abscess",
+      "expected_diseases": [
+        "Abscess"
+      ],
+      "llm_response": "An abscess is a confined pocket of pus that forms within tissue, organs, or a cavity as a result of infection, inflammation, or injury. It typically contains dead cells, bacteria, and immune‑system debris, surrounded by a wall of inflamed tissue. Common signs include localized pain, swelling, redness, warmth, and sometimes fever. Abscesses can develop in the skin (e.g., boils), internal organs (e.g., liver or brain), or spaces such as the peritoneum. Treatment usually involves drainage (surgical or percutaneous) and antibiotics to eradicate the underlying infection.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 92,
+      "elapsed_sec": 17.15,
+      "error": "",
+      "rouge1": 0.310078,
+      "rouge2": 0.062992,
+      "rougeL": 0.217054,
+      "bleu1": 0.208333,
+      "bleu2": 0.138772,
+      "bleu3": 0.093447,
+      "bleu4": 0.05139
+    },
+    {
+      "qid": "DEF-014",
+      "type": "definition",
+      "query": "What is allergic rhinitis?",
+      "expected_diseases": [
+        "Allergic rhinitis"
+      ],
+      "llm_response": "Allergic rhinitis, often called “hay fever,” is an inflammation of the nasal lining caused by an immune‑mediated reaction to airborne allergens such as pollen, dust mites, animal dander, or mold. When these substances are inhaled, the body’s IgE antibodies trigger the release of histamine and other chemicals, leading to symptoms like sneezing, nasal congestion or runny nose, itchy eyes, throat, or ears, and sometimes post‑nasal drip or fatigue. It can be seasonal (linked to specific pollens) or perennial (year‑round exposure). Management includes avoidance of known triggers, antihistamine or intranasal corticosteroid medications, saline nasal rinses, and, for persistent cases, immunotherapy (allergy shots or sublingual tablets).  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 111,
+      "elapsed_sec": 8.68,
+      "error": "",
+      "rouge1": 0.193103,
+      "rouge2": 0.041958,
+      "rougeL": 0.137931,
+      "bleu1": 0.125,
+      "bleu2": 0.059131,
+      "bleu3": 0.013504,
+      "bleu4": 0.006464
+    },
+    {
+      "qid": "DEF-015",
+      "type": "definition",
+      "query": "What is bacteremia?",
+      "expected_diseases": [
+        "Bacteremia"
+      ],
+      "llm_response": "Bacteremia is the presence of live bacteria in the bloodstream. It can occur transiently after activities that introduce microbes (e.g., dental work, brushing teeth, minor injuries) and often resolves without symptoms. When bacteria multiply or persist, it may lead to systemic infection, sepsis, or spread to other organs (e.g., endocarditis, osteomyelitis). Common causes include invasive procedures, indwelling catheters, urinary or respiratory infections, and immunosuppression. Diagnosis is made by blood cultures, and treatment depends on the identified organism and source, typically involving appropriate antibiotics. Prompt recognition is important because prolonged bacteremia can become life‑threatening. This is educational information, not a diagnosis.",
+      "llm_response_len": 100,
+      "elapsed_sec": 8.84,
+      "error": "",
+      "rouge1": 0.248175,
+      "rouge2": 0.118519,
+      "rougeL": 0.218978,
+      "bleu1": 0.216,
+      "bleu2": 0.131982,
+      "bleu3": 0.099711,
+      "bleu4": 0.079838
+    },
+    {
+      "qid": "DEF-016",
+      "type": "definition",
+      "query": "What is anorexia nervosa?",
+      "expected_diseases": [
+        "Anorexia nervosa"
+      ],
+      "llm_response": "Anorexia nervosa is a serious eating‑disorder characterized by self‑imposed restriction of food intake, leading to significantly low body weight for a person’s age, sex, developmental trajectory, and physical health. Core features include:\n\n* **Intense fear of gaining weight** or becoming “fat,” even when underweight.  \n* **Distorted body image** – the individual perceives themselves as larger than they are.  \n* **Restrictive eating behaviors** such as severe calorie counting, skipping meals, or excessive exercise.  \n* **Physical consequences** can include bradycardia, hypotension, electrolyte imbalances, osteoporosis, amenorrhea, and organ dysfunction.  \n\nThe disorder often begins in adolescence, is more common in females, and has a high risk of medical complications and mortality. Treatment typically involves a multidisciplinary approach: medical stabilization, nutritional rehabilitation, psychotherapy (e.g., cognitive‑behavioral therapy, family‑based therapy), and sometimes psychiatric medication for co‑occurring conditions.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 137,
+      "elapsed_sec": 1.5,
+      "error": "",
+      "rouge1": 0.179641,
+      "rouge2": 0.048485,
+      "rougeL": 0.131737,
+      "bleu1": 0.121693,
+      "bleu2": 0.05689,
+      "bleu3": 0.03259,
+      "bleu4": 0.02077
+    },
+    {
+      "qid": "DEF-017",
+      "type": "definition",
+      "query": "What is amyloidosis?",
+      "expected_diseases": [
+        "Amyloidosis"
+      ],
+      "llm_response": "Amyloidosis is a group of rare disorders in which abnormal protein fragments called **amyloid** fold into insoluble fibrils and deposit in tissues and organs. These deposits disrupt normal structure and function, leading to organ damage.\n\n**Key points**\n\n* **Types** – The most common are:\n  * **AL (primary) amyloidosis** – derived from light‑chain immunoglobulins produced by abnormal plasma cells (often related to multiple myeloma).\n  * **AA (secondary) amyloidosis** – derived from serum amyloid A protein, usually in chronic inflammatory or infectious diseases.\n  * **Hereditary (ATTR, etc.)** – caused by mutant transthyretin or other inherited proteins.\n* **Organs affected** – heart, kidneys, liver, peripheral nerves, gastrointestinal tract, and soft tissue.\n* **Symptoms** – depend on the organ involved: heart failure or arrhythmias, proteinuria/renal failure, hepatomegaly, neuropathy, weight loss, fatigue, or macroglossia (enlarged tongue) in AL.\n* **Diagnosis** – tissue biopsy with Congo‑red staining showing apple‑green birefringence under polarized light; typing of amyloid by mass spectrometry or immunohistochemistry; organ‑specific tests (e.g., cardiac MRI, serum/urine protein electrophoresis).\n* **Treatment** – aims to stop amyloid production and manage organ dysfunction: chemotherapy or autologous stem‑cell transplant for AL; anti‑inflammatory therapy for AA; tafamidis or patisiran for ATTR; supportive care (diuretics, dialysis, transplant) as needed.\n\nEarly recognition improves outcomes, but prognosis varies widely by type and organ involvement.\n\n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 218,
+      "elapsed_sec": 4.07,
+      "error": "",
+      "rouge1": 0.125,
+      "rouge2": 0.02521,
+      "rougeL": 0.108333,
+      "bleu1": 0.063291,
+      "bleu2": 0.031696,
+      "bleu3": 0.014735,
+      "bleu4": 0.005654
+    },
+    {
+      "qid": "DEF-018",
+      "type": "definition",
+      "query": "Information on alagille syndrome",
+      "expected_diseases": [
+        "Alagille syndrome"
+      ],
+      "llm_response": "Alagille syndrome (ALGS) is a rare, autosomal‑dominant disorder caused most often by pathogenic variants in **JAG1** (≈95 % of cases) or, less commonly, **NOTCH2**. It is a multisystem disease that classically involves:\n\n* **Liver** – paucity of intra‑hepatic bile ducts leading to cholestasis, jaundice, pruritus, and possible cirrhosis.\n* **Heart** – peripheral pulmonary artery stenosis, tetralogy of Fallot, or other congenital heart defects.\n* **Eyes** – posterior embryotoxon and other anterior segment anomalies.\n* **Skeleton** – butterfly‑shaped vertebrae, rib anomalies, and short stature.\n* **Facial features** – broad forehead, deep-set eyes, pointed chin, and a prominent, straight nose.\n* **Kidney** – structural anomalies or renal dysfunction in up to 30 % of patients.\n\n**Diagnosis** is clinical, supported by imaging (ultrasound, MRI), liver biopsy (bile‑duct paucity), cardiac echo, and confirmed by genetic testing for JAG1/NOTCH2 mutations.\n\n**Management** is multidisciplinary:\n* **Liver** – ursodeoxycholic acid, fat‑soluble vitamin supplementation, pruritus control; liver transplantation for end‑stage disease.\n* **Cardiac** – surgical or catheter‑based repair of stenoses.\n* **Renal** – monitoring and treatment of hypertension or renal insufficiency.\n* **Developmental** – early intervention, educational support, and regular ophthalmologic exams.\n\nPrognosis varies; many survive into adulthood with appropriate care, though severe liver or cardiac disease can limit life expectancy.\n\n**Key points**: genetic counseling is recommended for families, and regular follow‑up with hepatology, cardiology, nephrology, and genetics is essential.\n\n*This is educational information, not a diagnosis.*",
+      "llm_response_len": 229,
+      "elapsed_sec": 4.42,
+      "error": "",
+      "rouge1": 0.133333,
+      "rouge2": 0.02521,
+      "rougeL": 0.091667,
+      "bleu1": 0.054598,
+      "bleu2": 0.030725,
+      "bleu3": 0.013974,
+      "bleu4": 0.005303
+    },
+    {
+      "qid": "DEF-019",
+      "type": "definition",
+      "query": "What is amebiasis?",
+      "expected_diseases": [
+        "Amebiasis"
+      ],
+      "llm_response": "Amebiasis is an intestinal infection caused primarily by the protozoan parasite **Entamoeba histolytica**. The parasite is transmitted through ingestion of cysts in contaminated food or water, or by fecal‑oral contact. After swallowing, cysts release trophozoites that colonize the colon; they may cause:\n\n* **Asymptomatic infection** (most cases)  \n* **Amebic dysentery** – abdominal cramps, watery‑to‑bloody diarrhea, fever, and mucus or blood in stool  \n* **Extra‑intestinal disease** – most commonly a liver abscess, but also lung, brain, or peritoneal involvement.\n\nDiagnosis is made by stool microscopy, antigen detection, PCR, or serology (for invasive disease). Treatment of symptomatic or invasive disease usually includes a tissue‑acting agent (e.g., metronidazole or tinidazole) followed by a luminal agent (e.g., paromomycin) to eradicate cysts and prevent recurrence.\n\nPrevention focuses on safe water, proper food handling, and hand hygiene.\n\n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 138,
+      "elapsed_sec": 2.93,
+      "error": "",
+      "rouge1": 0.230303,
+      "rouge2": 0.110429,
+      "rougeL": 0.181818,
+      "bleu1": 0.120419,
+      "bleu2": 0.083496,
+      "bleu3": 0.052842,
+      "bleu4": 0.039172
+    },
+    {
+      "qid": "DEF-020",
+      "type": "definition",
+      "query": "What is aortic valve insufficiency?",
+      "expected_diseases": [
+        "Aortic valve insufficiency"
+      ],
+      "llm_response": "Aortic valve insufficiency (aortic regurgitation) occurs when the aortic valve does not close tightly, allowing blood that was pumped out of the left ventricle to leak back from the aorta during diastole. This back‑flow increases left‑ventricular volume and pressure, eventually causing ventricular dilation and reduced cardiac efficiency.\n\n**Common causes**\n- Degenerative calcification (elderly)\n- Congenital bicuspid valve\n- Rheumatic fever\n- Endocarditis or valve trauma\n- Aortic root dilation (e.g., Marfan syndrome)\n\n**Typical symptoms**\n- Early‑stage: often asymptomatic\n- Later: exertional dyspnea, fatigue, palpitations, chest discomfort, orthostatic hypotension, “water‑hammer” pulse, diastolic murmur (high‑pitched blowing)\n\n**Diagnosis**\n- Physical exam (diastolic decrescendo murmur)\n- Echocardiography (quantifies regurgitant volume, ventricular size)\n- ECG, chest X‑ray, cardiac MRI/CT as needed\n\n**Management**\n- Regular monitoring for mild disease\n- Medications: vasodilators (e.g., ACE inhibitors) to reduce afterload\n- Surgical or transcatheter aortic valve replacement when severe symptoms, left‑ventricular dysfunction, or aortic dimensions exceed thresholds\n\n**Prognosis**\n- Mild cases may remain stable for years; severe regurgitation without treatment can lead to heart failure.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 174,
+      "elapsed_sec": 41.2,
+      "error": "",
+      "rouge1": 0.211055,
+      "rouge2": 0.091371,
+      "rougeL": 0.150754,
+      "bleu1": 0.111111,
+      "bleu2": 0.065512,
+      "bleu3": 0.048058,
+      "bleu4": 0.03465
+    },
+    {
+      "qid": "SYM-001",
+      "type": "symptom",
+      "query": "I have fever, pain, swelling, and inflammation",
+      "expected_diseases": [
+        "Abscess",
+        "Appendicitis",
+        "Aortic valve insufficiency"
+      ],
+      "llm_response": "Fever together with localized pain, swelling and redness usually means an acute inflammatory or infectious process—common possibilities include cellulitis, an abscess, septic arthritis, gout, or a soft‑tissue injury that has become infected.  The exact cause depends on the site, how quickly the symptoms appeared, any recent wounds, bites, surgeries, or underlying conditions such as diabetes or immune suppression.\n\n**What to do now**\n\n1. **Seek medical care promptly**—especially if the area is rapidly enlarging, very painful, warm, or if you develop chills, shortness of breath, confusion, or a rash elsewhere.  \n2. Keep the affected area clean and elevated; apply a cool compress if tolerated.  \n3. Over‑the‑counter acetaminophen or ibuprofen can help lower fever and pain, unless contraindicated.  \n4. Stay well‑hydrated and rest while you arrange an evaluation.\n\nA clinician will likely examine the site, obtain blood work, and possibly imaging or a culture to decide whether antibiotics, drainage, or other treatment is needed.\n\n**Red‑flag signs** (call emergency services): sudden severe pain, spreading redness, difficulty breathing, high‑grade fever > 39 °C (102 °F), or signs of sepsis (rapid heartbeat, low blood pressure, confusion).\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 188,
+      "elapsed_sec": 3.65,
+      "error": "",
+      "rouge1": 0.197531,
+      "rouge2": 0.024896,
+      "rougeL": 0.115226,
+      "bleu1": 0.124,
+      "bleu2": 0.054662,
+      "bleu3": 0.028884,
+      "bleu4": 0.009938
+    },
+    {
+      "qid": "SYM-002",
+      "type": "symptom",
+      "query": "I have itching, runny nose, and swelling",
+      "expected_diseases": [
+        "Allergic rhinitis"
+      ],
+      "llm_response": "Itching, a runny nose, and swelling are classic signs of an allergic reaction, often called **allergic rhinitis** or **hay fever**. Common triggers include pollen, dust mites, pet dander, mold, or certain foods and medications. The swelling may involve the nasal passages, eyelids, or lips.\n\n**What you can try:**\n1. **Identify and avoid the trigger** – keep windows closed during high‑pollen days, use air filters, wash bedding in hot water, and avoid known allergens.\n2. **Over‑the‑counter antihistamines** (e.g., cetirizine, loratadine) can reduce itching, runny nose, and mild swelling.\n3. **Nasal saline rinses** or steroid nasal sprays (e.g., fluticasone) help clear mucus and decrease inflammation.\n4. **Cool compresses** on swollen areas can provide relief.\n\n**When to seek medical care:**  \n- Swelling of the throat, lips, or tongue, or difficulty breathing (possible anaphylaxis).  \n- Symptoms that persist despite OTC treatment, worsen, or are accompanied by fever or sinus pain.  \n\nA healthcare provider can confirm the cause, prescribe stronger medications if needed, and perform allergy testing.\n\n*This is educational information, not a diagnosis.*",
+      "llm_response_len": 169,
+      "elapsed_sec": 4.7,
+      "error": "",
+      "rouge1": 0.194872,
+      "rouge2": 0.062176,
+      "rougeL": 0.133333,
+      "bleu1": 0.087649,
+      "bleu2": 0.056173,
+      "bleu3": 0.042364,
+      "bleu4": 0.035187
+    },
+    {
+      "qid": "SYM-003",
+      "type": "symptom",
+      "query": "I have depression, confusion, and memory problems",
+      "expected_diseases": [
+        "Alzheimer's disease"
+      ],
+      "llm_response": "Depression often affects thinking, leading to confusion, difficulty concentrating, and memory lapses. Stress, sleep problems, medication side‑effects, thyroid disorders, vitamin deficiencies, or neurological conditions can also contribute to these symptoms. It’s important to have a thorough evaluation that includes a mental‑health assessment, review of any medications or substances you’re using, and basic medical tests (e.g., blood work, thyroid panel). Treatment may involve psychotherapy, antidepressant medication, lifestyle changes (regular sleep, exercise, balanced diet), and addressing any underlying medical issues. If you notice worsening confusion, sudden memory loss, or new neurological signs (e.g., weakness, vision changes), seek medical care promptly. \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 105,
+      "elapsed_sec": 17.54,
+      "error": "",
+      "rouge1": 0.267606,
+      "rouge2": 0.057143,
+      "rougeL": 0.140845,
+      "bleu1": 0.159722,
+      "bleu2": 0.081863,
+      "bleu3": 0.036138,
+      "bleu4": 0.013526
+    },
+    {
+      "qid": "SYM-004",
+      "type": "symptom",
+      "query": "I feel fatigue, nausea, and palpitations",
+      "expected_diseases": [
+        "Agoraphobia"
+      ],
+      "llm_response": "Fatigue, nausea, and palpitations can result from many different conditions, including:\n\n* **Cardiac** – arrhythmias, atrial fibrillation, or early heart‑failure signs.  \n* **Metabolic** – low blood sugar, thyroid over‑ or under‑activity, anemia, or electrolyte disturbances.  \n* **Infectious/Inflammatory** – viral illness, COVID‑19, or systemic infections.  \n* **Medication or substance‑related** – caffeine, nicotine, certain prescription drugs, or withdrawal from alcohol/drugs.  \n* **Psychologic/Stress‑related** – anxiety, panic attacks, or chronic stress.  \n* **Gastro‑intestinal** – dehydration, gastritis, or early pregnancy.\n\nBecause these symptoms overlap, it’s important to have a clinician evaluate you promptly. They may check vital signs, perform an ECG, order blood tests (CBC, thyroid panel, electrolytes, glucose), and review any medications or recent illnesses. If you develop chest pain, shortness of breath, fainting, or worsening symptoms, seek emergency care.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 133,
+      "elapsed_sec": 4.63,
+      "error": "",
+      "rouge1": 0.213836,
+      "rouge2": 0.063694,
+      "rougeL": 0.150943,
+      "bleu1": 0.099502,
+      "bleu2": 0.059013,
+      "bleu3": 0.041213,
+      "bleu4": 0.032092
+    },
+    {
+      "qid": "SYM-005",
+      "type": "symptom",
+      "query": "I have headache, dizziness, weakness, and vomiting",
+      "expected_diseases": [
+        "Arteriovenous malformations"
+      ],
+      "llm_response": "Headache, dizziness, weakness, and vomiting can be caused by many conditions, ranging from relatively benign (e.g., dehydration, viral gastroenteritis, migraine, low blood sugar) to more serious problems (e.g., intracranial pressure from bleeding or infection, stroke, severe infection, electrolyte imbalance, heart issues).  \n\nKey points to consider:  \n\n* **Onset and progression** – sudden, severe headache (“thunderclap”) or rapid worsening of symptoms warrants immediate evaluation.  \n* **Associated signs** – fever, neck stiffness, visual changes, confusion, weakness on one side, or loss of consciousness suggest infection, bleeding, or stroke.  \n* **Triggers** – recent illness, trauma, medication changes, alcohol use, or dehydration can help narrow the cause.  \n\nBecause these symptoms may indicate a condition that requires prompt treatment, you should seek medical care promptly, especially if the headache is severe, you have neurological changes, persistent vomiting, or feel markedly weak.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 142,
+      "elapsed_sec": 5.83,
+      "error": "",
+      "rouge1": 0.214286,
+      "rouge2": 0.072289,
+      "rougeL": 0.142857,
+      "bleu1": 0.14,
+      "bleu2": 0.083876,
+      "bleu3": 0.065751,
+      "bleu4": 0.056375
+    },
+    {
+      "qid": "SYM-006",
+      "type": "symptom",
+      "query": "I have fever, diarrhea, and cramps",
+      "expected_diseases": [
+        "Amebiasis",
+        "Appendicitis"
+      ],
+      "llm_response": "Fever, diarrhea, and abdominal cramps are common signs of an acute gastrointestinal infection. Possible causes include:\n\n* **Viral gastroenteritis** (e.g., norovirus, rotavirus) – often self‑limited.\n* **Bacterial food‑borne illness** (e.g., Salmonella, Campylobacter, E. coli) – may require antibiotics if severe.\n* **Parasitic infections** (e.g., Giardia) – more likely with recent travel or contaminated water.\n* **Inflammatory bowel flare** or other chronic GI conditions.\n\n**What to do now**\n\n1. **Hydration:** Drink oral rehydration solutions, clear broths, or electrolyte‑rich fluids frequently. Avoid caffeine and alcohol.\n2. **Diet:** Stick to bland foods (BRAT diet – bananas, rice, applesauce, toast) until symptoms improve.\n3. **Fever control:** Acetaminophen or ibuprofen can reduce fever and discomfort, unless contraindicated.\n4. **Monitor:** Seek medical care if you have:\n   * Persistent fever > 38.5 °C (101.3 °F) for > 48 h\n   * Bloody stools, severe abdominal pain, or vomiting\n   * Signs of dehydration (dry mouth, dizziness, reduced urine output)\n   * Underlying health conditions (immunosuppression, chronic disease) or are pregnant.\n\nA healthcare professional can evaluate stool studies, blood tests, or imaging if needed and determine whether specific treatment (e.g., antibiotics) is appropriate.\n\n**When to call emergency services:** high fever with confusion, severe dehydration, continuous vomiting, or sudden severe abdominal pain.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 207,
+      "elapsed_sec": 7.13,
+      "error": "",
+      "rouge1": 0.13913,
+      "rouge2": 0.035088,
+      "rougeL": 0.095652,
+      "bleu1": 0.070288,
+      "bleu2": 0.042453,
+      "bleu3": 0.030714,
+      "bleu4": 0.024728
+    },
+    {
+      "qid": "SYM-007",
+      "type": "symptom",
+      "query": "I have pain, fever, nausea, and diarrhea with loss of appetite",
+      "expected_diseases": [
+        "Appendicitis",
+        "Bacteremia"
+      ],
+      "llm_response": "These symptoms are common in **gastroenteritis** (viral, bacterial, or parasitic infection) or food‑borne illness, but they can also occur with other conditions such as inflammatory bowel disease, medication side effects, or early appendicitis.\n\n**Typical causes**\n- **Viral gastroenteritis** (norovirus, rotavirus) – often self‑limited.\n- **Bacterial infection** (Salmonella, Campylobacter, E. coli, Shigella) – may follow contaminated food or water.\n- **Parasitic infection** (Giardia) – more common after travel or untreated water exposure.\n- **Medication or toxin exposure** – e.g., antibiotics, NSAIDs, alcohol.\n\n**When to seek medical care**\n- Fever > 101.5 °F (38.5 °C) lasting > 48 h.\n- Persistent vomiting or inability to keep fluids down.\n- Severe abdominal pain, especially if localized (e.g., right lower quadrant).\n- Bloody stools or black/tarry stools.\n- Signs of dehydration (dry mouth, dizziness, reduced urine output, rapid heartbeat).\n- Symptoms lasting > 5 days without improvement.\n\n**Self‑care measures**\n1. **Hydration:** Sip oral rehydration solutions, clear broths, or electrolyte drinks every 15–30 min.\n2. **Diet:** Start with bland foods (BRAT diet – bananas, rice, applesauce, toast) as tolerated; avoid dairy, caffeine, fatty or spicy foods.\n3. **Fever/ pain:** Acetaminophen (paracetamol) 500 mg every 6 h as needed; avoid NSAIDs if you have stomach upset.\n4. **Rest:** Allow your body to recover.\n\nIf you have any red‑flag signs or your condition worsens, contact a healthcare provider promptly.\n\n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 229,
+      "elapsed_sec": 5.08,
+      "error": "",
+      "rouge1": 0.09375,
+      "rouge2": 0.007874,
+      "rougeL": 0.054688,
+      "bleu1": 0.050992,
+      "bleu2": 0.017021,
+      "bleu3": 0.004354,
+      "bleu4": 0.002204
+    },
+    {
+      "qid": "SYM-008",
+      "type": "symptom",
+      "query": "I have weight gain, high blood pressure, and shortness of breath",
+      "expected_diseases": [
+        "Ascites",
+        "Hypertension"
+      ],
+      "llm_response": "These three findings often cluster in conditions that affect fluid balance, the heart, or the endocrine system:\n\n| Possible cause | How it fits the picture |\n|----------------|------------------------|\n| **Obstructive sleep apnea** | Repeated nighttime hypoxia can raise blood pressure, cause fluid retention (weight gain), and lead to daytime shortness of breath. |\n| **Heart failure (especially left‑sided)** | The heart can’t pump efficiently, causing fluid buildup (weight gain/edema), elevated blood pressure, and breathlessness with activity or lying flat. |\n| **Hyperaldosteronism or other forms of secondary hypertension** | Excess aldosterone leads to sodium/water retention (weight gain) and high blood pressure; fluid overload can cause dyspnea. |\n| **Hypothyroidism** | Metabolic slowdown can cause weight gain, diastolic hypertension, and mild shortness of breath due to slower cardiac output. |\n| **Chronic kidney disease** | Impaired fluid excretion leads to weight gain/edema, hypertension, and reduced oxygen delivery causing breathlessness. |\n| **Obesity‑related metabolic syndrome** | Excess weight itself raises blood pressure and can produce exertional dyspnea. |\n\n**What to do next**\n\n1. **See a primary‑care clinician promptly.** They will likely order: basic metabolic panel, thyroid‑stimulating hormone, BNP or NT‑proBNP, urine albumin/creatinine, and possibly a sleep study or echocardiogram.  \n2. **Track symptoms:** weight changes (daily scale), blood pressure readings, and when shortness of breath occurs (rest vs. exertion, lying flat).  \n3. **Lifestyle measures:** limit sodium (<2 g/day), aim for modest weight loss (5–10 % of body weight), regular moderate activity (as tolerated), and avoid smoking or excessive alcohol.  \n4. **Medication review:** some drugs (e.g., steroids, NSAIDs) can worsen fluid retention and blood pressure.\n\nPrompt evaluation can identify the underlying condition and guide treatment to reduce cardiovascular risk and improve breathing.\n\n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 285,
+      "elapsed_sec": 4.16,
+      "error": "",
+      "rouge1": 0.107023,
+      "rouge2": 0.026936,
+      "rougeL": 0.080268,
+      "bleu1": 0.046838,
+      "bleu2": 0.029658,
+      "bleu3": 0.020229,
+      "bleu4": 0.011821
+    },
+    {
+      "qid": "SYM-009",
+      "type": "symptom",
+      "query": "I have high heart rate and high blood pressure",
+      "expected_diseases": [
+        "Anabolic steroid use",
+        "Hypertension"
+      ],
+      "llm_response": "A rapid heart rate (tachycardia) and elevated blood pressure can result from many factors, including:\n\n* **Stress, anxiety, or caffeine** – temporary spikes that often improve with relaxation techniques or reduced stimulant intake.  \n* **Medications or substances** – decongestants, certain asthma drugs, nicotine, illicit stimulants, or withdrawal from alcohol/benzodiazepines.  \n* **Medical conditions** – hyperthyroidism, anemia, fever, infections, heart rhythm disorders, sleep apnea, or hormonal imbalances.  \n* **Cardiovascular disease** – early signs of hypertension, coronary artery disease, or heart failure may present this way.  \n* **Lifestyle** – excess weight, lack of exercise, high‑salt diet, and chronic alcohol use can raise both heart rate and pressure.\n\n**What to consider doing now**\n\n1. **Seek medical evaluation** promptly, especially if you have chest pain, shortness of breath, dizziness, or fainting.  \n2. **Track symptoms** (heart rate, blood pressure, triggers, timing) to share with your clinician.  \n3. **Reduce modifiable contributors:** limit caffeine/alcohol, quit smoking, manage stress (deep breathing, meditation), stay hydrated, and aim for regular moderate exercise.  \n4. **Follow a low‑sodium, balanced diet** rich in fruits, vegetables, whole grains, and lean protein.  \n5. **Monitor** with a home blood pressure cuff if available, ensuring proper cuff size and technique.\n\nOnly a healthcare professional can determine the underlying cause and appropriate treatment.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 211,
+      "elapsed_sec": 7.7,
+      "error": "",
+      "rouge1": 0.166667,
+      "rouge2": 0.053097,
+      "rougeL": 0.122807,
+      "bleu1": 0.075949,
+      "bleu2": 0.046583,
+      "bleu3": 0.032571,
+      "bleu4": 0.023989
+    },
+    {
+      "qid": "SYM-010",
+      "type": "symptom",
+      "query": "I have fatigue, weakness, and anemia with bleeding",
+      "expected_diseases": [
+        "Anemias"
+      ],
+      "llm_response": "Fatigue, weakness, and anemia that occur together with bleeding can be caused by several conditions, including:\n\n* **Acute or chronic blood loss** – gastrointestinal ulcers, hemorrhoids, menstrual disorders, or trauma can deplete red‑cell volume.\n* **Hemolytic anemias** – autoimmune hemolysis, hereditary spherocytosis, or sickle‑cell disease cause red‑cell destruction and may present with bruising or bleeding.\n* **Bone‑marrow disorders** – aplastic anemia, myelodysplastic syndromes, or leukemia reduce production of red cells and can lead to easy bruising or bleeding.\n* **Nutrient deficiencies** – severe iron, vitamin B12, or folate deficiency can cause anemia and may be worsened by chronic bleeding.\n* **Kidney disease** – reduced erythropoietin production leads to anemia; uremia can impair platelet function, increasing bleeding risk.\n\nKey next steps include a complete blood count, iron studies, vitamin B12/folate levels, reticulocyte count, stool occult blood test, and possibly imaging or bone‑marrow evaluation. Prompt evaluation by a healthcare professional is essential to determine the underlying cause and appropriate treatment.\n\n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 165,
+      "elapsed_sec": 6.14,
+      "error": "",
+      "rouge1": 0.176166,
+      "rouge2": 0.041885,
+      "rougeL": 0.124352,
+      "bleu1": 0.100917,
+      "bleu2": 0.057056,
+      "bleu3": 0.035625,
+      "bleu4": 0.021415
+    },
+    {
+      "qid": "SYM-011",
+      "type": "symptom",
+      "query": "I have a cough and fever with chest pain",
+      "expected_diseases": [
+        "Pneumonia",
+        "Tuberculosis"
+      ],
+      "llm_response": "Cough, fever, and chest pain can be caused by several conditions, including:\n\n* **Upper‑respiratory infections** (viral or bacterial bronchitis, pneumonia) – often produce fever, a productive or dry cough, and a feeling of tightness or soreness in the chest.  \n* **Influenza** – can cause high fever, body aches, cough, and chest discomfort.  \n* **COVID‑19** – may present with fever, cough, and chest pain, especially if there is associated shortness of breath.  \n* **Pleural inflammation** (pleuritis) – inflammation of the lining around the lungs can cause sharp chest pain that worsens with deep breathing or coughing.  \n* **Pulmonary embolism** – a clot in the lung can cause sudden chest pain, cough, fever, and shortness of breath; this is a medical emergency.\n\n**When to seek urgent care:**  \n- Shortness of breath, rapid breathing, or wheezing  \n- Chest pain that is severe, worsening, or radiates to the arm, neck, or jaw  \n- High fever (> 39 °C / 102 °F) persisting > 48 h  \n- Cough producing blood‑tinged sputum  \n- Confusion, dizziness, or fainting\n\n**General care while awaiting evaluation:**  \n- Rest, stay hydrated, and use acetaminophen or ibuprofen for fever/pain if tolerated.  \n- Use a humidifier or warm fluids to soothe the throat.  \n- Avoid smoking or exposure to irritants.\n\nPrompt evaluation by a healthcare professional is essential to determine the exact cause and appropriate treatment. This is educational information, not a diagnosis.",
+      "llm_response_len": 230,
+      "elapsed_sec": 10.65,
+      "error": "",
+      "rouge1": 0.15261,
+      "rouge2": 0.05668,
+      "rougeL": 0.128514,
+      "bleu1": 0.075658,
+      "bleu2": 0.047405,
+      "bleu3": 0.037346,
+      "bleu4": 0.030499
+    },
+    {
+      "qid": "SYM-012",
+      "type": "symptom",
+      "query": "I have seizures and I feel confused",
+      "expected_diseases": [
+        "Epilepsy",
+        "Arteriovenous malformations"
+      ],
+      "llm_response": "Seizures can be followed by a period of confusion, disorientation, fatigue, or memory gaps known as the **post‑ictal state**. This can last from a few minutes to several hours, depending on the type of seizure and individual factors. Other possible contributors to confusion include low blood sugar, medication side effects, sleep deprivation, stress, or an underlying neurological condition such as epilepsy.\n\nIf you experience ongoing seizures, new‑onset confusion, or any worsening symptoms, seek prompt medical evaluation. Keep a record of seizure timing, duration, triggers, and any medications you’re taking, and share this with a healthcare professional. They may recommend blood tests, brain imaging, EEG monitoring, or medication adjustments to identify the cause and improve control.\n\n**Important:** Do not adjust or stop any prescribed medication without consulting your doctor.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 135,
+      "elapsed_sec": 1.56,
+      "error": "",
+      "rouge1": 0.204819,
+      "rouge2": 0.0,
+      "rougeL": 0.096386,
+      "bleu1": 0.104046,
+      "bleu2": 0.007778,
+      "bleu3": 0.003283,
+      "bleu4": 0.002136
+    },
+    {
+      "qid": "SYM-013",
+      "type": "symptom",
+      "query": "I have pain, fatigue, headache, weight loss, and dizziness",
+      "expected_diseases": [
+        "Anorexia nervosa"
+      ],
+      "llm_response": "These symptoms can be caused by a wide range of conditions, including:\n\n* **Infections** – chronic viral (e.g., Epstein‑Barr, HIV), bacterial (e.g., tuberculosis, endocarditis), or parasitic infections can produce fatigue, weight loss, headache, and dizziness.  \n* **Endocrine disorders** – hyperthyroidism, adrenal insufficiency, or uncontrolled diabetes may lead to weight loss, fatigue, and dizziness.  \n* **Anemia** – iron‑deficiency, B12 deficiency, or hemolytic anemia can cause fatigue, headache, and light‑headedness.  \n* **Autoimmune diseases** – systemic lupus erythematosus, rheumatoid arthritis, or vasculitis often present with generalized pain, fatigue, and weight loss.  \n* **Malignancy** – especially hematologic cancers (lymphoma, leukemia) or solid tumors can produce constitutional symptoms (weight loss, fatigue, headache).  \n* **Cardiovascular or pulmonary issues** – heart failure, arrhythmias, or chronic lung disease may cause dizziness and fatigue.  \n* **Psychiatric/psychosomatic factors** – depression or chronic stress can manifest with similar physical complaints.\n\nBecause many serious illnesses share these nonspecific signs, it’s important to seek prompt medical evaluation. A clinician will take a detailed history, perform a physical exam, and order appropriate labs (CBC, metabolic panel, thyroid studies, inflammatory markers) and imaging as needed to determine the cause.\n\n**Next steps:** Schedule an appointment with your primary‑care provider or go to urgent care if symptoms worsen, you develop new neurological signs, chest pain, or severe weakness.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 218,
+      "elapsed_sec": 43.7,
+      "error": "",
+      "rouge1": 0.124481,
+      "rouge2": 0.041841,
+      "rougeL": 0.074689,
+      "bleu1": 0.060897,
+      "bleu2": 0.039579,
+      "bleu3": 0.031182,
+      "bleu4": 0.02503
+    },
+    {
+      "qid": "SYM-014",
+      "type": "symptom",
+      "query": "I have itching and jaundice",
+      "expected_diseases": [
+        "Alagille syndrome"
+      ],
+      "llm_response": "Itching (pruritus) that occurs together with yellowing of the skin or eyes (jaundice) often points to a problem with the liver or bile ducts. Common conditions that can cause both symptoms include:\n\n* **Obstructive jaundice** – gallstones, tumors, or strictures blocking the bile ducts.\n* **Hepatitis** – viral, alcoholic, or drug‑induced inflammation of the liver.\n* **Primary biliary cholangitis or primary sclerosing cholangitis** – chronic autoimmune diseases that damage bile ducts.\n* **Cholestasis** – reduced bile flow from any cause (e.g., pregnancy, certain medications).\n* **Liver cancer or metastatic disease**.\n\nThese conditions may also produce other signs such as dark urine, pale stools, abdominal pain, fatigue, or swelling. Prompt evaluation with blood tests (liver function panel, bilirubin), imaging (ultrasound, CT, MRI), and possibly specialist referral is important.\n\nIf you notice worsening itching, increasing yellow color, or any new symptoms, seek medical care promptly.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 150,
+      "elapsed_sec": 8.48,
+      "error": "",
+      "rouge1": 0.259887,
+      "rouge2": 0.057143,
+      "rougeL": 0.169492,
+      "bleu1": 0.104762,
+      "bleu2": 0.031662,
+      "bleu3": 0.016892,
+      "bleu4": 0.006946
+    },
+    {
+      "qid": "SYM-015",
+      "type": "symptom",
+      "query": "I have fever, headache, rash, and loss of appetite",
+      "expected_diseases": [
+        "Allergic purpura",
+        "Dengue fever"
+      ],
+      "llm_response": "Fever, headache, rash, and loss of appetite can be seen in several illnesses, including:\n\n* **Viral infections** – such as measles, rubella, roseola, or COVID‑19.  \n* **Bacterial infections** – like meningococcal disease, scarlet fever, or Lyme disease.  \n* **Allergic or drug reactions** – which may cause a rash plus systemic symptoms.  \n* **Autoimmune conditions** – such as systemic lupus erythematosus, which can present with fever, headache, rash, and decreased appetite.  \n\nKey factors that help narrow the cause are the rash’s appearance (e.g., maculopapular, petechial, vesicular), its distribution, recent exposures, travel history, vaccination status, and any accompanying symptoms (e.g., stiff neck, joint pain, vomiting).  \n\nBecause these signs can indicate serious infections (especially meningococcemia or meningitis), you should seek medical evaluation promptly for a physical exam, appropriate labs, and possible treatment.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 136,
+      "elapsed_sec": 2.44,
+      "error": "",
+      "rouge1": 0.22619,
+      "rouge2": 0.084337,
+      "rougeL": 0.142857,
+      "bleu1": 0.117347,
+      "bleu2": 0.073594,
+      "bleu3": 0.060672,
+      "bleu4": 0.053349
+    },
+    {
+      "qid": "SYM-016",
+      "type": "symptom",
+      "query": "I have pain, diarrhea, bleeding, and abdominal pain",
+      "expected_diseases": [
+        "Amyloidosis",
+        "Appendicitis"
+      ],
+      "llm_response": "The combination of abdominal pain, diarrhea, and bleeding can be caused by several conditions, including:\n\n* **Infectious gastroenteritis** – bacterial (e.g., Campylobacter, Shigella, E. coli), viral, or parasitic infections can cause inflammation, cramping, watery or bloody stools.  \n* **Inflammatory bowel disease** – Crohn’s disease or ulcerative colitis often present with crampy pain, frequent stools, and rectal bleeding.  \n* **Ischemic colitis** – reduced blood flow to the colon can cause sudden pain and bloody diarrhea, especially in older adults.  \n* **Diverticulitis or diverticular bleeding** – inflamed pouches in the colon may cause pain and bleeding.  \n* **Hemorrhoids or anal fissures** – can cause bright red blood with stool, though usually without severe abdominal pain.  \n\nBecause bleeding and persistent pain may indicate a serious problem, you should seek prompt medical evaluation. A clinician can obtain a detailed history, perform a physical exam, and order stool studies, blood tests, or imaging as needed.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 157,
+      "elapsed_sec": 1.65,
+      "error": "",
+      "rouge1": 0.170455,
+      "rouge2": 0.068966,
+      "rougeL": 0.113636,
+      "bleu1": 0.090476,
+      "bleu2": 0.055048,
+      "bleu3": 0.030772,
+      "bleu4": 0.01937
+    },
+    {
+      "qid": "SYM-017",
+      "type": "symptom",
+      "query": "I am having trouble breathing and wheezing",
+      "expected_diseases": [
+        "Asthma",
+        "Allergic rhinitis"
+      ],
+      "llm_response": "Difficulty breathing and wheezing can be caused by several conditions, including asthma, allergic reactions, respiratory infections, chronic obstructive pulmonary disease (COPD), or a sudden airway obstruction. Key warning signs that require immediate medical attention are:\n\n- Rapid or labored breathing\n- Chest tightness or pain\n- Bluish lips or fingertips\n- Inability to speak full sentences\n- Swelling of the face or throat\n\nIf you experience any of these, call emergency services (e.g., 911) right away. For milder symptoms, consider:\n\n1. **Identify triggers** – pollen, dust, smoke, cold air, exercise, or certain foods.\n2. **Use a rescue inhaler** (e.g., albuterol) if prescribed, following the dosage instructions.\n3. **Stay upright** and practice slow, deep breaths.\n4. **Avoid irritants** such as tobacco smoke, strong fragrances, or polluted air.\n5. **Monitor symptoms** – if they worsen or persist for more than a few hours, seek prompt medical evaluation.\n\nA healthcare professional can perform a physical exam, lung function tests, and possibly prescribe controller medications or allergy treatments.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 171,
+      "elapsed_sec": 37.83,
+      "error": "",
+      "rouge1": 0.203046,
+      "rouge2": 0.010256,
+      "rougeL": 0.091371,
+      "bleu1": 0.093617,
+      "bleu2": 0.020002,
+      "bleu3": 0.005558,
+      "bleu4": 0.002933
+    },
+    {
+      "qid": "SYM-018",
+      "type": "symptom",
+      "query": "I have headache and high fever",
+      "expected_diseases": [
+        "Dengue fever",
+        "Bacteremia",
+        "Allergic purpura"
+      ],
+      "llm_response": "Headache and a high fever can be signs of several common illnesses, such as:\n\n* **Viral infections** – flu, COVID‑19, or other respiratory viruses often cause fever, headache, body aches, and sometimes cough or sore throat.  \n* **Bacterial infections** – sinusitis, meningitis, or a urinary tract infection can present with fever and headache, especially if the pain is severe or localized.  \n* **Inflammatory conditions** – migraine or tension‑type headaches may be worsened by fever from an underlying infection.  \n\nKey points to consider:\n- **Duration & severity** – If fever is > 39 °C (102 °F), persists more than 48 hours, or headache is sudden, severe, or accompanied by neck stiffness, confusion, rash, vomiting, or neurological changes, seek urgent medical care.  \n- **Associated symptoms** – Cough, shortness of breath, sore throat, sinus pain, or urinary symptoms can help narrow the cause.  \n- **Self‑care** – Stay hydrated, rest, and use acetaminophen or ibuprofen for fever and pain unless contraindicated.  \n\nIf you have any concerning signs or the fever does not improve with basic measures, contact a healthcare professional promptly.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 184,
+      "elapsed_sec": 60.48,
+      "error": "",
+      "rouge1": 0.185366,
+      "rouge2": 0.029557,
+      "rougeL": 0.117073,
+      "bleu1": 0.097561,
+      "bleu2": 0.044621,
+      "bleu3": 0.009345,
+      "bleu4": 0.004281
+    },
+    {
+      "qid": "SYM-019",
+      "type": "symptom",
+      "query": "I feel very anxious in crowded places with nausea and rapid heartbeat",
+      "expected_diseases": [
+        "Agoraphobia"
+      ],
+      "llm_response": "Feeling anxious, nauseous, and having a rapid heartbeat in crowded places is common in **social anxiety disorder, panic attacks, or agoraphobia**. The physical symptoms are driven by the body’s “fight‑or‑flight” response: adrenaline raises heart rate, stomach muscles contract (causing nausea), and breathing may become shallow.\n\n**What you can try now**\n\n1. **Breathing control** – inhale for 4 seconds, hold 2 seconds, exhale for 6 seconds; repeat 5–10 times.  \n2. **Grounding** – name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste.  \n3. **Gradual exposure** – practice staying in mildly crowded settings for short periods, slowly increasing time as tolerance builds.  \n4. **Lifestyle** – limit caffeine, stay hydrated, get regular exercise and sleep.\n\n**When to seek professional help**\n\n- Episodes are frequent or worsening.  \n- You avoid daily activities (work, school, errands).  \n- Symptoms last >10 minutes or cause severe distress.\n\nA mental‑health professional can assess for anxiety disorders and discuss therapy (CBT, exposure) or medication if needed.  \n\n*This is educational information, not a diagnosis.*",
+      "llm_response_len": 172,
+      "elapsed_sec": 3.64,
+      "error": "",
+      "rouge1": 0.160804,
+      "rouge2": 0.040609,
+      "rougeL": 0.070352,
+      "bleu1": 0.083665,
+      "bleu2": 0.031686,
+      "bleu3": 0.015916,
+      "bleu4": 0.00635
+    },
+    {
+      "qid": "SYM-020",
+      "type": "symptom",
+      "query": "I have swelling, constipation, and abdominal discomfort",
+      "expected_diseases": [
+        "Adhesions",
+        "Amyloidosis",
+        "Appendicitis"
+      ],
+      "llm_response": "Swelling (abdominal bloating), constipation, and discomfort are common and can result from several benign or more serious conditions, such as:\n\n* **Dietary factors** – low fiber intake, inadequate fluids, or excess salt can cause constipation and bloating.  \n* **Irritable bowel syndrome (IBS)** – often presents with alternating constipation, bloating, and cramping.  \n* **Small‑intestinal bacterial overgrowth or food intolerances** (e.g., lactose, fructose) – can produce gas and swelling.  \n* **Medication side effects** – opioids, anticholinergics, iron supplements, and some antidepressants may slow bowel movements.  \n* **Hypothyroidism** – can lead to generalized slowing of gastrointestinal motility.  \n* **Obstructive lesions** (e.g., colorectal cancer, strictures) – less common but should be ruled out, especially with persistent symptoms, weight loss, or blood in stool.\n\n**Self‑care steps**  \n1. Increase water intake (≥ 8 cups/day) and dietary fiber (fruits, vegetables, whole grains).  \n2. Aim for 30 minutes of moderate activity most days to stimulate motility.  \n3. Limit carbonated drinks, salt, and foods known to cause gas (beans, cruciferous veg).  \n4. Consider a probiotic or over‑the‑counter stool softener if needed.  \n\nIf symptoms persist > 2 weeks, worsen, or are accompanied by weight loss, vomiting, blood, or severe pain, seek medical evaluation promptly.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 201,
+      "elapsed_sec": 3.53,
+      "error": "",
+      "rouge1": 0.152466,
+      "rouge2": 0.027149,
+      "rougeL": 0.098655,
+      "bleu1": 0.084211,
+      "bleu2": 0.045559,
+      "bleu3": 0.028022,
+      "bleu4": 0.016713
+    },
+    {
+      "qid": "SYM-021",
+      "type": "symptom",
+      "query": "chest tightness and shortness of breath",
+      "expected_diseases": [
+        "Asthma",
+        "Pneumonia",
+        "Hypertension"
+      ],
+      "llm_response": "Chest tightness and shortness of breath can result from many conditions, including:\n\n* **Heart‑related**: angina, heart attack, heart failure, arrhythmias, pericarditis.  \n* **Lung‑related**: asthma, chronic obstructive pulmonary disease (COPD), pneumonia, pulmonary embolism, pneumothorax, interstitial lung disease.  \n* **Other**: anxiety/panic attacks, gastroesophageal reflux disease (GERD), anemia, thyroid disorders, severe allergic reactions.\n\nRed‑flag signs that require urgent care are sudden onset, severe pain, fainting, sweating, rapid heart rate, low blood pressure, or worsening symptoms. If you experience any of these, call emergency services or go to the nearest emergency department. For persistent or recurrent symptoms, schedule an evaluation with a healthcare provider for history, physical exam, and appropriate testing (e.g., ECG, chest X‑ray, labs, pulmonary function tests).\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 122,
+      "elapsed_sec": 11.12,
+      "error": "",
+      "rouge1": 0.25,
+      "rouge2": 0.063291,
+      "rougeL": 0.15,
+      "bleu1": 0.133333,
+      "bleu2": 0.066853,
+      "bleu3": 0.046483,
+      "bleu4": 0.036121
+    },
+    {
+      "qid": "SYM-022",
+      "type": "symptom",
+      "query": "I have pain, fever, nausea and vomiting with headache and chills",
+      "expected_diseases": [
+        "Babesiosis",
+        "Bacteremia"
+      ],
+      "llm_response": "These symptoms—fever, chills, headache, nausea, vomiting and generalized pain—are common to many acute illnesses, including viral or bacterial infections (e.g., flu, gastroenteritis, meningitis, urinary‑tract infection, or early sepsis).  \n\n**Red‑flag signs that require immediate medical attention**  \n- Severe or worsening headache, especially with neck stiffness or sensitivity to light  \n- Confusion, drowsiness, difficulty staying awake, or seizures  \n- Persistent vomiting that prevents keeping fluids down  \n- Rapid heart rate, low blood pressure, or shortness of breath  \n- Rash that looks petechial or purpuric  \n\n**What you can do while awaiting care**  \n- Stay hydrated with small sips of water, oral rehydration solution, or clear broth.  \n- Use acetaminophen (paracetamol) for fever and pain unless contraindicated.  \n- Rest in a quiet, cool environment.  \n\nIf any red‑flag signs appear, or if fever > 39 °C (102 °F) persists beyond 24 hours, seek urgent medical evaluation.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 148,
+      "elapsed_sec": 3.57,
+      "error": "",
+      "rouge1": 0.152941,
+      "rouge2": 0.02381,
+      "rougeL": 0.105882,
+      "bleu1": 0.108247,
+      "bleu2": 0.062658,
+      "bleu3": 0.039439,
+      "bleu4": 0.023806
+    },
+    {
+      "qid": "SYM-023",
+      "type": "symptom",
+      "query": "stomach pain and loose stool with fever",
+      "expected_diseases": [
+        "Amebiasis",
+        "Appendicitis",
+        "Bacteremia"
+      ],
+      "llm_response": "Stomach (abdominal) pain combined with loose stools and fever often points to an acute gastrointestinal infection, such as viral gastroenteritis, bacterial food‑borne illness (e.g., Salmonella, Campylobacter, Shigella), or, less commonly, parasitic infection. Other possibilities include inflammatory bowel disease flare, diverticulitis, or early appendicitis if pain is localized. Fever and watery diarrhea can also result from viral infections like norovirus or rotavirus. Important red‑flag signs that require prompt medical evaluation are:\n\n- Persistent high fever (>38.5 °C) or worsening fever  \n- Severe or worsening abdominal pain, especially if localized (e.g., right lower quadrant)  \n- Blood or mucus in stool  \n- Signs of dehydration (dry mouth, reduced urine output, dizziness)  \n- Inability to keep fluids down for >24 hours  \n\nManagement generally includes staying hydrated with oral rehydration solutions, resting, and a bland diet. If bacterial infection is suspected, a healthcare provider may prescribe antibiotics. Seek medical care promptly if any red‑flag symptoms appear.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 158,
+      "elapsed_sec": 17.87,
+      "error": "",
+      "rouge1": 0.182796,
+      "rouge2": 0.032609,
+      "rougeL": 0.139785,
+      "bleu1": 0.142857,
+      "bleu2": 0.066299,
+      "bleu3": 0.013134,
+      "bleu4": 0.005853
+    },
+    {
+      "qid": "SYM-024",
+      "type": "symptom",
+      "query": "memory loss and confusion in elderly",
+      "expected_diseases": [
+        "Alzheimer's disease"
+      ],
+      "llm_response": "Memory loss and confusion in older adults can be caused by many conditions, ranging from benign to serious:\n\n| Category | Typical Features | Common Examples |\n|----------|------------------|-----------------|\n| **Neurodegenerative** | Gradual onset, progressive worsening, difficulty with recent events, language, visuospatial tasks | Alzheimer disease, Lewy‑body dementia, frontotemporal dementia, vascular dementia |\n| **Metabolic / Endocrine** | Sudden or fluctuating changes, may improve with treatment | Low thyroid (hypothyroidism), hyper/hypoglycemia, electrolyte disturbances (Na⁺, Ca²⁺), dehydration |\n| **Medication‑related** | Confusion after dose change or addition, anticholinergic burden | Benzodiazepines, anticholinergics, opioids, polypharmacy |\n| **Vascular / Cerebrovascular** | Stepwise decline, focal neurologic signs, history of strokes or TIA | Multi‑infarct dementia, recent stroke |\n| **Infectious / Inflammatory** | Acute onset, fever, neck stiffness, altered mental status | Urinary‑tract infection, pneumonia, meningitis, encephalitis |\n| **Psychiatric** | Mood changes, anxiety, sleep disturbance; memory often “subjective” | Depression (pseudodementia), delirium |\n| **Other** | Acute confusional state, often reversible | Electrolyte imbalance, hypoxia, severe anemia, severe pain, sensory deprivation |\n\n**Initial evaluation steps**\n\n1. **History** – onset, speed of change, medications, recent illness, substance use, functional impact.  \n2. **Physical & neurologic exam** – focal deficits, gait, vital signs (fever, BP).  \n3. **Basic labs** – CBC, CMP, TSH, B12, folate, glucose, calcium, urinalysis, chest X‑ray if infection suspected.  \n4. **Medication review** – stop or reduce high‑risk drugs.  \n5. **Cognitive testing** – Mini‑Mental State Exam (MMSE) or MoCA.  \n6. **Neuroimaging** (CT or MRI) if focal signs, rapid decline, or to rule out stroke/hematoma.  \n\n**When to seek urgent care**\n\n- Sudden confusion, fever, severe headache, new focal weakness, seizures, or inability to care for self.\n\n**Management**\n\n- Treat reversible causes (e.g., infection, metabolic derangements, medication adjustment).  \n- For neurodegenerative disease, refer to neurology, consider cholinesterase inhibitors or memantine, and implement safety measures (fall prevention, advance‑care planning).  \n- Optimize vascular risk factors (BP, lipids, diabetes), encourage regular physical/social activity, ensure adequate sleep, hydration, and nutrition.\n\n**Key take‑away:** Memory loss and confusion in the elderly warrants a systematic work‑up to identify treatable contributors and to differentiate delirium (often acute and reversible) from dementia (typically chronic and progressive).\n\n*This is educational information, not a diagnosis.*",
+      "llm_response_len": 358,
+      "elapsed_sec": 6.14,
+      "error": "",
+      "rouge1": 0.101124,
+      "rouge2": 0.028249,
+      "rougeL": 0.061798,
+      "bleu1": 0.035149,
+      "bleu2": 0.019269,
+      "bleu3": 0.012524,
+      "bleu4": 0.007676
+    },
+    {
+      "qid": "SYM-025",
+      "type": "symptom",
+      "query": "blood in urine with pain",
+      "expected_diseases": [
+        "Bladder stones",
+        "Kidney stones",
+        "Urinary tract infection",
+        "Bladder cancer",
+        "Cystitis"
+      ],
+      "llm_response": "Seeing blood (hematuria) in the urine together with pain can be caused by several conditions, including:\n\n* **Urinary‑tract infection (UTI)** – often causes burning during urination, urgency, and sometimes flank pain.  \n* **Kidney stones** – cause sharp, colicky flank or lower‑abdominal pain and visible blood.  \n* **Bladder or kidney infection (cystitis, pyelonephritis)** – may produce pain, fever, and cloudy or foul‑smelling urine.  \n* **Trauma** to the kidneys, bladder, or urethra.  \n* **Benign prostatic hyperplasia or prostatitis** (in men) – can cause painful urination and blood.  \n* **Certain medications or blood‑clotting disorders** – can make urine appear pink or red.  \n* **More serious causes** such as tumors of the kidney, bladder, or urethra.\n\n**When to seek medical care promptly**\n\n* Severe pain, fever, vomiting, or inability to urinate.  \n* Large amounts of blood or clots.  \n* Persistent symptoms for more than a day.  \n* Recent injury or recent start of a new medication.\n\n**Typical evaluation**\n\nA doctor will usually order a urinalysis, urine culture, blood tests, and imaging (ultrasound or CT) to identify infection, stones, or structural problems. Treatment depends on the underlying cause (antibiotics for infection, pain control, hydration, or procedures for stones).\n\nIf you have these symptoms, contact a healthcare provider promptly for proper assessment.\n\n*This is educational information, not a diagnosis.*",
+      "llm_response_len": 213,
+      "elapsed_sec": 43.05,
+      "error": "",
+      "rouge1": 0.206897,
+      "rouge2": 0.06087,
+      "rougeL": 0.155172,
+      "bleu1": 0.09901,
+      "bleu2": 0.060053,
+      "bleu3": 0.022882,
+      "bleu4": 0.00795
+    },
+    {
+      "qid": "MIX-001",
+      "type": "mixed",
+      "query": "What causes epilepsy and how is it treated?",
+      "expected_diseases": [
+        "Epilepsy"
+      ],
+      "llm_response": "Epilepsy is a disorder of brain electrical activity that leads to recurrent, unprovoked seizures. Common causes include:\n\n* **Genetic factors** – inherited mutations that affect ion channels or neurotransmitter systems.  \n* **Structural brain lesions** – scar tissue from head injury, stroke, tumors, malformations of cortical development, or infections (e.g., meningitis, encephalitis).  \n* **Metabolic or immune disorders** – abnormal glucose, calcium, or autoimmune encephalitis.  \n* **Unknown (idiopathic)** – in many people no specific trigger is identified.\n\nTreatment aims to prevent seizures while minimizing side effects:\n\n1. **Antiepileptic drugs (AEDs)** – first‑line; choice depends on seizure type and patient factors (e.g., levetiracetam, lamotrigine, carbamazepine).  \n2. **Surgical options** – resection of a focal lesion or disconnective procedures for drug‑resistant focal epilepsy.  \n3. **Neurostimulation** – vagus‑nerve stimulator, responsive neurostimulation, or deep brain stimulation.  \n4. **Dietary therapy** – ketogenic or modified Atkins diet, especially in children with refractory seizures.  \n5. **Lifestyle measures** – adequate sleep, stress reduction, avoidance of seizure triggers, and adherence to medication.\n\nManagement is individualized and requires neurologist oversight.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 174,
+      "elapsed_sec": 4.13,
+      "error": "",
+      "rouge1": 0.133333,
+      "rouge2": 0.020725,
+      "rougeL": 0.102564,
+      "bleu1": 0.058366,
+      "bleu2": 0.021354,
+      "bleu3": 0.012138,
+      "bleu4": 0.005151
+    },
+    {
+      "qid": "MIX-002",
+      "type": "mixed",
+      "query": "How serious is tuberculosis and can it be cured?",
+      "expected_diseases": [
+        "Tuberculosis"
+      ],
+      "llm_response": "Tuberculosis (TB) is a contagious bacterial infection caused by *Mycobacterium tuberculosis*. It most often affects the lungs but can involve other organs.  \n\n**Seriousness**  \n- **Global impact:** About 10 million new cases and 1.5 million deaths occur each year worldwide.  \n- **Complications:** Untreated pulmonary TB can cause progressive lung damage, respiratory failure, and spread to other sites (e.g., meningitis, bone).  \n- **Drug‑resistant forms:** Multidrug‑resistant (MDR) and extensively drug‑resistant (XDR) TB are harder to treat and have higher mortality.\n\n**Cure**  \n- **Drug‑sensitive TB:** Standard therapy (usually 4 drugs – isoniazid, rifampin, ethambutol, pyrazinamide – for 2 months, then isoniazid + rifampin for 4 months) cures >95 % of patients when taken correctly.  \n- **Drug‑resistant TB:** Requires longer, more complex regimens (often 6‑20 months) with second‑line drugs; cure rates are lower (≈60‑80 %).  \n- **Adherence:** Completing the full course is essential to prevent relapse and resistance.\n\nEarly diagnosis, appropriate treatment, and public‑health measures (contact tracing, vaccination with BCG in high‑risk areas) greatly reduce morbidity and mortality.\n\n**Bottom line:** TB can be life‑threatening if untreated, but the vast majority of drug‑sensitive cases are curable with proper therapy.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 190,
+      "elapsed_sec": 6.13,
+      "error": "",
+      "rouge1": 0.171171,
+      "rouge2": 0.054545,
+      "rougeL": 0.108108,
+      "bleu1": 0.07554,
+      "bleu2": 0.028603,
+      "bleu3": 0.014365,
+      "bleu4": 0.00573
+    },
+    {
+      "qid": "MIX-003",
+      "type": "mixed",
+      "query": "What is the prognosis for dengue fever?",
+      "expected_diseases": [
+        "Dengue fever"
+      ],
+      "llm_response": "Dengue fever is usually a self‑limited illness. In most healthy adults and children, symptoms last 5‑7 days and full recovery occurs within 2‑3 weeks without lasting problems.  \n\nSevere dengue (dengue hemorrhagic fever or dengue shock syndrome) occurs in ≈5‑10 % of cases. With early recognition and proper fluid‑resuscitation, mortality drops to <1 %; without timely treatment, mortality can rise to 10‑20 %. Risk factors for a worse prognosis include very young age, older age, pregnancy, pre‑existing heart or lung disease, and secondary infection with a different dengue serotype.  \n\nMost patients regain normal health, but severe cases may need intensive care and can have lingering fatigue or organ dysfunction that resolves over weeks to months.  \n\n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 121,
+      "elapsed_sec": 2.58,
+      "error": "",
+      "rouge1": 0.157895,
+      "rouge2": 0.026667,
+      "rougeL": 0.092105,
+      "bleu1": 0.110345,
+      "bleu2": 0.047946,
+      "bleu3": 0.025238,
+      "bleu4": 0.010315
+    },
+    {
+      "qid": "MIX-004",
+      "type": "mixed",
+      "query": "Is diabetes mellitus contagious and who gets it?",
+      "expected_diseases": [
+        "Diabetes mellitus"
+      ],
+      "llm_response": "Diabetes mellitus is **not contagious**; it cannot be spread from person to person like an infection.  \n\n**Who can develop diabetes?**  \n\n* **Type 1 diabetes** – an autoimmune condition that usually appears in childhood or early adulthood. Risk factors include certain genetic backgrounds (family history) and, in some cases, viral infections that may trigger the immune attack on pancreatic β‑cells.  \n\n* **Type 2 diabetes** – the most common form, developing later in life but increasingly seen in younger people. Major risk factors are overweight/obesity, physical inactivity, poor diet, advancing age, family history, and certain ethnic backgrounds (e.g., African‑American, Hispanic, Native American, South‑Asian).  \n\n* **Gestational diabetes** – occurs during pregnancy in women who have risk factors such as obesity, prior gestational diabetes, or a strong family history of diabetes.  \n\nIn all types, genetics and lifestyle factors play key roles, but the disease itself is not transmissible.  \n\n*This is educational information, not a diagnosis.*",
+      "llm_response_len": 151,
+      "elapsed_sec": 17.01,
+      "error": "",
+      "rouge1": 0.208791,
+      "rouge2": 0.055556,
+      "rougeL": 0.142857,
+      "bleu1": 0.126829,
+      "bleu2": 0.06597,
+      "bleu3": 0.02778,
+      "bleu4": 0.01015
+    },
+    {
+      "qid": "MIX-005",
+      "type": "mixed",
+      "query": "What are the complications of pneumonia?",
+      "expected_diseases": [
+        "Pneumonia"
+      ],
+      "llm_response": "Pneumonia can lead to several acute and long‑term complications, especially in older adults, infants, or people with chronic illnesses:\n\n* **Respiratory failure** – severe gas‑exchange impairment may require mechanical ventilation.  \n* **Septicemia / sepsis** – bacteria or viruses from the lungs enter the bloodstream, causing systemic infection.  \n* **Pleural effusion** – fluid accumulates in the pleural space; if infected it becomes an empyema that often needs drainage.  \n* **Lung abscess** – a localized cavity of necrotic tissue that may need antibiotics and sometimes surgical removal.  \n* **Acute respiratory distress syndrome (ARDS)** – widespread inflammation leading to rapid oxygen desaturation.  \n* **Bronchiectasis** – permanent dilation of bronchi after repeated infection, causing chronic cough and sputum production.  \n* **Cardiac complications** – arrhythmias, myocardial infarction, or worsening heart failure, particularly in patients with pre‑existing heart disease.  \n* **Secondary bacterial infection** – superinfection with different organisms after the initial episode.  \n\nPrompt treatment and monitoring reduce the risk of these outcomes.  \n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 163,
+      "elapsed_sec": 9.22,
+      "error": "",
+      "rouge1": 0.223464,
+      "rouge2": 0.033898,
+      "rougeL": 0.111732,
+      "bleu1": 0.094595,
+      "bleu2": 0.041378,
+      "bleu3": 0.019817,
+      "bleu4": 0.007721
+    },
+    {
+      "qid": "MIX-006",
+      "type": "mixed",
+      "query": "What body system does asthma affect?",
+      "expected_diseases": [
+        "Asthma"
+      ],
+      "llm_response": "Asthma primarily involves the **respiratory system**, specifically the airways (bronchi and bronchioles). In asthma, the airway walls become inflamed and hyper‑reactive, leading to narrowing, excess mucus, and bronchospasm that cause wheezing, coughing, shortness of breath, and chest tightness. While the immune system drives the inflammatory response, the clinical manifestations are respiratory.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 58,
+      "elapsed_sec": 2.08,
+      "error": "",
+      "rouge1": 0.227848,
+      "rouge2": 0.077922,
+      "rougeL": 0.202532,
+      "bleu1": 0.166667,
+      "bleu2": 0.080582,
+      "bleu3": 0.020443,
+      "bleu4": 0.010331
+    },
+    {
+      "qid": "MIX-007",
+      "type": "mixed",
+      "query": "What is the treatment for anemia?",
+      "expected_diseases": [
+        "Anemias"
+      ],
+      "llm_response": "Treatment of anemia depends on its cause:\n\n| Type of anemia | Typical treatment |\n|----------------|-------------------|\n| **Iron‑deficiency** | Oral ferrous sulfate (e.g., 325 mg 1–3 times daily) or ferrous gluconate; take with vitamin C for better absorption. Intravenous iron if intolerance, malabsorption, or need rapid repletion. Increase dietary iron (red meat, beans, fortified cereals, leafy greens). |\n| **Vitamin B12 deficiency** | Intramuscular cyanocobalamin 1000 µg weekly for 4–6 weeks, then monthly; high‑dose oral B12 (≥1000 µg daily) is also effective. Add B12‑rich foods (meat, dairy, fortified plant milks). |\n| **Folate deficiency** | Oral folic acid 1 mg daily (or 5 mg if severe). Emphasize folate‑rich foods (leafy vegetables, legumes, citrus). |\n| **Anemia of chronic disease** | Treat the underlying inflammatory or renal condition; erythropoiesis‑stimulating agents (epoetin, darbepoetin) may be used in chronic kidney disease. |\n| **Hemolytic or marrow failure** | Specific therapies (immunosuppression, steroids, splenectomy, bone‑marrow transplant) as indicated. |\n| **Severe symptomatic anemia** | Red blood cell transfusion (usually 1 unit raises hemoglobin ≈1 g/dL). |\n\nGeneral measures: screen for occult bleeding, correct nutritional deficiencies, avoid unnecessary blood draws, and monitor hemoglobin and iron studies during therapy.\n\n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 200,
+      "elapsed_sec": 4.34,
+      "error": "",
+      "rouge1": 0.204651,
+      "rouge2": 0.056338,
+      "rougeL": 0.148837,
+      "bleu1": 0.078689,
+      "bleu2": 0.035975,
+      "bleu3": 0.023401,
+      "bleu4": 0.017068
+    },
+    {
+      "qid": "MIX-008",
+      "type": "mixed",
+      "query": "Can hypertension be cured?",
+      "expected_diseases": [
+        "Hypertension"
+      ],
+      "llm_response": "Hypertension (high blood pressure) is usually a chronic condition. In most people it can be **controlled**—through lifestyle changes (diet, exercise, weight loss, reduced sodium and alcohol, stress management) and, when needed, medications—but it is not typically “cured.”  \n\nA small subset of patients have **secondary hypertension** caused by an identifiable problem (e.g., kidney disease, hormonal disorders, certain medications). Treating or removing that underlying cause can normalize blood pressure, which may be considered a cure for those specific cases.  \n\nFor primary (essential) hypertension, long‑term management is required to keep blood pressure in a healthy range and lower the risk of heart disease, stroke, and kidney damage. Regular monitoring and adherence to treatment plans are essential.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 120,
+      "elapsed_sec": 2.91,
+      "error": "",
+      "rouge1": 0.27451,
+      "rouge2": 0.092715,
+      "rougeL": 0.183007,
+      "bleu1": 0.141975,
+      "bleu2": 0.072739,
+      "bleu3": 0.032098,
+      "bleu4": 0.012009
+    },
+    {
+      "qid": "MIX-009",
+      "type": "mixed",
+      "query": "I have appendicitis symptoms — what should I know?",
+      "expected_diseases": [
+        "Appendicitis"
+      ],
+      "llm_response": "Appendicitis is inflammation of the appendix and is a surgical emergency. Typical signs include:\n\n* **Pain** – starts as vague discomfort around the belly button, then shifts to a steady, sharp pain in the lower‑right abdomen (McBurney’s point).  \n* **Nausea / vomiting** – often follows the pain.  \n* **Loss of appetite** and mild **fever** (often > 38 °C/100.4 °F).  \n* **Tenderness** when the abdomen is pressed and then released (rebound tenderness).  \n* **Possible changes** in bowel habits, mild diarrhea or constipation.\n\nIf you have these symptoms, especially worsening right‑lower‑quadrant pain, seek medical care immediately. Diagnosis is made by physical exam, blood tests (elevated white cells), and imaging—usually an abdominal ultrasound or CT scan.\n\n**Treatment:** Prompt appendectomy (laparoscopic or open) is the standard; antibiotics alone are only for selected early cases. Delay can lead to perforation, abscess, or peritonitis, which increase morbidity.\n\n**When to call emergency services:** sudden severe pain, fever > 101 °F, vomiting that won’t stop, swelling or redness of the abdomen, or signs of shock (rapid heartbeat, faintness).\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 177,
+      "elapsed_sec": 7.07,
+      "error": "",
+      "rouge1": 0.165049,
+      "rouge2": 0.039216,
+      "rougeL": 0.097087,
+      "bleu1": 0.092664,
+      "bleu2": 0.050141,
+      "bleu3": 0.026946,
+      "bleu4": 0.00935
+    },
+    {
+      "qid": "MIX-010",
+      "type": "mixed",
+      "query": "What is bacteremia and how dangerous is it?",
+      "expected_diseases": [
+        "Bacteremia"
+      ],
+      "llm_response": "**Bacteremia** is the presence of live bacteria circulating in the bloodstream. It can occur briefly after routine activities (e.g., tooth brushing, dental work) and often resolves without illness. However, when bacteria multiply or the immune system cannot clear them, bacteremia can progress to **sepsis**, a systemic inflammatory response that may lead to organ dysfunction, septic shock, and death.\n\n**How dangerous it can be**\n- **Transient, low‑grade bacteremia:** Usually harmless in healthy people; the liver, spleen, and immune cells eliminate the organisms quickly.\n- **Persistent or high‑grade bacteremia:** More common in individuals with weakened immunity, indwelling catheters, prosthetic devices, or chronic illnesses. It raises the risk of sepsis, metastatic infections (e.g., endocarditis, osteomyelitis), and organ failure.\n- **Symptoms** may include fever, chills, rapid heart rate, low blood pressure, confusion, or organ‑specific signs if infection spreads.\n\nPrompt medical evaluation, blood cultures, and appropriate antibiotics are essential to prevent complications.\n\n*This is educational information, not a diagnosis.*",
+      "llm_response_len": 154,
+      "elapsed_sec": 3.15,
+      "error": "",
+      "rouge1": 0.259067,
+      "rouge2": 0.125654,
+      "rougeL": 0.186528,
+      "bleu1": 0.153153,
+      "bleu2": 0.094916,
+      "bleu3": 0.062633,
+      "bleu4": 0.038703
+    },
+    {
+      "qid": "EDGE-001",
+      "type": "edge",
+      "query": "What is abdominal pain",
+      "expected_diseases": [],
+      "llm_response": "Abdominal pain is discomfort or aching in the area between the chest and pelvis. It can be **localized** (e.g., right lower quadrant pain from appendicitis) or **diffuse** (e.g., generalized tenderness from gastroenteritis). Pain may be described as **sharp, cramping, burning, or colicky**, and its timing (constant vs intermittent) and relation to meals, movement, or bowel habits help narrow the cause.\n\nCommon categories of causes include:\n\n* **Gastrointestinal** – gastritis, peptic ulcer, bowel obstruction, inflammatory bowel disease, appendicitis, gallstones, pancreatitis.  \n* **Genitourinary** – urinary tract infection, kidney stones, ovarian cysts, ectopic pregnancy.  \n* **Vascular** – abdominal aortic aneurysm, mesenteric ischemia.  \n* **Musculoskeletal** – strained abdominal wall muscles, hernias.  \n* **Metabolic/ systemic** – diabetic ketoacidosis, porphyria, viral infections.\n\nEvaluation involves history, physical exam (including peritoneal signs), laboratory tests, and imaging (ultrasound, CT) as needed. Prompt medical attention is essential for severe, sudden, or worsening pain, especially with fever, vomiting, or signs of bleeding.\n\n**This is educational information, not a diagnosis.**",
+      "llm_response_len": 158,
+      "elapsed_sec": 6.35,
+      "error": "",
+      "rouge1": 0.2,
+      "rouge2": 0.033708,
+      "rougeL": 0.1,
+      "bleu1": 0.097166,
+      "bleu2": 0.056213,
+      "bleu3": 0.029547,
+      "bleu4": 0.01014
+    },
+    {
+      "qid": "EDGE-002",
+      "type": "edge",
+      "query": "xyzzy123 disease",
+      "expected_diseases": [],
+      "llm_response": "I’m not aware of any recognized medical condition called “xyzzy123 disease.” It may be a misspelling, a fictional term, or a very rare/novel condition not documented in standard medical literature. If you have specific symptoms or concerns, it’s best to describe them to a healthcare professional who can evaluate your situation, order appropriate tests, and provide a proper diagnosis and treatment plan. \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 69,
+      "elapsed_sec": 4.59,
+      "error": "",
+      "rouge1": 0.073171,
+      "rouge2": 0.0,
+      "rougeL": 0.04878,
+      "bleu1": 0.047619,
+      "bleu2": 0.007574,
+      "bleu3": 0.004121,
+      "bleu4": 0.003049
+    },
+    {
+      "qid": "EDGE-003",
+      "type": "edge",
+      "query": "What is diabetis",
+      "expected_diseases": [
+        "Diabetes mellitus"
+      ],
+      "llm_response": "Diabetes mellitus is a chronic metabolic disorder in which the body cannot properly regulate blood glucose levels. It occurs when there is insufficient insulin production (type 1 diabetes), resistance to insulin’s effects (type 2 diabetes), or other hormonal problems (e.g., gestational diabetes). Elevated glucose can damage blood vessels, nerves, kidneys, eyes, and other organs over time.\n\nCommon signs include excessive thirst, frequent urination, unexplained weight loss, fatigue, blurred vision, and slow wound healing. Risk factors for type 2 diabetes include obesity, sedentary lifestyle, family history, and advancing age. Diagnosis is made by measuring fasting plasma glucose, oral‑glucose tolerance test, or HbA1c levels.\n\nManagement involves lifestyle changes (diet, exercise, weight control), glucose‑lowering medications (insulin, metformin, etc.), and regular monitoring to prevent complications.\n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 128,
+      "elapsed_sec": 4.98,
+      "error": "",
+      "rouge1": 0.21519,
+      "rouge2": 0.064103,
+      "rougeL": 0.164557,
+      "bleu1": 0.103448,
+      "bleu2": 0.064698,
+      "bleu3": 0.041795,
+      "bleu4": 0.025562
+    },
+    {
+      "qid": "EDGE-004",
+      "type": "edge",
+      "query": "I feel fine",
+      "expected_diseases": [],
+      "llm_response": "I’m glad to hear you’re feeling well! Even when you feel fine, it’s still a good idea to keep an eye on your overall health:\n\n- **Routine check‑ups:** Schedule regular visits with your primary care provider for preventive screenings (blood pressure, cholesterol, blood sugar, etc.).\n- **Healthy habits:** Aim for a balanced diet, regular physical activity, adequate sleep, and stress‑management techniques.\n- **Watch for changes:** If you notice any new symptoms—such as fatigue, pain, changes in appetite, mood shifts, or anything unusual—make a note of them and discuss them with a clinician.\n- **Vaccinations & screenings:** Stay up‑to‑date on recommended vaccines and age‑appropriate screenings (e.g., cancer, bone density, vision, hearing).\n\nIf you have any specific concerns or questions about your health, feel free to share them.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 133,
+      "elapsed_sec": 2.68,
+      "error": "",
+      "rouge1": 0.078431,
+      "rouge2": 0.0,
+      "rougeL": 0.065359,
+      "bleu1": 0.041667,
+      "bleu2": 0.004671,
+      "bleu3": 0.002256,
+      "bleu4": 0.00157
+    },
+    {
+      "qid": "EDGE-005",
+      "type": "edge",
+      "query": "fever",
+      "expected_diseases": [
+        "Abscess",
+        "Dengue fever",
+        "Bacteremia",
+        "Appendicitis"
+      ],
+      "llm_response": "Fever is an elevation of body temperature above the normal range (generally > 38 °C / 100.4 °F). It is a common response to infection, inflammation, medication reactions, heat exposure, or other medical conditions such as autoimmune diseases or malignancy.\n\n**Typical causes**\n- Viral or bacterial infections (e.g., flu, pneumonia, urinary‑tract infection)\n- Inflammatory conditions (e.g., rheumatoid arthritis, lupus)\n- Drug fever (reaction to antibiotics, antiepileptics, etc.)\n- Heat‑related illness or dehydration\n- Endocrine disorders (e.g., hyperthyroidism)\n\n**When to seek medical attention**\n- Temperature ≥ 39.4 °C (103 °F) in adults or any fever in infants < 3 months\n- Fever lasting > 3 days without an obvious cause\n- Accompanying severe symptoms: difficulty breathing, chest pain, persistent vomiting, confusion, rash, stiff neck, or seizures\n- Underlying chronic illness (heart, lung, kidney disease) that worsens with fever\n\n**Home care tips**\n- Stay hydrated; sip water, oral rehydration solutions, or clear broths.\n- Use antipyretics such as acetaminophen or ibuprofen (follow dosing guidelines).\n- Dress lightly and keep the environment comfortably cool.\n- Rest and monitor temperature regularly.\n\nIf you have concerns about the cause or duration of your fever, contact a healthcare professional.  \n\nThis is educational information, not a diagnosis.",
+      "llm_response_len": 200,
+      "elapsed_sec": 44.3,
+      "error": "",
+      "rouge1": 0.101852,
+      "rouge2": 0.009346,
+      "rougeL": 0.074074,
+      "bleu1": 0.060837,
+      "bleu2": 0.02155,
+      "bleu3": 0.005625,
+      "bleu4": 0.002876
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "description": "Side-by-side comparison of unconstrained LLM baseline vs MediBot KG-augmented retrieval on the same 60 queries and reference answers.",
+  "model": "openai/gpt-oss-120b",
+  "medibot_retrieval": "KG BFS + encyclopedia boost + alias recovery",
+  "baseline_retrieval": "none (raw LLM, no context)",
+  "overall": {
+    "rouge1": {
+      "baseline": 0.2032,
+      "medibot": 0.1973,
+      "delta": "-2.9%"
+    },
+    "rouge2": {
+      "baseline": 0.056,
+      "medibot": 0.0806,
+      "delta": "+43.9%"
+    },
+    "rougeL": {
+      "baseline": 0.1395,
+      "medibot": 0.1529,
+      "delta": "+9.6%"
+    },
+    "bleu1": {
+      "baseline": 0.1129,
+      "medibot": 0.1208,
+      "delta": "+7.0%"
+    },
+    "bleu2": {
+      "baseline": 0.0599,
+      "medibot": 0.0747,
+      "delta": "+24.7%"
+    },
+    "bleu3": {
+      "baseline": 0.0342,
+      "medibot": 0.0532,
+      "delta": "+55.6%"
+    },
+    "bleu4": {
+      "baseline": 0.0214,
+      "medibot": 0.0402,
+      "delta": "+87.9%"
+    }
+  },
+  "by_type_rouge1": {
+    "definition": {
+      "baseline_rouge1": 0.2366,
+      "medibot_rouge1": 1.0,
+      "baseline_bleu1": 0.1392
+    },
+    "symptom": {
+      "baseline_rouge1": 0.1802,
+      "medibot_rouge1": 0.64,
+      "baseline_bleu1": 0.0955
+    },
+    "mixed": {
+      "baseline_rouge1": 0.2026,
+      "medibot_rouge1": 1.0,
+      "baseline_bleu1": 0.1099
+    }
+  },
+  "medibot_hit1": 0.807,
+  "medibot_mrr": 0.8618,
+  "baseline_hit1": "N/A (no retrieval — metric not applicable)",
+  "note": "Hit@1 and MRR are not applicable to the unconstrained baseline since it performs no ranked retrieval. ROUGE and BLEU scores are directly comparable as both systems use the same reference answers."
+}

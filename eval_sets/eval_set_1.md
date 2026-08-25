@@ -1,0 +1,265 @@
+# MediBot Evaluation - Set 1
+
+*10 questions. For each item below: read the query and MediBot's answer, then score it on the Google Form (Clinical correctness, Relevance, Clarity, Completeness, Overall usefulness - 1 to 5) and add optional comments.*
+
+---
+
+## Question 1 - SYM-006 (Symptom-based)
+
+**Query given to MediBot:** I have fever, diarrhea, and cramps
+
+**MediBot's answer:**
+
+1) You are describing three common symptoms - fever, diarrhea and abdominal cramps - and are likely looking for possible causes and guidance on when to seek medical care.
+
+2) The diseases in the knowledge base that best match all three symptoms are:
+
+ a) Amebiasis - Fever, Diarrhea and Cramps. The encyclopedia notes "Persons with amebiasis may experience... diarrhea, fever, and cramps."
+
+ b) Rotavirus infection - is associated with Fever, Diarrhea and Cramps. The description states "The main symptoms... fever, stomach cramps,... and diarrhea."
+
+ c) Gastroenteritis - linked to Fever, Diarrhea and Cramps. The entry says "Major symptoms include... diarrhea,... abdominal cramps... may be accompanied by fever."
+
+ d) Shigellosis - is associated with Fever, Diarrhea and Cramps. The text describes "major symptoms are diarrhea, abdominal cramps, fever."
+
+ e) Cryptosporidiosis (listed as "debilitating, and even fatal.") - has the same three symptom edges and the description mentions "major symptom is diarrhea... low-grade fever... abdominal cramps."
+
+ These five conditions are the strongest matches because each explicitly includes all three of your reported symptoms.
+
+3) The symptom set is limited; additional information that would narrow the possibilities includes:
+
+ - Presence of blood or mucus in stool
+ - Vomiting, nausea, or loss of appetite
+ - Recent travel, exposure to contaminated water or food, or contact with sick individuals
+ - Duration of symptoms and any fever spikes (temperature)
+ - Age, immune status, and any underlying medical conditions
+
+4) Red-flag signs that warrant prompt medical evaluation:
+
+ - Fever higher than 102 degrees F (38.9 degrees C) or lasting more than 48 hours
+ - Persistent vomiting or inability to keep fluids down
+ - Signs of dehydration (dry mouth, reduced urine output, dizziness, rapid heartbeat)
+ - Severe abdominal pain, especially if sudden or worsening
+ - Blood, pus or black/tarry stool
+ - Confusion, lethargy, or any signs of sepsis
+
+ If any of these occur, seek care immediately (emergency department or urgent care).
+
+5) Disclaimer: This information is for educational purposes only and does not replace a professional medical evaluation. I am not a clinician, and the content should not be used as a diagnosis or treatment plan. Please consult a qualified health-care provider for personalized advice.
+
+---
+
+## Question 2 - SYM-010 (Symptom-based)
+
+**Query given to MediBot:** I have fatigue, weakness, and anemia with bleeding
+
+**MediBot's answer:**
+
+1) You are describing a combination of fatigue, weakness, anemia and bleeding. This pattern most often points to an underlying anemia, especially one caused by loss of blood or a nutrient deficiency.
+
+2) Diseases that match your symptoms most closely in the knowledge base:
+
+ a) Anemias - listed as having the symptoms "Fatigue", "Weakness", "Bleeding" and "Anemia". The entry defines anemia as "a condition characterized by abnormally low levels of healthy red blood cells or hemoglobin".
+
+ b) Iron deficiency anemia - a type of anemia that "can be caused by... excessive bleeding in the gastrointestinal tract" and is associated with low hemoglobin. It is explicitly linked to the symptom "Anemia".
+
+ c) Folic acid deficiency anemia - described with symptoms "Fatigue", "Weakness", "Anemia" and caused by poor dietary intake or malabsorption. The entry notes "Fatigue is often the first sign of folic acid deficiency anemia".
+
+3) Missing information that would help narrow the cause:
+
+ - Quantity, duration and source of the bleeding (e.g., menstrual, gastrointestinal, trauma).
+ - Laboratory results such as hemoglobin, hematocrit, iron studies, vitamin B12/folate levels.
+ - Any associated symptoms like shortness of breath, chest pain, palpitations, or visible bruising.
+
+4) Red-flag signs that require prompt medical attention:
+
+ - Rapid or heavy bleeding that does not stop with pressure.
+ - Severe shortness of breath, chest pain, fainting, or rapid heartbeat.
+ - Very low energy causing inability to stand or walk.
+ If any of these occur, seek emergency care or call your clinician right away.
+
+5) Disclaimer: This information is for educational purposes only and does not replace a professional medical evaluation. Please consult a qualified healthcare provider for an accurate diagnosis and appropriate treatment.
+
+---
+
+## Question 3 - DEF-010 (Definition)
+
+**Query given to MediBot:** Tell me about agoraphobia
+
+**MediBot's answer:**
+
+1) Definition: Agoraphobia derives from Greek meaning "fear of the marketplace" and describes an irrational, often disabling fear of being out in public.
+2) Description: It is a type of phobia where anxiety centers on places where escape might be difficult or help unavailable; sufferers often avoid such situations and may become completely housebound.
+3) Body systems affected: cardiovascular; neurological; psychiatric.
+4) Age groups affected: All ages; most commonly appears between ages 15-35 and is twice as common in women.
+5) Causes/Prevalence: It is the most common phobia, affecting an estimated 5-12 % of Americans over a lifetime.
+6) Symptoms: trembling, sweating, heart palpitations, jitters, fatigue, tingling in hands/feet, nausea, rapid pulse or breathing, and a sense of impending doom.
+7) Diagnosis: Individuals experiencing panic attacks should consult a physician for evaluation and appropriate medical work-up.
+8) Treatment: Management usually combines medication (antidepressants such as amitriptyline, paroxetine, fluoxetine, sertraline; benzodiazepines such as alprazolam, clonazepam) and psychotherapy, with cognitive-behavioral therapy as the mainstay. Additional therapies listed as treatments include art therapy, family therapy, group therapy, gestalt therapy, homeopathic medicine, and other psychotherapeutic approaches.
+9) Contagiousness: Agoraphobia is not contagious.
+
+This is educational information, not a diagnosis.
+
+---
+
+## Question 4 - SYM-013 (Symptom-based)
+
+**Query given to MediBot:** I have pain, fatigue, headache, weight loss, and dizziness
+
+**MediBot's answer:**
+
+1) You are describing a set of symptoms (pain, fatigue, headache, weight loss, dizziness) and are likely looking for possible conditions that can present with this combination.
+
+2) The diseases in the knowledge bundle that most closely match all five symptoms are:
+ a) Anorexia nervosa - listed as having the symptoms Pain, Fatigue, Headache, Dizziness and Weight Loss.
+ b) Hypoglycemia - described with Fatigue, Dizziness, Headache and "Unintentional weight loss" in the definition.
+ c) Coccidioidomycosis - has Pain, Headache, Weight Loss (and also fever, cough, rash).
+
+ Other conditions that share several but not all of the symptoms:
+ - Ménière's disease - Pain, Headache, Dizziness (no weight loss).
+ - Zika fever - Pain, Fatigue, Headache, Dizziness (weight loss not listed).
+ - Hypertrophic cardiomyopathy - Pain, Fatigue, Dizziness (no headache or weight loss).
+ - Chagas disease - Pain, Fatigue, Headache (no weight loss).
+ - Stress - Pain, Fatigue, Headache (no weight loss).
+
+3) Information that would help narrow the possibilities further includes:
+ - Duration and pattern of each symptom (e.g., constant vs episodic).
+ - Presence of fever, gastrointestinal upset, visual or auditory changes, or cardiac symptoms.
+ - Recent travel, insect bites, exposure to endemic areas, or dietary changes.
+ - Any recent weight-changing behaviors, eating patterns, or medication use.
+
+4) Red-flag features that warrant prompt medical evaluation:
+ - Unexplained, rapid weight loss.
+ - New or worsening severe headache or dizziness.
+ - Persistent pain that interferes with daily activities.
+ - Any signs of cardiovascular instability (e.g., fainting, palpitations).
+
+5) Disclaimer: This information is for educational purposes only and does not replace a professional medical assessment. If you are experiencing these symptoms, especially the red-flag signs, please seek evaluation by a qualified healthcare provider.
+
+---
+
+## Question 5 - DEF-018 (Definition)
+
+**Query given to MediBot:** Information on alagille syndrome
+
+**MediBot's answer:**
+
+1) Definition: Alagille syndrome (ALGS) is a rare genetic condition that primarily affects the bile ducts of the liver and can also involve the heart, kidneys, skeleton, and other organs.
+2) Causes: >90 % of cases are due to mutations in the JAG1 gene on chromosome 20; ~7 % result from deletions that include JAG1; <1 % are caused by mutations in NOTCH2.
+3) Affected body systems: cardiovascular, respiratory, neurological, gastrointestinal.
+4) Severity: Severe.
+5) Typical age group: Children (usually identified in the first months of life).
+6) Contagious: No.
+7) Common symptoms: jaundice, enlarged liver, pale/loose stools, severe itching (pruritus), xanthomas (yellow skin bumps), stunted growth.
+8) Diagnosis: Mentioned key terms include examination, amniocentesis, bile, bilirubin, cirrhosis, jaundice, xanthomas, malabsorption of fats. Specific diagnostic tests are not listed in the dataset.
+9) Treatment: The dataset lists many general procedures (e.g., surgery, endoscopy, cell therapy, chelation therapy, etc.) as "treats" Alagille syndrome, but no specific medication or therapy is detailed.
+10) Prognosis: About 75 % of children survive to at least 20 years; liver transplantation survival is 60-80 %; kidney disease and intracranial bleeding influence outcomes.
+11) Prevention: Prenatal testing (chorionic villus sampling or amniocentesis) is available when a parent is known to have the disorder, though variable expression limits interpretation.
+
+This is educational information, not a diagnosis.
+
+---
+
+## Question 6 - MIX-001 (Mixed)
+
+**Query given to MediBot:** What causes epilepsy and how is it treated?
+
+**MediBot's answer:**
+
+1) Causes: Epilepsy arises when there is an underlying physical problem in the brain. The problem may be very small yet sufficient to generate persistent seizure activity. Potential causes include genetic/hereditary factors, brain injury, and other structural abnormalities; many cases are idiopathic, resulting from a combination of genetic and environmental influences.
+
+2) Treatment: No cure exists for epilepsy, but a variety of treatment programs aim to control seizures. The dataset notes that "a wide range of treatment programs are available" but does not list specific modalities such as medications, surgery, or dietary therapies. Therefore, detailed treatment options are not provided in the current information.
+
+This is educational information, not a diagnosis.
+
+---
+
+## Question 7 - DEF-007 (Definition)
+
+**Query given to MediBot:** What is dengue fever?
+
+**MediBot's answer:**
+
+1) Dengue fever, also called break bone fever, is a disease caused by several closely related viruses (serotypes) of the genus Flavivirus and is transmitted by female Aedes mosquitoes.
+2) It is not spread directly from person to person; an intermediate vector (Aedes mosquito, especially A. aegypti) carries the virus between humans.
+3) The virus is acquired when a mosquito bites an infected person, picks up the virus, replicates in its body for about 8-12 days, and then transmits it to another person through its bite.
+4) Common symptoms include high fever (up to 41 degrees C), extreme headache, severe pain behind the eyes, and other possible signs; symptoms appear 4-10 days after the bite, and some cases are mild or asymptomatic.
+5) Diagnosis relies on the patient's recent travel to endemic areas, a persistent high fever lasting 2-7 days, and the presence of two or more classic symptoms; it can be difficult to confirm definitively.
+6) There is no cure for dengue fever; treatment is supportive care only.
+7) The prognosis is very good, with almost all patients fully recovering; early identification and treatment improve outcomes for severe forms.
+8) Prevention focuses on controlling mosquito populations by eliminating standing-water breeding sites and reducing exposure to Aedes mosquitoes.
+
+This is educational information, not a diagnosis.
+
+---
+
+## Question 8 - SYM-024 (Symptom-based)
+
+**Query given to MediBot:** memory loss and confusion in elderly
+
+**MediBot's answer:**
+
+1) The user is describing two symptoms - memory loss and confusion - in an older adult. This is a symptom-based query seeking possible medical explanations rather than a request for a definition.
+
+2) Diseases that best match both symptoms in the provided data
+
+ a) Alzheimer's disease - encyclopedia definition notes "short-term memory loss" and the symptom list includes "Confusion".
+ b) Ehrlichiosis - symptom extraction lists "Confusion" and "Loss Of Appetite"; description mentions "confusion" among common signs.
+ c) Hypokalemia - symptom extraction includes "Confusion"; description of moderate hypokalemia lists "confusion, disorientation".
+ d) Dizziness - symptom extraction shows "Confusion" as a co-symptom; description explains dizziness can be accompanied by mental confusion.
+ e) Memory loss (as a disease entity) - definition states "inability to recall past events" and the symptom list contains "Memory Loss" and "Confusion".
+
+ Less likely but still listed in the graph: Creutzfeldt-Jakob disease (confusion can appear early), Ménière's disease (includes "Memory Loss" as a symptom), and Chronic fatigue syndrome (has "memory loss" in description).
+
+3) Information that is missing for a more precise assessment
+
+ - Onset and duration of the symptoms (sudden vs gradual)
+ - Presence of fever, headache, weakness, or other systemic signs
+ - Recent exposures (ticks, medications, dehydration)
+ - Cognitive testing results or neurological exam findings
+ - Laboratory data (electrolytes, blood counts, serology)
+
+4) Red-flag features that warrant prompt medical evaluation
+
+ - Sudden or rapidly worsening confusion or memory loss
+ - Accompanying fever, severe headache, stiff neck, or seizures
+ - New weakness, loss of balance, or visual changes
+ - Recent tick bite, recent start of diuretic therapy, or known exposure to infectious agents
+
+ If any of these are present, seek emergency care or contact a clinician promptly.
+
+5) Disclaimer
+
+ This information is for educational purposes only and does not replace a professional medical evaluation. Only a qualified health-care provider can diagnose the cause of memory loss and confusion and recommend appropriate treatment.
+
+---
+
+## Question 9 - DEF-020 (Definition)
+
+**Query given to MediBot:** What is aortic valve insufficiency?
+
+**MediBot's answer:**
+
+1) Aortic valve insufficiency is a condition in which the aortic valve does not close properly after the left ventricle pumps blood into the aorta, allowing blood to leak back toward the heart.
+2) Causes include congenital defects, abnormal widening of the aorta (often from very high blood pressure), inflammatory diseases such as rheumatic fever, and, rarely, syphilis.
+3) Reported symptoms are fever, swelling, and inflammation; patients may also have a heart murmur, tearing-type chest pain, reduced or absent peripheral pulses, and an enlarged aorta visible on X-ray or ultrasound.
+4) The condition is classified under the cardiovascular, gastrointestinal, infectious, and hematological body systems and can affect people of all ages.
+5) Treatment ranges from medications that remove excess fluid, lower blood pressure, and improve heart contractility, plus a low-salt diet, to surgical replacement of the defective valve in severe cases.
+6) Prognosis information is not provided in the dataset.
+
+This is educational information, not a diagnosis.
+
+---
+
+## Question 10 - MIX-004 (Mixed)
+
+**Query given to MediBot:** Is diabetes mellitus contagious and who gets it?
+
+**MediBot's answer:**
+
+1) Diabetes mellitus is not contagious.
+2) It can affect people of all ages. The more common type 2 form occurs most often in overweight adults, especially those over 50, and is linked to obesity. Type 1 can develop suddenly in children or adolescents.
+
+This is educational information, not a diagnosis.
+
+---

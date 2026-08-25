@@ -1,0 +1,5 @@
+[2026-08-11 09:36:37] LightRAG pipeline started
+[2026-08-11 09:36:43] Starting/resuming index build (1243/1802 already processed)
+[2026-08-11 11:46:01] Build finished with exit=42; processed=1399/1802, failed=4, tracked=1403
+[2026-08-11 11:46:01] CREDITS EXHAUSTED at 1399 processed. Pipeline stopped cleanly.
+[2026-08-11 11:46:01] ACTION NEEDED: put a new OPENROUTER_API_KEY in .env, then re-run this script to resume.

@@ -1,0 +1,10 @@
+{
+  "documents_indexed": 1,
+  "batch_size": 1,
+  "dataset_dir": "D:\\IMPORTANT FILE DONT DELETE\\ai_play\\AI\\final_dataset",
+  "storage_dir": "D:\\IMPORTANT FILE DONT DELETE\\ai_play\\AI\\lightrag_storage",
+  "elapsed_sec": 79.47,
+  "sample_entries": [
+    "Abscess"
+  ]
+}

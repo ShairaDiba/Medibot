@@ -1,0 +1,106 @@
+{
+  "description": "Three-way comparison: unconstrained LLM baseline vs LightRAG vs MediBot on the same eval_queries.json reference answers.",
+  "systems": {
+    "baseline": "none (unconstrained LLM baseline)",
+    "lightrag": "LightRAG (mix mode, encyclopedia corpus)",
+    "medibot": "KG BFS + encyclopedia boost + alias recovery"
+  },
+  "overall": {
+    "rouge1": {
+      "lightrag": 0.2582,
+      "medibot": 0.1973,
+      "baseline": 0.2032,
+      "lightrag_vs_baseline": "+27.1%",
+      "medibot_vs_lightrag": "-23.6%"
+    },
+    "rouge2": {
+      "lightrag": 0.0865,
+      "medibot": 0.0806,
+      "baseline": 0.056,
+      "lightrag_vs_baseline": "+54.5%",
+      "medibot_vs_lightrag": "-6.8%"
+    },
+    "rougeL": {
+      "lightrag": 0.1931,
+      "medibot": 0.1529,
+      "baseline": 0.1395,
+      "lightrag_vs_baseline": "+38.4%",
+      "medibot_vs_lightrag": "-20.8%"
+    },
+    "bleu1": {
+      "lightrag": 0.1772,
+      "medibot": 0.1208,
+      "baseline": 0.1129,
+      "lightrag_vs_baseline": "+57.0%",
+      "medibot_vs_lightrag": "-31.8%"
+    },
+    "bleu2": {
+      "lightrag": 0.0964,
+      "medibot": 0.0747,
+      "baseline": 0.0599,
+      "lightrag_vs_baseline": "+60.9%",
+      "medibot_vs_lightrag": "-22.5%"
+    },
+    "bleu3": {
+      "lightrag": 0.0564,
+      "medibot": 0.0532,
+      "baseline": 0.0342,
+      "lightrag_vs_baseline": "+64.9%",
+      "medibot_vs_lightrag": "-5.7%"
+    },
+    "bleu4": {
+      "lightrag": 0.035,
+      "medibot": 0.0402,
+      "baseline": 0.0214,
+      "lightrag_vs_baseline": "+63.6%",
+      "medibot_vs_lightrag": "+14.9%"
+    }
+  },
+  "retrieval_metrics": {
+    "hit1": {
+      "baseline": "N/A",
+      "lightrag": 0.4211,
+      "medibot": 0.807,
+      "medibot_vs_lightrag": "+91.6%"
+    },
+    "hit3": {
+      "baseline": "N/A",
+      "lightrag": 0.5263,
+      "medibot": 0.9123,
+      "medibot_vs_lightrag": "+73.3%"
+    },
+    "hit5": {
+      "baseline": "N/A",
+      "lightrag": 0.5439,
+      "medibot": 0.9298,
+      "medibot_vs_lightrag": "+71.0%"
+    },
+    "mrr": {
+      "baseline": "N/A",
+      "lightrag": 0.4718,
+      "medibot": 0.8618,
+      "medibot_vs_lightrag": "+82.7%"
+    }
+  },
+  "retrieval_by_type": {
+    "definition": {
+      "lightrag_hit1": 0.7,
+      "medibot_hit1": 1.0,
+      "lightrag_mrr": 0.7,
+      "medibot_mrr": 1.0
+    },
+    "symptom": {
+      "lightrag_hit1": 0.2,
+      "medibot_hit1": 0.64,
+      "lightrag_mrr": 0.3131,
+      "medibot_mrr": 0.765
+    },
+    "mixed": {
+      "lightrag_hit1": 0.5,
+      "medibot_hit1": 1.0,
+      "lightrag_mrr": 0.5,
+      "medibot_mrr": 1.0
+    }
+  },
+  "note": "Hit@K and MRR for LightRAG are computed from retrieved chunk Entry: lines and disease-like entities mapped to encyclopedia entry names. The unconstrained baseline performs no retrieval (N/A). ROUGE/BLEU are directly comparable across all three LLM-backed systems."
+}

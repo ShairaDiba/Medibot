@@ -1,0 +1,35 @@
+INFO: [_] Created new empty graph file: D:\IMPORTANT FILE DONT DELETE\ai_play\AI\lightrag_storage\graph_chunk_entity_relation.graphml
+INFO:nano-vectordb:Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'D:\\IMPORTANT FILE DONT DELETE\\ai_play\\AI\\lightrag_storage\\vdb_entities.json'} 0 data
+INFO:nano-vectordb:Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'D:\\IMPORTANT FILE DONT DELETE\\ai_play\\AI\\lightrag_storage\\vdb_relationships.json'} 0 data
+INFO:nano-vectordb:Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'D:\\IMPORTANT FILE DONT DELETE\\ai_play\\AI\\lightrag_storage\\vdb_chunks.json'} 0 data
+INFO: [_] Process 25292 KV load full_docs with 0 records
+INFO: [_] Process 25292 KV load text_chunks with 0 records
+INFO: [_] Process 25292 KV load full_entities with 0 records
+INFO: [_] Process 25292 KV load full_relations with 0 records
+INFO: [_] Process 25292 KV load llm_response_cache with 0 records
+INFO: [_] Process 25292 doc status load doc_status with 0 records
+INFO: Processing 10 document(s)
+INFO: Extracting stage 1/10: unknown_source
+INFO: Processing d-id: enc_00009
+INFO: Extracting stage 2/10: unknown_source
+INFO: Processing d-id: enc_00000
+INFO: Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+INFO: LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+INFO:  == LLM cache == saving: default:extract:b3ee783b07771db936df144c298c61f5
+WARNING: chunk-0f2da2e6ea84de29321c6bb6647758bc: Complete delimiter can not be found in extraction result
+INFO:  == LLM cache == saving: default:extract:4ce703a608aa49ee3a9746ca1eb471b3
+WARNING: chunk-e49611e93e664f1f3b07223c8f1f46b2: Complete delimiter can not be found in extraction result
+INFO:  == LLM cache == saving: default:extract:28d902e32c731d2a1ce9260ab1c5c920
+INFO: Chunk 1 of 1 extracted 3 Ent + 2 Rel chunk-0f2da2e6ea84de29321c6bb6647758bc
+INFO: Merging stage 1/10: unknown_source
+INFO: Phase 1: Processing 3 entities from enc_00009 (async: 8)
+INFO: Phase 2: Processing 2 relations from enc_00009 (async: 8)
+INFO: Phase 3: Updating final 4(3+1) entities and  2 relations from enc_00009
+INFO: Completed merging: 3 entities, 1 extra entities, 2 relations
+INFO: [_] Writing graph with 4 nodes, 2 edges
+INFO: In memory DB persist to disk
+INFO: Completed processing file 1/10: unknown_source
+INFO: Extracting stage 3/10: unknown_source
+INFO: Processing d-id: enc_00008
+INFO:  == LLM cache == saving: default:extract:5558b4780da01a93371da35a5b27e3c0
+WARNING: chunk-cf6dff342e4acda4a389bc2338c84151: Complete delimiter can not be found in extraction result

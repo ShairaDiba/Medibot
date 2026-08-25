@@ -18,6 +18,17 @@ It supports two graph traversal backends:
 This repo also includes a simple browser UI (`UI.html`) connected to the Python pipeline via a local server (`ui_server.py`),
 with a one-click **Bangla translation** feature.
 
+## 👥 Team
+
+This project was collaboratively developed by a team of 4 members. All members contributed equally to the research, development, and testing of the pipeline.
+
+| Name | GitHub |
+|------|--------|
+| Shruti Khisa | [@Shruti-570](https://github.com/Shruti-570) |
+| Shaira Akhter Diba | [@ShairaDiba](https://github.com/ShairaDiba) |
+| Farhan Tanvir | [@Tanvir868X](https://github.com/Tanvir868X) |
+| Farhan Noor | [@frnoor](https://github.com/frnoor) |
+
 ## Quickstart
 
 Install deps:

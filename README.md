@@ -253,5 +253,3 @@ Use `bolt://127.0.0.1:7687` for local Desktop instances (single instance, no rou
 ## Disclaimer
 
 MediBot is an educational prototype. It is not medical advice, diagnosis, or treatment.
-
-// bruv

@@ -1,0 +1,1 @@
+All 2 LLM API key(s) exhausted (HTTP 402): {"error":{"message":"This request requires more credits, or fewer max_tokens. You requested up to 2048 tokens, but can only afford 444. To increase, visit https://openrouter.ai/settings/credits and upgrade to a paid account","code":402,"metadata":{"limit_source":"openrouter_credits","remedy_hint":"A

@@ -1,0 +1,1110 @@
+INFO: [_] Loaded graph from D:\IMPORTANT FILE DONT DELETE\ai_play\AI\lightrag_storage\graph_chunk_entity_relation.graphml with 4475 nodes, 2785 edges
+INFO:nano-vectordb:Load (4475, 1536) data
+INFO:nano-vectordb:Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'D:\\IMPORTANT FILE DONT DELETE\\ai_play\\AI\\lightrag_storage\\vdb_entities.json'} 4475 data
+INFO:nano-vectordb:Load (2785, 1536) data
+INFO:nano-vectordb:Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'D:\\IMPORTANT FILE DONT DELETE\\ai_play\\AI\\lightrag_storage\\vdb_relationships.json'} 2785 data
+INFO:nano-vectordb:Load (576, 1536) data
+INFO:nano-vectordb:Init {'embedding_dim': 1536, 'metric': 'cosine', 'storage_file': 'D:\\IMPORTANT FILE DONT DELETE\\ai_play\\AI\\lightrag_storage\\vdb_chunks.json'} 576 data
+INFO: [_] Process 24616 KV load full_docs with 1402 records
+INFO: [_] Process 24616 KV load text_chunks with 850 records
+INFO: [_] Process 24616 KV load full_entities with 557 records
+INFO: [_] Process 24616 KV load full_relations with 425 records
+INFO: [_] Process 24616 KV load llm_response_cache with 1348 records
+INFO: [_] Process 24616 doc status load doc_status with 1403 records
+
+LightRAG Baseline Evaluator
+  Mode           : mix
+  Queries to run : 60
+  Storage dir    : D:\IMPORTANT FILE DONT DELETE\ai_play\AI\lightrag_storage
+  Dry run        : False
+
+[KeyPool] Using dedicated EVAL_API_KEY for queries
+  Running   1/60 : DEF-001 ...
+INFO: LLM func: 4 new workers initialized (Timeouts: Func: 180s, Worker: 360s, Health Check: 375s)
+INFO:  == LLM cache == saving: mix:keywords:333342976eadbf650be5a2047dd34a16
+INFO: Query nodes: Diabetes mellitus (top_k:40, cosine:0.2)
+INFO: Embedding func: 8 new workers initialized (Timeouts: Func: 30s, Worker: 60s, Health Check: 75s)
+INFO: Local query: 40 entites, 47 relations
+INFO: Query edges: Diabetes mellitus (top_k:40, cosine:0.2)
+INFO: Global query: 48 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 68 entities, 52 relations, 20 vector chunks
+INFO: After truncation: 64 entities, 52 relations
+INFO: Selecting 155 from 155 entity-related chunks by vector similarity
+INFO: Find 4 additional chunks in 3 relations (deduplicated 12)
+INFO: Selecting 4 from 4 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 179 -> 165 (deduplicated 14)
+INFO: Final context: 64 entities, 52 relations, 20 chunks
+INFO: Final chunks S+F/O: E8/1 R1/1 E12/2 R2/2 E11/3 R2/3 E7/4 R3/4 E18/5 E2/6 E1/7 C1/8 E2/8 C1/9 E2/9 E1/10 E2/11 C1/12 E3/12 E2/13
+INFO:  == LLM cache == saving: mix:query:da8377a17be51e75393d9421dff9a679
+INFO:absl:Using default tokenizer.
+  Running   2/60 : DEF-002 ...
+INFO:  == LLM cache == saving: mix:keywords:f216d6f5801f8dd4a3bfa6cb1e20ab32
+INFO: Query nodes: tuberculosis (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 46 relations
+INFO: Query edges: tuberculosis (top_k:40, cosine:0.2)
+INFO: Global query: 69 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 93 entities, 66 relations, 20 vector chunks
+INFO: After truncation: 63 entities, 66 relations
+INFO: Selecting 132 from 132 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 7 relations (deduplicated 29)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 159 -> 146 (deduplicated 13)
+INFO: Final context: 63 entities, 66 relations, 20 chunks
+INFO: Final chunks S+F/O: E5/1 R9/1 C1/2 E3/2 R1/2 C1/3 E1/3 R1/3 E1/4 R1/4 E2/5 R1/5 C1/6 E1/6 R1/6 C1/7 E3/7 R1/7 E3/8 E1/9
+INFO:  == LLM cache == saving: mix:query:a913b4f5fc004a55017cbb036d873621
+INFO:absl:Using default tokenizer.
+  Running   3/60 : DEF-003 ...
+INFO:  == LLM cache == saving: mix:keywords:c05717efd4710ef72a26a9008277cfc7
+INFO: Query nodes: asthma (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 49 relations
+INFO: Query edges: asthma definition (top_k:40, cosine:0.2)
+INFO: Global query: 49 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 68 entities, 60 relations, 20 vector chunks
+INFO: After truncation: 68 entities, 60 relations
+INFO: Selecting 120 from 120 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 12)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 142 -> 129 (deduplicated 13)
+INFO: Final context: 68 entities, 60 relations, 20 chunks
+INFO: Final chunks S+F/O: E11/1 R1/1 E9/2 R1/2 E5/3 E14/4 E7/5 C1/6 E7/6 E4/7 C1/8 E3/8 E6/9 E1/10 E1/11 C1/12 E5/12 E1/13 C1/14 E2/14
+INFO:  == LLM cache == saving: mix:query:e2c3fe647546a3dc14d50cf044bf47cc
+INFO:absl:Using default tokenizer.
+  Running   4/60 : DEF-004 ...
+WARNING: low_level_keywords is empty
+WARNING: high_level_keywords is empty
+WARNING: Forced low_level_keywords to origin query: What is epilepsy?
+INFO: Query nodes: What is epilepsy? (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 41 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 40 entities, 41 relations, 20 vector chunks
+INFO: After truncation: 40 entities, 41 relations
+INFO: Selecting 41 from 41 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 18)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 62 -> 56 (deduplicated 6)
+INFO: Final context: 40 entities, 41 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E1/1 R1/1 C1/2 E1/2 C1/3 E1/3 E1/4 C1/5 E2/5 C1/6 E2/6 E1/7 E1/8 C1/9 E1/9 C1/10 E1/10 C1/11 E1/11
+INFO:  == LLM cache == saving: mix:query:6cfd9b43364f70e3fb32dd6c876ee413
+INFO:absl:Using default tokenizer.
+  Running   5/60 : DEF-005 ...
+INFO:  == LLM cache == saving: mix:keywords:1e839447c7bc3cc1b5b5ea4556c182ef
+INFO: Query nodes: Hypertension (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 83 relations
+INFO: Query edges: Hypertension (top_k:40, cosine:0.2)
+INFO: Global query: 50 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 72 entities, 87 relations, 20 vector chunks
+INFO: After truncation: 69 entities, 87 relations
+INFO: Selecting 151 from 151 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 24)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 173 -> 161 (deduplicated 12)
+INFO: Final context: 69 entities, 87 relations, 20 chunks
+INFO: Final chunks S+F/O: E7/1 R1/1 E6/2 R1/2 E9/3 E2/4 E6/5 C1/6 E3/6 E6/7 E8/8 C1/9 E2/9 E4/10 C1/11 E1/11 E5/12 C1/13 E3/13 C1/14
+INFO:  == LLM cache == saving: mix:query:66a3f379b55bbc740c25be6559965595
+INFO:absl:Using default tokenizer.
+  Running   6/60 : DEF-006 ...
+INFO:  == LLM cache == saving: mix:keywords:3c78194a9c79c7448608098dd90c5f90
+INFO: Query nodes: Pneumonia (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 39 relations
+INFO: Query edges: Pneumonia (top_k:40, cosine:0.2)
+INFO: Global query: 49 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 70 entities, 47 relations, 20 vector chunks
+INFO: After truncation: 69 entities, 47 relations
+INFO: Selecting 116 from 116 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 12)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 137 -> 125 (deduplicated 12)
+INFO: Final context: 69 entities, 47 relations, 20 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 E6/2 E4/3 E21/4 C1/5 E4/5 C1/6 E11/6 E1/7 E4/8 C1/9 E2/9 E1/10 C1/11 E1/11 C1/12 E3/12 C1/13 E2/13
+INFO:  == LLM cache == saving: mix:query:d53129f92131322f0934428a97b04883
+INFO:absl:Using default tokenizer.
+  Running   7/60 : DEF-007 ...
+INFO:  == LLM cache == saving: mix:keywords:f88cc76dc08286f9f67382074a062b03
+INFO: Query nodes: dengue (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 45 relations
+INFO: Query edges: Dengue fever (top_k:40, cosine:0.2)
+INFO: Global query: 53 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 78 entities, 59 relations, 20 vector chunks
+INFO: After truncation: 78 entities, 59 relations
+INFO: Selecting 104 from 104 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 59 relations
+INFO: Round-robin merged chunks: 124 -> 111 (deduplicated 13)
+INFO: Final context: 78 entities, 59 relations, 20 chunks
+INFO: Final chunks S+F/O: E1/1 E5/2 E1/3 E7/4 E4/5 C1/6 E8/6 C1/7 E3/7 E1/8 E2/9 E2/10 E4/11 C1/12 E3/12 C1/13 E7/13 E3/14 E6/15 E2/16
+INFO:  == LLM cache == saving: mix:query:c890041ea7d33e53c0654a8cac8976d0
+INFO:absl:Using default tokenizer.
+  Running   8/60 : DEF-008 ...
+INFO:  == LLM cache == saving: mix:keywords:81bdc7c60965aa5fd39e68ba5ccebec1
+INFO: Query nodes: definition (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 31 relations
+INFO: Query edges: appendicitis (top_k:40, cosine:0.2)
+INFO: Global query: 62 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 102 entities, 71 relations, 20 vector chunks
+INFO: After truncation: 80 entities, 71 relations
+INFO: Selecting 200 from 364 entity-related chunks by vector similarity
+INFO: Find 133 additional chunks in 19 relations (deduplicated 102)
+INFO: Selecting 47 from 133 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 267 -> 250 (deduplicated 17)
+INFO: Final context: 80 entities, 71 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E7/1 R1/1 E4/2 R1/2 E1/3 R1/3 E1/4 R1/4 E3/5 R1/5 C1/6 E2/6 R1/6 E3/7 R2/7 E1/8 R1/8 E3/9 R1/9
+INFO:  == LLM cache == saving: mix:query:979617f2ac09a33e4612cb4a58a6a290
+INFO:absl:Using default tokenizer.
+  Running   9/60 : DEF-009 ...
+INFO:  == LLM cache == saving: mix:keywords:4071576dd51543e17e6da13207d634c7
+INFO: Query nodes: Alzheimer's disease (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 95 relations
+INFO: Query edges: Alzheimer's disease (top_k:40, cosine:0.2)
+INFO: Global query: 54 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 75 entities, 107 relations, 20 vector chunks
+INFO: After truncation: 75 entities, 107 relations
+INFO: Selecting 89 from 89 entity-related chunks by vector similarity
+INFO: Find 3 additional chunks in 3 relations (deduplicated 28)
+INFO: Selecting 3 from 3 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 112 -> 99 (deduplicated 13)
+INFO: Final context: 75 entities, 107 relations, 20 chunks
+INFO: Final chunks S+F/O: E22/1 R2/1 C1/2 E5/2 R1/2 E1/3 R1/3 E5/4 C1/5 E2/5 E3/6 E8/7 E1/8 C1/9 E5/9 E1/10 E2/11 E2/12 E4/13 C1/14
+INFO:  == LLM cache == saving: mix:query:62aa2a552cbf0fbc9202f70b42a6ac8e
+INFO:absl:Using default tokenizer.
+  Running  10/60 : DEF-010 ...
+INFO:  == LLM cache == saving: mix:keywords:b2a98f2fcd61f5a5c4509d32a4535c05
+INFO: Query nodes: agoraphobia (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 51 relations
+INFO: Query edges: agoraphobia (top_k:40, cosine:0.2)
+INFO: Global query: 48 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 69 entities, 56 relations, 20 vector chunks
+INFO: After truncation: 69 entities, 56 relations
+INFO: Selecting 136 from 136 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 14)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 157 -> 142 (deduplicated 15)
+INFO: Final context: 69 entities, 56 relations, 20 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 E2/2 E15/3 E3/4 E5/5 E10/6 C1/7 E6/7 E11/8 E1/9 C1/10 E2/10 C1/11 E1/11 C1/12 E2/12 E1/13 E4/14 E1/15
+INFO:  == LLM cache == saving: mix:query:1c57f9e56d6ab76c4271d00b91cf8e14
+INFO:absl:Using default tokenizer.
+  Running  11/60 : DEF-011 ...
+INFO:  == LLM cache == saving: mix:keywords:35789b9892d673f5fb0aa3d1e971145b
+INFO: Query nodes: Anemia (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 68 relations
+INFO: Query edges: Anemia (top_k:40, cosine:0.2)
+INFO: Global query: 49 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 72 entities, 80 relations, 20 vector chunks
+INFO: After truncation: 62 entities, 80 relations
+INFO: Selecting 155 from 174 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 20)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 177 -> 161 (deduplicated 16)
+INFO: Final context: 62 entities, 80 relations, 20 chunks
+INFO: Final chunks S+F/O: E1/1 R5/1 E2/2 R1/2 E1/3 E2/4 E4/5 E3/6 E6/7 E4/8 E7/9 C1/10 E2/10 E1/11 E5/12 E2/13 C1/14 E1/14 E3/15 E2/16
+INFO:  == LLM cache == saving: mix:query:40c7c8ecabbdabaf3077db466d080c09
+INFO:absl:Using default tokenizer.
+  Running  12/60 : DEF-012 ...
+INFO:  == LLM cache == saving: mix:keywords:8e3463e36681857afb11514951eef5d2
+INFO: Query nodes: Malaria (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 48 relations
+INFO: Query edges: Malaria (top_k:40, cosine:0.2)
+INFO: Global query: 50 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 70 entities, 61 relations, 20 vector chunks
+INFO: After truncation: 70 entities, 61 relations
+INFO: Selecting 80 from 80 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 61 relations
+INFO: Round-robin merged chunks: 100 -> 90 (deduplicated 10)
+INFO: Final context: 70 entities, 61 relations, 20 chunks
+INFO: Final chunks S+F/O: E9/1 C1/2 E5/2 E3/3 E3/4 C1/5 E5/5 E15/6 E2/7 E2/8 C1/9 E1/9 C1/10 E2/10 C1/11 E2/11 E1/12 C1/13 E2/13 E5/14
+INFO:  == LLM cache == saving: mix:query:e6f9312e5848a02a19057f3fff0baab7
+INFO:absl:Using default tokenizer.
+  Running  13/60 : DEF-013 ...
+INFO:  == LLM cache == saving: mix:keywords:11afa196cd2efb68678d2b79ab717976
+INFO: Query nodes: abscess (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 39 relations
+INFO: Query edges: abscess definition, medical condition (top_k:40, cosine:0.2)
+INFO: Global query: 63 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 89 entities, 65 relations, 20 vector chunks
+INFO: After truncation: 89 entities, 65 relations
+INFO: Selecting 103 from 103 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 65 relations
+INFO: Round-robin merged chunks: 123 -> 110 (deduplicated 13)
+INFO: Final context: 89 entities, 65 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 E9/2 C1/3 E8/3 E1/4 C1/5 E5/5 E2/6 E2/7 E2/8 E4/9 E2/10 E2/11 E1/12 C1/13 E1/13 E1/14 C1/15 E1/15
+INFO:  == LLM cache == saving: mix:query:2e8919a024da52ef28e070fd2433e45f
+INFO:absl:Using default tokenizer.
+  Running  14/60 : DEF-014 ...
+INFO:  == LLM cache == saving: mix:keywords:eb8e1b0fc5a438135993d22ecd11d79e
+INFO: Query nodes: Allergic rhinitis (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 31 relations
+INFO: Query edges: Allergic rhinitis, Allergy, Nasal condition (top_k:40, cosine:0.2)
+INFO: Global query: 55 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 74 entities, 47 relations, 20 vector chunks
+INFO: After truncation: 74 entities, 47 relations
+INFO: Selecting 118 from 118 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 47 relations
+INFO: Round-robin merged chunks: 138 -> 126 (deduplicated 12)
+INFO: Final context: 74 entities, 47 relations, 20 chunks
+INFO: Final chunks S+F/O: E7/1 E11/2 E14/3 E3/4 E7/5 E2/6 E6/7 C1/8 E4/8 E2/9 C1/10 E2/10 E3/11 E2/12 C1/13 E1/13 C1/14 E1/14 C1/15 E1/15
+INFO:  == LLM cache == saving: mix:query:e02aac35e8f6a02befb93d20862f0cf2
+INFO:absl:Using default tokenizer.
+  Running  15/60 : DEF-015 ...
+INFO:  == LLM cache == saving: mix:keywords:bf89863e802164604a77b990b0767582
+INFO: Query nodes: bacteremia (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 52 relations
+INFO: Query edges: bacteremia (top_k:40, cosine:0.2)
+INFO: Global query: 52 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 82 entities, 67 relations, 20 vector chunks
+INFO: After truncation: 63 entities, 67 relations
+INFO: Selecting 109 from 109 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 15)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 130 -> 116 (deduplicated 14)
+INFO: Final context: 63 entities, 67 relations, 20 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 C1/2 E4/2 C1/3 E1/3 E15/4 E8/5 E4/6 E1/7 E2/8 C1/9 E1/9 E1/10 C1/11 E11/11 E3/12 E1/13 E1/14 C1/15
+INFO:  == LLM cache == saving: mix:query:4c217074894897a22ca6ae19cb3dd401
+INFO:absl:Using default tokenizer.
+  Running  16/60 : DEF-016 ...
+INFO:  == LLM cache == saving: mix:keywords:6471255f28bdc6532c60becf037dcdb1
+INFO: Query nodes: Anorexia nervosa (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 62 relations
+INFO: Query edges: Anorexia nervosa (top_k:40, cosine:0.2)
+INFO: Global query: 54 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 76 entities, 76 relations, 20 vector chunks
+INFO: After truncation: 62 entities, 76 relations
+INFO: Selecting 155 from 180 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 21)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 176 -> 162 (deduplicated 14)
+INFO: Final context: 62 entities, 76 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E8/1 R10/1 C1/2 E1/2 E5/3 E4/4 E7/5 E1/6 C1/7 E2/7 E5/8 E2/9 E1/10 E2/11 E3/12 E4/13 E5/14 E1/15 C1/16
+INFO:  == LLM cache == saving: mix:query:e14fbef0509d280bee1b5b579ddaf674
+INFO:absl:Using default tokenizer.
+  Running  17/60 : DEF-017 ...
+INFO:  == LLM cache == saving: mix:keywords:f69840554133b3464b92325a37aa130e
+INFO: Query nodes: Amyloidosis (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 55 relations
+INFO: Query edges: Definition, Medical condition (top_k:40, cosine:0.2)
+INFO: Global query: 55 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 95 entities, 95 relations, 20 vector chunks
+INFO: After truncation: 65 entities, 95 relations
+INFO: Selecting 142 from 142 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 30)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 168 -> 157 (deduplicated 11)
+INFO: Final context: 65 entities, 95 relations, 20 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 C1/2 E4/2 R1/2 E14/3 R2/3 C1/4 E2/4 R6/4 E2/5 R2/5 E1/6 R1/6 E1/7 C1/8 E1/8 E1/9 C1/10 E1/10
+INFO:  == LLM cache == saving: mix:query:651867ee2dfaa0158bc226cd5626d697
+INFO:absl:Using default tokenizer.
+  Running  18/60 : DEF-018 ...
+INFO:  == LLM cache == saving: mix:keywords:34627e8820485771fc8c67de8ec43e14
+INFO: Query nodes: information (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 32 relations
+INFO: Query edges: Alagille syndrome (top_k:40, cosine:0.2)
+INFO: Global query: 55 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 95 entities, 72 relations, 20 vector chunks
+INFO: After truncation: 88 entities, 72 relations
+INFO: Selecting 121 from 121 entity-related chunks by vector similarity
+INFO: Find 25 additional chunks in 4 relations (deduplicated 38)
+INFO: Selecting 10 from 25 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 151 -> 142 (deduplicated 9)
+INFO: Final context: 88 entities, 72 relations, 20 chunks
+INFO: Final chunks S+F/O: E13/1 R1/1 C1/2 E3/2 R1/2 E2/3 R1/3 E3/4 R1/4 E2/5 R2/5 E3/6 R1/6 C1/7 E1/7 R1/7 E2/8 R1/8 C1/9 E1/9
+INFO:  == LLM cache == saving: mix:query:42eb30fd6f2acc53ffca18d358c9c8c3
+INFO:absl:Using default tokenizer.
+  Running  19/60 : DEF-019 ...
+INFO:  == LLM cache == saving: mix:keywords:359a9692931bae22fc30980a2cfcfc5e
+INFO: Query nodes: amebiasis (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 29 relations
+INFO: Query edges: Amebiasis (top_k:40, cosine:0.2)
+INFO: Global query: 54 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 84 entities, 53 relations, 20 vector chunks
+INFO: After truncation: 84 entities, 53 relations
+INFO: Selecting 92 from 92 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 20)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 113 -> 100 (deduplicated 13)
+INFO: Final context: 84 entities, 53 relations, 20 chunks
+INFO: Final chunks S+F/O: E16/1 R2/1 C1/2 E3/2 E1/3 E6/4 E9/5 C1/6 E1/6 E3/7 C1/8 E2/8 E1/9 C1/10 E4/10 C1/11 E6/11 E2/12 E1/13 C1/14
+INFO:  == LLM cache == saving: mix:query:e22f23ab2c7f7e748d9dc6ca4a3dcbde
+INFO:absl:Using default tokenizer.
+  Running  20/60 : DEF-020 ...
+INFO:  == LLM cache == saving: mix:keywords:cf80afc0ed6c06858a634b71cf331eeb
+INFO: Query nodes: Aortic valve, Insufficiency (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 42 relations
+INFO: Query edges: Aortic valve insufficiency, Heart valve disorder, Cardiovascular disease (top_k:40, cosine:0.2)
+INFO: Global query: 44 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 62 entities, 54 relations, 20 vector chunks
+INFO: After truncation: 62 entities, 54 relations
+INFO: Selecting 96 from 96 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 54 relations
+INFO: Round-robin merged chunks: 116 -> 106 (deduplicated 10)
+INFO: Final context: 62 entities, 54 relations, 20 chunks
+INFO: Final chunks S+F/O: E15/1 C1/2 E8/2 C1/3 E8/3 E1/4 C1/5 E1/5 E5/6 E1/7 E7/8 E1/9 E1/10 E2/11 C1/12 E2/12 C1/13 E3/13 E1/14 C1/15
+INFO:  == LLM cache == saving: mix:query:ad1d8242e62ac1323493a8d579c29014
+INFO:absl:Using default tokenizer.
+  Running  21/60 : SYM-001 ...
+INFO:  == LLM cache == saving: mix:keywords:35c1d0192477f98354806eeee9a73345
+INFO: Query nodes: fever, pain, swelling, inflammation (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 51 relations
+INFO: Query edges: Symptoms, Medical condition, Health issue (top_k:40, cosine:0.2)
+INFO: Global query: 53 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 93 entities, 91 relations, 20 vector chunks
+INFO: After truncation: 70 entities, 91 relations
+INFO: Selecting 157 from 157 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 7 relations (deduplicated 35)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 184 -> 171 (deduplicated 13)
+INFO: Final context: 70 entities, 91 relations, 20 chunks
+INFO: Final chunks S+F/O: E4/1 R8/1 C1/2 E2/2 R1/2 C1/3 E1/3 R2/3 E1/4 R1/4 C1/5 E1/5 R1/5 E8/6 R1/6 E1/7 R1/7 E3/8 C1/9 E2/9
+INFO:  == LLM cache == saving: mix:query:2e69811b705a69ac94ad542a5720e4db
+INFO:absl:Using default tokenizer.
+  Running  22/60 : SYM-002 ...
+INFO:  == LLM cache == saving: mix:keywords:ba95056be2d470bf59e54de7bcf61ba3
+INFO: Query nodes: Itching, Runny nose, Swelling (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 35 relations
+INFO: Query edges: Allergic reaction, Skin symptoms, Respiratory symptoms (top_k:40, cosine:0.2)
+INFO: Global query: 52 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 75 entities, 55 relations, 20 vector chunks
+INFO: After truncation: 73 entities, 55 relations
+INFO: Selecting 116 from 116 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 55 relations
+INFO: Round-robin merged chunks: 136 -> 124 (deduplicated 12)
+INFO: Final context: 73 entities, 55 relations, 20 chunks
+INFO: Final chunks S+F/O: E5/1 C1/2 E4/2 E6/3 E7/4 E1/5 E1/6 E2/7 E12/8 E3/9 E3/10 C1/11 E3/11 E5/12 C1/13 E6/13 C1/14 E1/14 E1/15 E2/16
+INFO:  == LLM cache == saving: mix:query:a3b8af0161da7d6819b9f665d4d1cd09
+INFO:absl:Using default tokenizer.
+  Running  23/60 : SYM-003 ...
+INFO:  == LLM cache == saving: mix:keywords:6edbf3781abc29003efa354f9bb82478
+INFO: Query nodes: depression, confusion, memory problems (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 76 relations
+INFO: Query edges: mental health symptoms, cognitive impairment (top_k:40, cosine:0.2)
+INFO: Global query: 53 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 88 entities, 107 relations, 20 vector chunks
+INFO: After truncation: 74 entities, 107 relations
+INFO: Selecting 116 from 116 entity-related chunks by vector similarity
+INFO: Find 8 additional chunks in 8 relations (deduplicated 29)
+INFO: Selecting 8 from 8 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 144 -> 129 (deduplicated 15)
+INFO: Final context: 74 entities, 107 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E7/1 R1/1 E5/2 R2/2 C1/3 E4/3 R1/3 E5/4 R1/4 E5/5 R1/5 E4/6 R1/6 C1/7 E2/7 R1/7 E1/8 R1/8 E2/9
+INFO:  == LLM cache == saving: mix:query:9768985dfe02cd1ee79fb33a33cb83e3
+INFO:absl:Using default tokenizer.
+  Running  24/60 : SYM-004 ...
+INFO:  == LLM cache == saving: mix:keywords:238bcc425a765e6c1798a28b1dd3f0c4
+INFO: Query nodes: fatigue, nausea, palpitations (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 45 relations
+INFO: Query edges: feeling of fatigue, feeling of nausea, feeling of palpitations (top_k:40, cosine:0.2)
+INFO: Global query: 62 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 87 entities, 66 relations, 20 vector chunks
+INFO: After truncation: 81 entities, 66 relations
+INFO: Selecting 128 from 128 entity-related chunks by vector similarity
+INFO: Find 4 additional chunks in 4 relations (deduplicated 35)
+INFO: Selecting 4 from 4 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 152 -> 141 (deduplicated 11)
+INFO: Final context: 81 entities, 66 relations, 20 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E1/2 R1/2 C1/3 E2/3 R1/3 E2/4 R1/4 E3/5 E1/6 E1/7 E4/8 E1/9 C1/10 E7/10 C1/11 E5/11 C1/12 E4/12
+INFO:  == LLM cache == saving: mix:query:c4ef7b94ae73e2f3c6185dd1821930b1
+INFO:absl:Using default tokenizer.
+  Running  25/60 : SYM-005 ...
+INFO:  == LLM cache == saving: mix:keywords:23c6fc075b00928cc4b00f2d7b8a1003
+INFO: Query nodes: headache, dizziness, weakness, vomiting (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 33 relations
+INFO: Query edges: Health symptoms, Possible diagnosis, Medical condition (top_k:40, cosine:0.2)
+INFO: Global query: 53 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 89 entities, 70 relations, 20 vector chunks
+INFO: After truncation: 47 entities, 70 relations
+INFO: Selecting 117 from 160 entity-related chunks by vector similarity
+INFO: Find 14 additional chunks in 14 relations (deduplicated 24)
+INFO: Selecting 14 from 14 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 151 -> 142 (deduplicated 9)
+INFO: Final context: 47 entities, 70 relations, 20 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 E1/2 R1/2 C1/3 E2/3 R2/3 E2/4 R1/4 E5/5 R4/5 E2/6 R1/6 E1/7 R1/7 E4/8 R1/8 E1/9 R1/9 C1/10
+INFO:  == LLM cache == saving: mix:query:871a1a577f7b85347bb7bb0cd108e5ba
+INFO:absl:Using default tokenizer.
+  Running  26/60 : SYM-006 ...
+INFO:  == LLM cache == saving: mix:keywords:646352502ae642167d9cf086a1510bf3
+INFO: Query nodes: fever, diarrhea, cramps (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 33 relations
+INFO: Query edges: Symptoms, Gastrointestinal symptoms, Illness (top_k:40, cosine:0.2)
+INFO: Global query: 54 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 89 entities, 67 relations, 20 vector chunks
+INFO: After truncation: 84 entities, 67 relations
+INFO: Selecting 136 from 136 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 42)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 158 -> 147 (deduplicated 11)
+INFO: Final context: 84 entities, 67 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E3/1 R1/1 E2/2 R1/2 C1/3 E6/3 C1/4 E3/4 E1/5 E2/6 E3/7 C1/8 E3/8 E3/9 C1/10 E2/10 E1/11 E2/12 E1/13
+INFO:  == LLM cache == saving: mix:query:839408f08d0371e98028275b13937797
+INFO:absl:Using default tokenizer.
+  Running  27/60 : SYM-007 ...
+INFO:  == LLM cache == saving: mix:keywords:2b1fb3cd248ff16411f93e75478c86ea
+INFO: Query nodes: pain, fever, nausea, diarrhea, loss of appetite (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 21 relations
+INFO: Query edges: Gastrointestinal symptoms, Systemic symptoms, Acute illness (top_k:40, cosine:0.2)
+INFO: Global query: 53 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 89 entities, 57 relations, 20 vector chunks
+INFO: After truncation: 68 entities, 57 relations
+INFO: Selecting 165 from 165 entity-related chunks by vector similarity
+INFO: Find 5 additional chunks in 5 relations (deduplicated 35)
+INFO: Selecting 5 from 5 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 190 -> 183 (deduplicated 7)
+INFO: Final context: 68 entities, 57 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E5/1 R1/1 C1/2 E5/2 R1/2 C1/3 E1/3 R1/3 C1/4 E4/4 R1/4 C1/5 E1/5 R1/5 C1/6 E1/6 E3/7 C1/8 E5/8
+INFO:  == LLM cache == saving: mix:query:5c1dee642ebb4b5bd56cd8cb2aa61a16
+INFO:absl:Using default tokenizer.
+  Running  28/60 : SYM-008 ...
+INFO:  == LLM cache == saving: mix:keywords:44c828ca92f1d94b986c7fab6f1dd565
+INFO: Query nodes: weight gain, high blood pressure, shortness of breath (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 79 relations
+INFO: Query edges: Medical symptoms, Cardiovascular health concerns (top_k:40, cosine:0.2)
+INFO: Global query: 46 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 83 entities, 116 relations, 20 vector chunks
+INFO: After truncation: 73 entities, 116 relations
+INFO: Selecting 153 from 153 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 7 relations (deduplicated 51)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 180 -> 167 (deduplicated 13)
+INFO: Final context: 73 entities, 116 relations, 20 chunks
+INFO: Final chunks S+F/O: E3/1 R5/1 E4/2 R1/2 C1/3 E5/3 R1/3 E2/4 R4/4 C1/5 E10/5 R1/5 E4/6 R1/6 E5/7 R1/7 E2/8 C1/9 E2/9 E1/10
+INFO:  == LLM cache == saving: mix:query:0eb6f9c973314f8f1c7a7619f0ed5ecf
+INFO:absl:Using default tokenizer.
+  Running  29/60 : SYM-009 ...
+INFO:  == LLM cache == saving: mix:keywords:899c0c30a415a4e56b26bb591d1bed0f
+INFO: Query nodes: high heart rate, high blood pressure (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 88 relations
+INFO: Query edges: cardiovascular health, heart rate issues, blood pressure issues, medical symptoms (top_k:40, cosine:0.2)
+INFO: Global query: 47 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 80 entities, 113 relations, 20 vector chunks
+INFO: After truncation: 79 entities, 113 relations
+INFO: Selecting 151 from 151 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 45)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 177 -> 162 (deduplicated 15)
+INFO: Final context: 79 entities, 113 relations, 20 chunks
+INFO: Final chunks S+F/O: E4/1 R5/1 C1/2 E9/2 R2/2 C1/3 E8/3 R1/3 E1/4 R2/4 E7/5 R1/5 E2/6 R1/6 E8/7 E1/8 E1/9 E5/10 E5/11 E4/12
+INFO:  == LLM cache == saving: mix:query:392eeec09ddac5fef5358aedc7f24143
+INFO:absl:Using default tokenizer.
+  Running  30/60 : SYM-010 ...
+INFO:  == LLM cache == saving: mix:keywords:140d913923d9acd73b95b7e8112e8398
+INFO: Query nodes: fatigue, weakness, anemia, bleeding (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 61 relations
+INFO: Query edges: Anemia symptoms, Bleeding manifestations, Hematologic disorders (top_k:40, cosine:0.2)
+INFO: Global query: 51 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 80 entities, 75 relations, 20 vector chunks
+INFO: After truncation: 80 entities, 75 relations
+INFO: Selecting 143 from 143 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 75 relations
+INFO: Round-robin merged chunks: 163 -> 149 (deduplicated 14)
+INFO: Final context: 80 entities, 75 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E4/1 C1/2 E3/2 E1/3 E2/4 C1/5 E2/5 E1/6 E1/7 E2/8 C1/9 E4/9 E2/10 C1/11 E1/11 E8/12 E4/13 E5/14 E6/15
+INFO:  == LLM cache == saving: mix:query:193e2562d10dfb451436f9a96f7d9cf2
+INFO:absl:Using default tokenizer.
+  Running  31/60 : SYM-011 ...
+INFO:  == LLM cache == saving: mix:keywords:37f5c7f7b6a2d33bae8582e9fd4098cc
+INFO: Query nodes: cough, fever, chest pain (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 32 relations
+INFO: Query edges: respiratory symptoms, medical symptom assessment, possible infection (top_k:40, cosine:0.2)
+INFO: Global query: 55 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 89 entities, 64 relations, 20 vector chunks
+INFO: After truncation: 71 entities, 64 relations
+INFO: Selecting 121 from 121 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 7 relations (deduplicated 34)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 148 -> 139 (deduplicated 9)
+INFO: Final context: 71 entities, 64 relations, 20 chunks
+INFO: Final chunks S+F/O: E2/1 R3/1 E2/2 R1/2 E1/3 R1/3 C1/4 E2/4 R1/4 E7/5 R1/5 C1/6 E2/6 R1/6 E6/7 R1/7 C1/8 E4/8 C1/9 E6/9
+INFO:  == LLM cache == saving: mix:query:2d7d195556caf1e38e8acc2137cf5c47
+INFO:absl:Using default tokenizer.
+  Running  32/60 : SYM-012 ...
+INFO:  == LLM cache == saving: mix:keywords:12686951d97896124699050e82f877ee
+INFO: Query nodes: seizures, feeling confused (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 47 relations
+INFO: Query edges: Seizures, Confusion, Neurological symptoms (top_k:40, cosine:0.2)
+INFO: Global query: 54 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 85 entities, 71 relations, 20 vector chunks
+INFO: After truncation: 85 entities, 71 relations
+INFO: Selecting 116 from 116 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 30)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 137 -> 131 (deduplicated 6)
+INFO: Final context: 85 entities, 71 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R2/1 C1/2 E3/2 C1/3 E2/3 C1/4 E2/4 C1/5 E6/5 C1/6 E5/6 C1/7 E3/7 C1/8 E1/8 E11/9 C1/10 E1/10
+INFO:  == LLM cache == saving: mix:query:1be518d8497095bfa2313eb71771969a
+INFO:absl:Using default tokenizer.
+  Running  33/60 : SYM-013 ...
+INFO:  == LLM cache == saving: mix:keywords:45b462a660f2b3d886689f19e23aed09
+INFO: Query nodes: pain, fatigue, headache, weight loss, dizziness (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 30 relations
+INFO: Query edges: medical symptoms, health concerns (top_k:40, cosine:0.2)
+INFO: Global query: 60 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 94 entities, 63 relations, 20 vector chunks
+INFO: After truncation: 59 entities, 63 relations
+INFO: Selecting 147 from 162 entity-related chunks by vector similarity
+INFO: Find 10 additional chunks in 10 relations (deduplicated 29)
+INFO: Selecting 10 from 10 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 177 -> 170 (deduplicated 7)
+INFO: Final context: 59 entities, 63 relations, 20 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 C1/2 E2/2 R1/2 C1/3 E2/3 R1/3 C1/4 E1/4 R1/4 E1/5 R1/5 C1/6 E6/6 R2/6 C1/7 E2/7 R3/7 C1/8
+INFO:  == LLM cache == saving: mix:query:96e2d166fc9d0a2f2613c384820341be
+INFO:absl:Using default tokenizer.
+  Running  34/60 : SYM-014 ...
+INFO:  == LLM cache == saving: mix:keywords:72168e71daef5ec757f5da3cab4d2658
+INFO: Query nodes: itching, jaundice (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 27 relations
+INFO: Query edges: Itching, Jaundice, Medical symptoms (top_k:40, cosine:0.2)
+INFO: Global query: 57 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 84 entities, 49 relations, 20 vector chunks
+INFO: After truncation: 68 entities, 49 relations
+INFO: Selecting 114 from 114 entity-related chunks by vector similarity
+INFO: Find 4 additional chunks in 4 relations (deduplicated 23)
+INFO: Selecting 4 from 4 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 138 -> 125 (deduplicated 13)
+INFO: Final context: 68 entities, 49 relations, 20 chunks
+INFO: Final chunks S+F/O: E9/1 R2/1 E3/2 R1/2 C1/3 E2/3 R1/3 E2/4 R1/4 E10/5 E2/6 E6/7 E3/8 C1/9 E4/9 E1/10 C1/11 E6/11 E7/12 C1/13
+INFO:  == LLM cache == saving: mix:query:4f8fc133e21b34732de53905dabf059e
+INFO:absl:Using default tokenizer.
+  Running  35/60 : SYM-015 ...
+INFO:  == LLM cache == saving: mix:keywords:ffe080a988084ff378652033698be660
+INFO: Query nodes: fever, headache, rash, loss of appetite (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 30 relations
+INFO: Query edges: Medical symptoms, Potential diagnosis (top_k:40, cosine:0.2)
+INFO: Global query: 55 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 92 entities, 67 relations, 20 vector chunks
+INFO: After truncation: 60 entities, 67 relations
+INFO: Selecting 128 from 128 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 7 relations (deduplicated 28)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 155 -> 143 (deduplicated 12)
+INFO: Final context: 60 entities, 67 relations, 20 chunks
+INFO: Final chunks S+F/O: E8/1 R1/1 C1/2 E1/2 R1/2 E1/3 R1/3 C1/4 E2/4 R1/4 C1/5 E4/5 R1/5 E2/6 R1/6 E4/7 R1/7 E3/8 C1/9 E3/9
+INFO:  == LLM cache == saving: mix:query:b42f6a138877f83fd450da47ee120ddd
+INFO:absl:Using default tokenizer.
+  Running  36/60 : SYM-016 ...
+INFO:  == LLM cache == saving: mix:keywords:54c67fd80631cede982da527d92c1d17
+INFO: Query nodes: pain, diarrhea, bleeding, abdominal pain (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 38 relations
+INFO: Query edges: Gastrointestinal symptoms, Abdominal pain, Digestive health concerns (top_k:40, cosine:0.2)
+INFO: Global query: 53 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 90 entities, 75 relations, 20 vector chunks
+INFO: After truncation: 82 entities, 75 relations
+INFO: Selecting 148 from 148 entity-related chunks by vector similarity
+INFO: Find 4 additional chunks in 4 relations (deduplicated 47)
+INFO: Selecting 4 from 4 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 172 -> 162 (deduplicated 10)
+INFO: Final context: 82 entities, 75 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E3/1 R1/1 C1/2 E1/2 R1/2 E1/3 R3/3 E4/4 R1/4 E1/5 C1/6 E3/6 E1/7 E2/8 C1/9 E4/9 C1/10 E3/10 E2/11
+INFO:  == LLM cache == saving: mix:query:1a53109f0a75807aefe6ff7daf69ab58
+INFO:absl:Using default tokenizer.
+  Running  37/60 : SYM-017 ...
+INFO:  == LLM cache == saving: mix:keywords:cd398fdba90feaeb2a4ef75ef69f0020
+INFO: Query nodes: trouble breathing, wheezing (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 58 relations
+INFO: Query edges: respiratory distress, breathing problems, wheezing (top_k:40, cosine:0.2)
+INFO: Global query: 53 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 71 entities, 67 relations, 20 vector chunks
+INFO: After truncation: 71 entities, 67 relations
+INFO: Selecting 89 from 89 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 33)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 110 -> 98 (deduplicated 12)
+INFO: Final context: 71 entities, 67 relations, 20 chunks
+INFO: Final chunks S+F/O: E8/1 R1/1 E6/2 E8/3 E1/4 E5/5 E5/6 C1/7 E11/7 C1/8 E1/8 C1/9 E4/9 E4/10 C1/11 E4/11 C1/12 E1/12 E1/13 E1/14
+INFO:  == LLM cache == saving: mix:query:a315c8d2dbd30d3f5eafb7c417d7c9df
+INFO:absl:Using default tokenizer.
+  Running  38/60 : SYM-018 ...
+INFO:  == LLM cache == saving: mix:keywords:030ead530c6d76984ed442b9f8c21f42
+INFO: Query nodes: headache, high fever (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 27 relations
+INFO: Query edges: medical symptoms, illness (top_k:40, cosine:0.2)
+INFO: Global query: 57 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 93 entities, 60 relations, 20 vector chunks
+INFO: After truncation: 77 entities, 60 relations
+INFO: Selecting 140 from 140 entity-related chunks by vector similarity
+INFO: Find 5 additional chunks in 5 relations (deduplicated 29)
+INFO: Selecting 5 from 5 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 165 -> 153 (deduplicated 12)
+INFO: Final context: 77 entities, 60 relations, 20 chunks
+INFO: Final chunks S+F/O: E4/1 R1/1 E1/2 R2/2 E1/3 R1/3 E1/4 R2/4 C1/5 E2/5 R1/5 E6/6 E4/7 C1/8 E1/8 C1/9 E1/9 C1/10 E1/10 E1/11
+INFO:  == LLM cache == saving: mix:query:5cc9074974499c383422ec99f9137f6b
+INFO:absl:Using default tokenizer.
+  Running  39/60 : SYM-019 ...
+INFO:  == LLM cache == saving: mix:keywords:1816ad6e7b120819e26f5c3fb0efda7a
+INFO: Query nodes: feeling anxious, nausea, rapid heartbeat (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 34 relations
+INFO: Query edges: Anxiety, Crowded environments, Physical symptoms (top_k:40, cosine:0.2)
+INFO: Global query: 54 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 85 entities, 62 relations, 20 vector chunks
+INFO: After truncation: 66 entities, 62 relations
+INFO: Selecting 146 from 146 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 29)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 168 -> 154 (deduplicated 14)
+INFO: Final context: 66 entities, 62 relations, 20 chunks
+INFO: Final chunks S+F/O: E20/1 R1/1 E4/2 R1/2 E1/3 E5/4 E2/5 E2/6 C1/7 E7/7 E2/8 E1/9 C1/10 E4/10 E2/11 E1/12 C1/13 E7/13 E3/14 E1/15
+INFO:  == LLM cache == saving: mix:query:c71da973439c54d11cc0f11a92d0edef
+INFO:absl:Using default tokenizer.
+  Running  40/60 : SYM-020 ...
+INFO:  == LLM cache == saving: mix:keywords:ef322660fb2c34549a3280e7e85193d4
+INFO: Query nodes: swelling, constipation, abdominal discomfort (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 57 relations
+INFO: Query edges: Abdominal symptoms, Digestive health (top_k:40, cosine:0.2)
+INFO: Global query: 61 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 96 entities, 93 relations, 20 vector chunks
+INFO: After truncation: 71 entities, 93 relations
+INFO: Selecting 170 from 170 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 43)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 196 -> 186 (deduplicated 10)
+INFO: Final context: 71 entities, 93 relations, 20 chunks
+INFO: Final chunks S+F/O: E7/1 R1/1 C1/2 E3/2 R1/2 C1/3 E4/3 R1/3 E1/4 R3/4 E4/5 R1/5 E4/6 R1/6 C1/7 E2/7 C1/8 E1/8 E1/9 E1/10
+INFO:  == LLM cache == saving: mix:query:838d3bd9326c89292b44b99f5cfb0393
+INFO:absl:Using default tokenizer.
+  Running  41/60 : SYM-021 ...
+INFO:  == LLM cache == saving: mix:keywords:e7ad7daf6476f313a32944086de1ed57
+INFO: Query nodes: chest tightness, shortness of breath (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 35 relations
+INFO: Query edges: Respiratory distress, Cardiopulmonary symptoms (top_k:40, cosine:0.2)
+INFO: Global query: 53 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 85 entities, 67 relations, 20 vector chunks
+INFO: After truncation: 72 entities, 67 relations
+INFO: Selecting 158 from 158 entity-related chunks by vector similarity
+INFO: Find 6 additional chunks in 6 relations (deduplicated 30)
+INFO: Selecting 6 from 6 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 184 -> 172 (deduplicated 12)
+INFO: Final context: 72 entities, 67 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E7/1 R5/1 E8/2 R1/2 E3/3 R2/3 E4/4 R2/4 C1/5 E3/5 R1/5 E1/6 R1/6 E2/7 E1/8 E4/9 E3/10 C1/11 E4/11
+INFO:  == LLM cache == saving: mix:query:29b8d77d5d988319ee8f69707bca30c9
+INFO:absl:Using default tokenizer.
+  Running  42/60 : SYM-022 ...
+INFO:  == LLM cache == saving: mix:keywords:a79023d5d273a148df6b61bf25cde4e4
+INFO: Query nodes: pain, fever, nausea, vomiting, headache, chills (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 38 relations
+INFO: Query edges: Medical symptoms, Acute illness, Patient presentation (top_k:40, cosine:0.2)
+INFO: Global query: 58 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 92 entities, 72 relations, 20 vector chunks
+INFO: After truncation: 67 entities, 72 relations
+INFO: Selecting 143 from 143 entity-related chunks by vector similarity
+INFO: Find 5 additional chunks in 5 relations (deduplicated 31)
+INFO: Selecting 5 from 5 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 168 -> 158 (deduplicated 10)
+INFO: Final context: 67 entities, 72 relations, 20 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 C1/2 E1/2 R2/2 E1/3 R1/3 C1/4 E4/4 R1/4 E1/5 R1/5 C1/6 E2/6 E4/7 C1/8 E1/8 C1/9 E3/9 C1/10
+INFO:  == LLM cache == saving: mix:query:baf9f98172a6f66d67d2cc4bd0a74042
+INFO:absl:Using default tokenizer.
+  Running  43/60 : SYM-023 ...
+INFO:  == LLM cache == saving: mix:keywords:9fc7b88f2bcc8539cc215500c7bbac66
+INFO: Query nodes: stomach pain, loose stool, fever (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 25 relations
+INFO: Query edges: Abdominal pain, Diarrhea, Fever, Gastrointestinal infection (top_k:40, cosine:0.2)
+INFO: Global query: 62 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 97 entities, 59 relations, 20 vector chunks
+INFO: After truncation: 82 entities, 59 relations
+INFO: Selecting 135 from 135 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 7 relations (deduplicated 43)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 162 -> 150 (deduplicated 12)
+INFO: Final context: 82 entities, 59 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E4/1 R1/1 E1/2 R1/2 C1/3 E1/3 R1/3 E1/4 R1/4 E4/5 R1/5 E1/6 R1/6 E4/7 R1/7 C1/8 E3/8 C1/9 E2/9
+INFO:  == LLM cache == saving: mix:query:04416ccd2689a2e835b54a883c9d2e87
+INFO:absl:Using default tokenizer.
+  Running  44/60 : SYM-024 ...
+INFO:  == LLM cache == saving: mix:keywords:245f9ed91f727a408efd8bebe15742e0
+INFO: Query nodes: memory loss, confusion, elderly (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 73 relations
+INFO: Query edges: memory loss, confusion, elderly (top_k:40, cosine:0.2)
+INFO: Global query: 56 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 75 entities, 85 relations, 20 vector chunks
+INFO: After truncation: 75 entities, 85 relations
+INFO: Selecting 101 from 101 entity-related chunks by vector similarity
+INFO: Find no additional relations-related chunks from 85 relations
+INFO: Round-robin merged chunks: 121 -> 109 (deduplicated 12)
+INFO: Final context: 75 entities, 85 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E16/1 E11/2 E6/3 C1/4 E2/4 E1/5 C1/6 E2/6 E4/7 E1/8 C1/9 E2/9 E2/10 E2/11 E3/12 C1/13 E1/13 E1/14 E3/15
+INFO:  == LLM cache == saving: mix:query:432885b73b1283b52fbc1a7fd1c24efc
+INFO:absl:Using default tokenizer.
+  Running  45/60 : SYM-025 ...
+INFO:  == LLM cache == saving: mix:keywords:087373d59f3e7b1c61ae4531da23090c
+INFO: Query nodes: blood, urine, pain (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 91 relations
+INFO: Query edges: blood in urine, urinary pain, hematuria (top_k:40, cosine:0.2)
+INFO: Global query: 52 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 82 entities, 121 relations, 20 vector chunks
+INFO: After truncation: 50 entities, 121 relations
+INFO: Selecting 125 from 148 entity-related chunks by vector similarity
+INFO: Find 15 additional chunks in 15 relations (deduplicated 38)
+INFO: Selecting 15 from 15 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 160 -> 149 (deduplicated 11)
+INFO: Final context: 50 entities, 121 relations, 20 chunks
+INFO: Final chunks S+F/O: E2/1 R6/1 E8/2 R3/2 E5/3 R1/3 E1/4 R1/4 C1/5 E7/5 R1/5 C1/6 E3/6 R1/6 E2/7 R3/7 E1/8 R1/8 E1/9 R5/9
+INFO:  == LLM cache == saving: mix:query:2022c707ab7a092a8eb6fa699d322f5d
+INFO:absl:Using default tokenizer.
+  Running  46/60 : MIX-001 ...
+INFO:  == LLM cache == saving: mix:keywords:4b4265fa09fe581494101786541af032
+INFO: Query nodes: Epilepsy (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 27 relations
+INFO: Query edges: Causes of epilepsy, Treatment of epilepsy (top_k:40, cosine:0.2)
+INFO: Global query: 68 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 105 entities, 63 relations, 20 vector chunks
+INFO: After truncation: 91 entities, 63 relations
+INFO: Selecting 136 from 136 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 37)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 158 -> 150 (deduplicated 8)
+INFO: Final context: 91 entities, 63 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E3/1 R1/1 C1/2 E1/2 R1/2 C1/3 E4/3 E2/4 C1/5 E1/5 E1/6 C1/7 E2/7 C1/8 E1/8 E3/9 E2/10 C1/11 E1/11
+INFO:  == LLM cache == saving: mix:query:c2e51657af3e3aa0d8e70520fc76d758
+INFO:absl:Using default tokenizer.
+  Running  47/60 : MIX-002 ...
+INFO:  == LLM cache == saving: mix:keywords:c8cef843beaa270db4a379be06f3a135
+INFO: Query nodes: tuberculosis (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 46 relations
+INFO: Query edges: Tuberculosis seriousness, Tuberculosis cure (top_k:40, cosine:0.2)
+INFO: Global query: 67 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 100 entities, 79 relations, 20 vector chunks
+INFO: After truncation: 70 entities, 79 relations
+INFO: Selecting 127 from 127 entity-related chunks by vector similarity
+INFO: Find 9 additional chunks in 9 relations (deduplicated 35)
+INFO: Selecting 9 from 9 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 156 -> 142 (deduplicated 14)
+INFO: Final context: 70 entities, 79 relations, 20 chunks
+INFO: Final chunks S+F/O: E5/1 R8/1 C1/2 E1/2 R1/2 C1/3 E6/3 R1/3 E3/4 R1/4 E5/5 R1/5 E1/6 R1/6 E1/7 R1/7 E2/8 R1/8 E1/9 R1/9
+INFO:  == LLM cache == saving: mix:query:e87f83996cb1bb35c0ff94d5b84dd2f3
+INFO:absl:Using default tokenizer.
+  Running  48/60 : MIX-003 ...
+INFO:  == LLM cache == saving: mix:keywords:2e70bff0ea3fff12ab315cc021f6c2a8
+INFO: Query nodes: dengue fever (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 35 relations
+INFO: Query edges: Dengue fever prognosis, Prognosis (top_k:40, cosine:0.2)
+INFO: Global query: 62 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 95 entities, 65 relations, 20 vector chunks
+INFO: After truncation: 76 entities, 65 relations
+INFO: Selecting 106 from 106 entity-related chunks by vector similarity
+INFO: Find 7 additional chunks in 7 relations (deduplicated 27)
+INFO: Selecting 7 from 7 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 133 -> 121 (deduplicated 12)
+INFO: Final context: 76 entities, 65 relations, 20 chunks
+INFO: Final chunks S+F/O: E1/1 R1/1 E9/2 R1/2 E1/3 R1/3 E5/4 R1/4 C1/5 E4/5 R1/5 C1/6 E3/6 R1/6 E2/7 R1/7 C1/8 E2/8 C1/9 E2/9
+INFO:  == LLM cache == saving: mix:query:17e1fa10d0b519298ec68b18789b9d65
+INFO:absl:Using default tokenizer.
+  Running  49/60 : MIX-004 ...
+INFO:  == LLM cache == saving: mix:keywords:673cea780eac82272e219f47a9d72059
+INFO: Query nodes: contagious, who gets it, risk groups, prevalence (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 80 relations
+INFO: Query edges: Diabetes mellitus, Contagious disease, Epidemiology, Disease transmission (top_k:40, cosine:0.2)
+INFO: Global query: 59 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 87 entities, 109 relations, 20 vector chunks
+INFO: After truncation: 78 entities, 109 relations
+INFO: Selecting 135 from 135 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 38)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 156 -> 143 (deduplicated 13)
+INFO: Final context: 78 entities, 109 relations, 20 chunks
+INFO: Final chunks S+F/O: E2/1 R1/1 E2/2 E2/3 E2/4 E4/5 C1/6 E4/6 C1/7 E3/7 E3/8 C1/9 E1/9 C1/10 E6/10 C1/11 E2/11 E3/12 E3/13 E1/14
+INFO:  == LLM cache == saving: mix:query:61914b85e82258a69be26e0ab2789ba3
+INFO:absl:Using default tokenizer.
+  Running  50/60 : MIX-005 ...
+INFO:  == LLM cache == saving: mix:keywords:e32377785f7b37d2861a3896bc3f3b0e
+INFO: Query nodes: pneumonia, complications (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 49 relations
+INFO: Query edges: Complications of pneumonia (top_k:40, cosine:0.2)
+INFO: Global query: 57 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 85 entities, 71 relations, 20 vector chunks
+INFO: After truncation: 73 entities, 71 relations
+INFO: Selecting 123 from 123 entity-related chunks by vector similarity
+INFO: Find 2 additional chunks in 2 relations (deduplicated 25)
+INFO: Selecting 2 from 2 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 145 -> 133 (deduplicated 12)
+INFO: Final context: 73 entities, 71 relations, 20 chunks
+INFO: Final chunks S+F/O: E5/1 R1/1 E3/2 R1/2 E3/3 E2/4 E16/5 E1/6 C1/7 E1/7 C1/8 E3/8 C1/9 E5/9 E3/10 C1/11 E3/11 C1/12 E2/12 E4/13
+INFO:  == LLM cache == saving: mix:query:10b1fb09b6cd985ed508116e9edab3ea
+INFO:absl:Using default tokenizer.
+  Running  51/60 : MIX-006 ...
+INFO:  == LLM cache == saving: mix:keywords:2a2b01e1a2869c9350a3934b3c8a92fa
+INFO: Query nodes: asthma, body system (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 180 relations
+INFO: Query edges: Body system, Asthma (top_k:40, cosine:0.2)
+INFO: Global query: 49 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 67 entities, 185 relations, 20 vector chunks
+INFO: After truncation: 34 entities, 185 relations
+INFO: Selecting 85 from 175 entity-related chunks by vector similarity
+INFO: Find 46 additional chunks in 46 relations (deduplicated 37)
+INFO: Selecting 46 from 46 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 151 -> 140 (deduplicated 11)
+INFO: Final context: 34 entities, 185 relations, 20 chunks
+INFO: Final chunks S+F/O: E8/1 R1/1 E3/2 R2/2 E5/3 R1/3 E3/4 R1/4 C1/5 E1/5 R1/5 E5/6 R2/6 E4/7 R3/7 E1/8 R1/8 E2/9 R1/9 C1/10
+INFO:  == LLM cache == saving: mix:query:18894b523ea6db7703de57b4882c86fd
+INFO:absl:Using default tokenizer.
+  Running  52/60 : MIX-007 ...
+INFO:  == LLM cache == saving: mix:keywords:adf43e95e854be9bf7ad548900bcf9c2
+INFO: Query nodes: treatment (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 71 relations
+INFO: Query edges: Anemia (top_k:40, cosine:0.2)
+INFO: Global query: 49 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 89 entities, 111 relations, 20 vector chunks
+INFO: After truncation: 69 entities, 111 relations
+INFO: Selecting 170 from 170 entity-related chunks by vector similarity
+INFO: Find 37 additional chunks in 12 relations (deduplicated 42)
+INFO: Selecting 30 from 37 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 220 -> 208 (deduplicated 12)
+INFO: Final context: 69 entities, 111 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E2/1 R2/1 E2/2 R1/2 C1/3 E1/3 R1/3 E1/4 R6/4 E3/5 R1/5 E5/6 R1/6 E1/7 R1/7 E5/8 R1/8 E5/9 R3/9
+INFO:  == LLM cache == saving: mix:query:91fdd8ef29b84428ddedc0cafba797bd
+INFO:absl:Using default tokenizer.
+  Running  53/60 : MIX-008 ...
+INFO:  == LLM cache == saving: mix:keywords:7bdd45a357dbebc36e5d7bed927431f5
+INFO: Query nodes: Hypertension (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 83 relations
+INFO: Query edges: Hypertension, Cure, Medical treatment (top_k:40, cosine:0.2)
+INFO: Global query: 58 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 84 entities, 101 relations, 20 vector chunks
+INFO: After truncation: 75 entities, 101 relations
+INFO: Selecting 155 from 155 entity-related chunks by vector similarity
+INFO: Find 3 additional chunks in 3 relations (deduplicated 34)
+INFO: Selecting 3 from 3 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 178 -> 167 (deduplicated 11)
+INFO: Final context: 75 entities, 101 relations, 20 chunks
+INFO: Final chunks S+F/O: E6/1 R1/1 C1/2 E3/2 R1/2 E5/3 R1/3 E6/4 E6/5 C1/6 E3/6 E2/7 E5/8 E7/9 E1/10 E2/11 E3/12 C1/13 E1/13 E1/14
+INFO:  == LLM cache == saving: mix:query:c22cfebc52c5028f1a5efb2a54a0d513
+INFO:absl:Using default tokenizer.
+  Running  54/60 : MIX-009 ...
+INFO:  == LLM cache == saving: mix:keywords:ba401758686042e33263ef229fa143b3
+INFO: Query nodes: appendicitis, symptoms (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 34 relations
+INFO: Query edges: Appendicitis symptoms, Medical advice, Health information (top_k:40, cosine:0.2)
+INFO: Global query: 63 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 92 entities, 59 relations, 20 vector chunks
+INFO: After truncation: 81 entities, 59 relations
+INFO: Selecting 122 from 122 entity-related chunks by vector similarity
+INFO: Find 4 additional chunks in 4 relations (deduplicated 37)
+INFO: Selecting 4 from 4 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 146 -> 133 (deduplicated 13)
+INFO: Final context: 81 entities, 59 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E5/1 R1/1 E3/2 R1/2 E2/3 R1/3 C1/4 E4/4 R1/4 E1/5 E2/6 E1/7 C1/8 E2/8 C1/9 E2/9 E1/10 E3/11 E2/12
+INFO:  == LLM cache == saving: mix:query:113fe86e17a8f9a5b672ea5acd79055f
+INFO:absl:Using default tokenizer.
+  Running  55/60 : MIX-010 ...
+INFO:  == LLM cache == saving: mix:keywords:c3cf5d704857f6ae15d528f77f6f4da2
+INFO: Query nodes: bacteremia (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 52 relations
+INFO: Query edges: Bacteremia, Danger level (top_k:40, cosine:0.2)
+INFO: Global query: 60 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 92 entities, 76 relations, 20 vector chunks
+INFO: After truncation: 78 entities, 76 relations
+INFO: Selecting 102 from 102 entity-related chunks by vector similarity
+INFO: Find 3 additional chunks in 3 relations (deduplicated 23)
+INFO: Selecting 3 from 3 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 125 -> 113 (deduplicated 12)
+INFO: Final context: 78 entities, 76 relations, 20 chunks
+INFO: Final chunks S+F/O: E3/1 R1/1 C1/2 E7/2 R3/2 E1/3 R1/3 C1/4 E15/4 E5/5 C1/6 E2/6 C1/7 E1/7 E9/8 E3/9 E1/10 C1/11 E2/11 E2/12
+INFO:  == LLM cache == saving: mix:query:f508f700a924f2caf0f8a8209677a1c0
+INFO:absl:Using default tokenizer.
+  Running  56/60 : EDGE-001 ...
+INFO:  == LLM cache == saving: mix:keywords:6725ff069719d729766bc8c6f75ad4d9
+INFO: Query nodes: Abdomen, Pain (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 32 relations
+INFO: Query edges: Abdominal pain, Medical symptom, Definition (top_k:40, cosine:0.2)
+INFO: Global query: 71 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 100 entities, 60 relations, 20 vector chunks
+INFO: After truncation: 78 entities, 60 relations
+INFO: Selecting 115 from 115 entity-related chunks by vector similarity
+INFO: Find 8 additional chunks in 8 relations (deduplicated 38)
+INFO: Selecting 8 from 8 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 143 -> 132 (deduplicated 11)
+INFO: Final context: 78 entities, 60 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E5/1 R1/1 E2/2 R1/2 E3/3 R1/3 E1/4 R1/4 E1/5 R1/5 C1/6 E1/6 R1/6 C1/7 E2/7 R1/7 E2/8 R1/8 E1/9
+INFO:  == LLM cache == saving: mix:query:d90ac12604e10427a04e675028300d47
+INFO:absl:Using default tokenizer.
+  Running  57/60 : EDGE-002 ...
+INFO:  == LLM cache == saving: mix:keywords:dd17944a75596448b64a42390e78da7d
+INFO: Query nodes: xyzzy123 (top_k:40, cosine:0.2)
+INFO: Local query: 15 entites, 32 relations
+INFO: Query edges: Disease (top_k:40, cosine:0.2)
+INFO: Global query: 56 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 71 entities, 72 relations, 20 vector chunks
+INFO: After truncation: 59 entities, 72 relations
+INFO: Selecting 147 from 160 entity-related chunks by vector similarity
+INFO: Find 3 additional chunks in 3 relations (deduplicated 42)
+INFO: Selecting 3 from 3 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 170 -> 165 (deduplicated 5)
+INFO: Final context: 59 entities, 72 relations, 20 chunks
+INFO: Final chunks S+F/O: C1/1 E3/1 R1/1 E1/2 R1/2 C1/3 E2/3 R1/3 E1/4 C1/5 E1/5 C1/6 E2/6 E1/7 C1/8 E5/8 C1/9 E3/9 C1/10 E1/10
+INFO:  == LLM cache == saving: mix:query:3b73fd72e2a0f7b33864e97d42277866
+INFO:absl:Using default tokenizer.
+  Running  58/60 : EDGE-003 ...
+INFO:  == LLM cache == saving: mix:keywords:52f1250ae9b2feb4e7b19899a98c1118
+INFO: Query nodes: diabetis (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 45 relations
+INFO: Query edges: diabetis (top_k:40, cosine:0.2)
+INFO: Global query: 50 entites, 40 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 67 entities, 47 relations, 20 vector chunks
+INFO: After truncation: 66 entities, 47 relations
+INFO: Selecting 154 from 154 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 11)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 175 -> 161 (deduplicated 14)
+INFO: Final context: 66 entities, 47 relations, 20 chunks
+INFO: Final chunks S+F/O: E14/1 R1/1 E8/2 E10/3 E2/4 E6/5 E18/6 C1/7 E1/7 E2/8 E1/9 E2/10 C1/11 E2/11 C1/12 E3/12 E1/13 C1/14 E2/14 E2/15
+INFO:  == LLM cache == saving: mix:query:f6a2d98485645070952eb4edf52fcedc
+INFO:absl:Using default tokenizer.
+  Running  59/60 : EDGE-004 ...
+WARNING: low_level_keywords is empty
+WARNING: high_level_keywords is empty
+WARNING: Forced low_level_keywords to origin query: I feel fine
+INFO: Query nodes: I feel fine (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 31 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 40 entities, 31 relations, 20 vector chunks
+INFO: After truncation: 40 entities, 31 relations
+INFO: Selecting 43 from 43 entity-related chunks by vector similarity
+INFO: Find 3 additional chunks in 3 relations (deduplicated 22)
+INFO: Selecting 3 from 3 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 66 -> 60 (deduplicated 6)
+INFO: Final context: 40 entities, 31 relations, 20 chunks
+INFO: Final chunks S+F/O: R1/1 E1/1 C1/2 E1/2 R1/2 C1/3 E9/3 R1/3 E2/4 E1/5 E1/6 C1/7 E1/7 C1/8 E1/8 C1/9 E2/9 C1/10 E2/10 C1/11
+INFO:  == LLM cache == saving: mix:query:a85bfd919a2027413cf2c5707a957afa
+INFO:absl:Using default tokenizer.
+  Running  60/60 : EDGE-005 ...
+WARNING: low_level_keywords is empty
+WARNING: high_level_keywords is empty
+WARNING: Forced low_level_keywords to origin query: fever
+INFO: Query nodes: fever (top_k:40, cosine:0.2)
+INFO: Local query: 40 entites, 39 relations
+INFO: Naive query: 20 chunks (chunk_top_k:20 cosine:0.2)
+INFO: Raw search results: 40 entities, 39 relations, 20 vector chunks
+INFO: After truncation: 40 entities, 39 relations
+INFO: Selecting 33 from 33 entity-related chunks by vector similarity
+INFO: Find 1 additional chunks in 1 relations (deduplicated 17)
+INFO: Selecting 1 from 1 relation-related chunks by vector similarity
+INFO: Round-robin merged chunks: 54 -> 44 (deduplicated 10)
+INFO: Final context: 40 entities, 39 relations, 20 chunks
+INFO: Final chunks S+F/O: E1/1 R7/1 C1/2 E2/2 E6/3 E5/4 C1/5 E3/5 E1/6 C1/7 E1/7 E1/8 C1/9 E1/9 C1/10 E1/10 C1/11 E2/11 E6/12 E1/13
+INFO:  == LLM cache == saving: mix:query:d82d1cfc5f125a7770e12153aadd52b3
+INFO:absl:Using default tokenizer.
+INFO: Successfully finalized 10 storages
+
+
+====================================================================
+  LIGHTRAG BASELINE ù EVALUATION REPORT
+====================================================================
+  Retrieval       : LightRAG (mix mode, encyclopedia corpus)
+  Total queries   : 60
+  Scored queries  : 57
+  Errors          : 0
+
+  RETRIEVAL METRICS (macro-averaged over scored queries)
+  Hit@1       : 0.4211
+  Hit@3       : 0.5263
+  Hit@5       : 0.5439
+  MRR         : 0.4718
+
+  RESPONSE QUALITY (vs reference answers)
+  rouge1      : 0.2582
+  rouge2      : 0.0865
+  rougeL      : 0.1931
+  bleu1       : 0.1772
+  bleu2       : 0.0964
+  bleu3       : 0.0564
+  bleu4       : 0.0350
+  Avg latency : 41.08s
+
+  RETRIEVAL BY QUERY TYPE
+  Type            n     H@1     H@3     MRR
+  ----------------------------------------
+  definition     20   0.700   0.700   0.700
+  symptom        25   0.200   0.440   0.313
+  mixed          10   0.500   0.500   0.500
+
+  RESPONSE QUALITY BY QUERY TYPE
+  Type            n   ROUGE-1   ROUGE-L    BLEU-1    BLEU-4
+  ----------------------------------------------------------
+  definition     20    0.2744    0.2125    0.2044    0.0417
+  symptom        25    0.2396    0.1708    0.1554    0.0343
+  mixed          10    0.2846    0.2163    0.1880    0.0288
+
+  THREE-WAY COMPARISON
+  Metric        Baseline    LightRAG     MediBot
+  ------------------------------------------------
+  rouge1          0.2032      0.2582      0.1973
+  bleu1           0.1129      0.1772      0.1208
+
+  RETRIEVAL COMPARISON (LightRAG vs MediBot)
+  Metric        LightRAG     MediBot       Delta
+  ------------------------------------------------
+  hit1            0.4211      0.8070      +91.6%
+  hit3            0.5263      0.9123      +73.3%
+  hit5            0.5439      0.9298      +71.0%
+  mrr             0.4718      0.8618      +82.7%
+
+  LIGHTRAG MISS DETAIL (33 queries where Hit@1 = False)
+  [DEF-001] expected=['Diabetes mellitus'] | top1='Hypoglycemia'
+  [DEF-002] expected=['Tuberculosis'] | top1='Antituberculosis drugs'
+  [DEF-004] expected=['Epilepsy'] | top1='disorder'
+  [DEF-007] expected=['Dengue fever'] | top1='Hemorrhagic fevers'
+  [DEF-012] expected=['Malaria'] | top1='Antimalarial drugs'
+  [DEF-015] expected=['Bacteremia'] | top1='the illness usually resolves within four to eight weeks.'
+  [SYM-001] expected=['Abscess', 'Appendicitis'] | top1='Infectious arthritis'
+  [SYM-003] expected=["Alzheimer's disease"] | top1='Amnesia'
+  [SYM-004] expected=['Agoraphobia'] | top1='Palpitations'
+  [SYM-005] expected=['Arteriovenous malformations'] | top1='Headache'
+  [SYM-006] expected=['Amebiasis', 'Appendicitis'] | top1='Gastroenteritis'
+  [SYM-007] expected=['Appendicitis', 'Bacteremia'] | top1='Gastroenteritis'
+  [SYM-008] expected=['Ascites', 'Hypertension'] | top1='Insulin resistance'
+  [SYM-012] expected=['Epilepsy', 'Arteriovenous malformations'] | top1='Anticonvulsant drugs'
+  [SYM-013] expected=['Anorexia nervosa'] | top1='Headache'
+====================================================================
+
+  LightRAG results saved to : D:\IMPORTANT FILE DONT DELETE\ai_play\AI\eval_lightrag_results.json
+  Comparison table saved to : D:\IMPORTANT FILE DONT DELETE\ai_play\AI\eval_lightrag_comparison.json

@@ -1,0 +1,2213 @@
+{
+  "enc_00009": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0f2da2e6ea84de29321c6bb6647758bc"
+    ],
+    "content_summary": "Entry: Acrocyanosis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; gastrointestinal; dermatological; hematological\nSeverity Level: Moderate\nDefinition: Acrocyanosis is a decrease in the amount of oxygen delivered to t...",
+    "content_length": 1241,
+    "created_at": "2026-08-10T14:37:35.318795+00:00",
+    "updated_at": "2026-08-10T14:39:41.612890+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786372655,
+      "processing_end_time": 1786372781
+    }
+  },
+  "enc_00000": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-e49611e93e664f1f3b07223c8f1f46b2"
+    ],
+    "content_summary": "Entry: Abscess\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: respiratory; gastrointestinal; dermatological; infectious\nSeverity Level: Severe\nDefinition: These four signs—heat, swelling, redness, and pain—characterize inflammation...",
+    "content_length": 2302,
+    "created_at": "2026-08-10T14:37:35.317849+00:00",
+    "updated_at": "2026-08-10T14:43:33.289943+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786372655,
+      "processing_end_time": 1786373013
+    }
+  },
+  "enc_00008": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-cf6dff342e4acda4a389bc2338c84151"
+    ],
+    "content_summary": "Entry: Acoustic neuroma\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; musculoskeletal; oncological; ophthalmological\nSeverity Level: Moderate\nDefinition: An acoustic neuroma is a benign tumor involving cells of the m...",
+    "content_length": 2957,
+    "created_at": "2026-08-10T14:37:35.318795+00:00",
+    "updated_at": "2026-08-10T14:43:25.600504+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786372781,
+      "processing_end_time": 1786373005
+    }
+  },
+  "enc_00010": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-a3e3297cd7a04555f40229593145f2e2"
+    ],
+    "content_summary": "Entry: Acromegaly and gigantism\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; musculoskeletal; endocrine; dermatological\nSeverity Level: Severe\nDefinition: Causes and symptoms The sympathetic nerves cause constrictio...",
+    "content_length": 2660,
+    "created_at": "2026-08-10T14:37:35.318795+00:00",
+    "updated_at": "2026-08-10T14:46:25.520854+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786373005,
+      "processing_end_time": 1786373185
+    }
+  },
+  "enc_00005": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0df4e770c55ce326a53bf6ab0d1f1b74"
+    ],
+    "content_summary": "Entry: Achondroplasia\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; gastrointestinal; musculoskeletal\nSeverity Level: Unknown\nDefinition: Achondroplasia is the most common cause of dwarfism, or significantly abnormal...",
+    "content_length": 2719,
+    "created_at": "2026-08-10T14:37:35.317849+00:00",
+    "updated_at": "2026-08-10T14:46:52.042840+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786373013,
+      "processing_end_time": 1786373212
+    }
+  },
+  "enc_00007": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8b8518a3e45fc354bf7fc9125174f51e"
+    ],
+    "content_summary": "Entry: Acne\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: gastrointestinal; endocrine; immunological; dermatological\nSeverity Level: Unknown\nDefinition: Acne is a common skin condition characterized by pimples on the face, chest, ...",
+    "content_length": 3092,
+    "created_at": "2026-08-10T14:37:35.317849+00:00",
+    "updated_at": "2026-08-10T14:49:36.840643+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786373185,
+      "processing_end_time": 1786373376
+    }
+  },
+  "enc_00003": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0eaf14f47f2b7374eca25847c8bbdd8d"
+    ],
+    "content_summary": "Entry: Acetaminophen\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: gastrointestinal\nSeverity Level: Moderate\nDefinition: Acetaminophen, paracetamol, is a medicine that is sold over the counter and combined with stronger pain relie...",
+    "content_length": 1500,
+    "created_at": "2026-08-10T14:37:35.317849+00:00",
+    "updated_at": "2026-08-10T14:49:19.083436+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786373212,
+      "processing_end_time": 1786373359
+    }
+  },
+  "enc_00001": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-6aaee80ad65e061c4dbd83e81542c322"
+    ],
+    "content_summary": "Entry: Abscess incision and drainage\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: respiratory; neurological; gastrointestinal; musculoskeletal\nSeverity Level: Critical\nDefinition: An infected skin nodule that contains pus may nee...",
+    "content_length": 1700,
+    "created_at": "2026-08-10T14:37:35.317849+00:00",
+    "updated_at": "2026-08-10T14:50:51.818374+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786373359,
+      "processing_end_time": 1786373451
+    }
+  },
+  "enc_00004": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d4ef02fa72700fb047729ed50bb1182a"
+    ],
+    "content_summary": "Entry: Acetylsalicylic acid see Aspirin\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; neurological; gastrointestinal; musculoskeletal\nSeverity Level: Unknown\nDefinition: Achalasia is a disorder of the esophagus tha...",
+    "content_length": 2111,
+    "created_at": "2026-08-10T14:37:35.317849+00:00",
+    "updated_at": "2026-08-10T14:52:51.364382+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786373376,
+      "processing_end_time": 1786373571
+    }
+  },
+  "enc_00006": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-380c6702cc605a3cfe1200c7e02a7fb6"
+    ],
+    "content_summary": "Entry: Acid phosphatase test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: gastrointestinal; musculoskeletal; endocrine; renal\nSeverity Level: Moderate\nDefinition: Acid phosphatase is an enzyme found throughout the body, but primari...",
+    "content_length": 998,
+    "created_at": "2026-08-10T14:37:35.317849+00:00",
+    "updated_at": "2026-08-10T14:53:34.221623+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_203735_c377a573",
+    "metadata": {
+      "processing_start_time": 1786373451,
+      "processing_end_time": 1786373614
+    }
+  },
+  "enc_00019": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-f9338b75f511ec154e543f92f47f1080"
+    ],
+    "content_summary": "Entry: Addison’s disease\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; endocrine; immunological; renal\nSeverity Level: Moderate\nDefinition: Addison’s disease is a disorder involving disrupted functioning of the part...",
+    "content_length": 3075,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T14:56:06.097951+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786373614,
+      "processing_end_time": 1786373766
+    }
+  },
+  "enc_00014": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-3ff1c28387bf5cdbd9396931e1ac3bd9"
+    ],
+    "content_summary": "Entry: Acute kidney failure\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; musculoskeletal; endocrine\nSeverity Level: Critical\nDefinition: Acute kidney failure occurs when illness, infection, or inj...",
+    "content_length": 3360,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T15:00:03.896102+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786373614,
+      "processing_end_time": 1786374003
+    }
+  },
+  "enc_00017": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-5fe2128e4bb38758c5026c816732bdc4"
+    ],
+    "content_summary": "Entry: Acute stress disorder\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: neurological; psychiatric\nSeverity Level: Unknown\nDefinition: Acute stress disorder (ASD) is an anxiety disorder characterized by a cluster of dissociative ...",
+    "content_length": 3644,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T14:57:17.630196+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786373766,
+      "processing_end_time": 1786373837
+    }
+  },
+  "enc_00016": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-551add173e0a688b46340efd695e578b"
+    ],
+    "content_summary": "Entry: glomerulonephritis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: dermatological; renal; infectious; hematological\nSeverity Level: Unknown\nDefinition: Acute poststreptococcal glomerulonephritis (APSGN) is an inflammation of ...",
+    "content_length": 1583,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T14:58:15.686138+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786373837,
+      "processing_end_time": 1786373895
+    }
+  },
+  "enc_00011": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8acc4586bbed4747bf08e618045ae17a"
+    ],
+    "content_summary": "Entry: Actinomycosis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; neurological; dermatological; infectious\nSeverity Level: Moderate\nDefinition: Actinomycosis is an infection primarily caused by the bacterium Actin...",
+    "content_length": 1707,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T14:59:21.691725+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786373895,
+      "processing_end_time": 1786373961
+    }
+  },
+  "enc_00018": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-2df310a5eb710fa15878efbe7d25bc7d"
+    ],
+    "content_summary": "Entry: Addiction\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; psychiatric\nSeverity Level: Critical\nDefinition: Addiction is a disease of the brain that causes dependence upon or a persistent, compulsive need to use ...",
+    "content_length": 2915,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T15:00:14.887302+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786373961,
+      "processing_end_time": 1786374014
+    }
+  },
+  "enc_00012": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-77a98908cc7f18fa4c5b0c4a45575393"
+    ],
+    "content_summary": "Entry: Acupressure\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: respiratory; musculoskeletal; immunological\nSeverity Level: Unknown\nDefinition: Acupressure is a form of touch therapy that utilizes the principles of acupuncture an...",
+    "content_length": 1251,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T15:06:14.512774+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786374004,
+      "processing_end_time": 1786374374
+    }
+  },
+  "enc_00020": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1eecaf7395eab7edd21fbd3e05173dce"
+    ],
+    "content_summary": "Entry: Adenoid hyperplasia\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: endocrine; immunological; infectious\nSeverity Level: Severe\nDefinition: Adenoid hyperplasia, or sometimes also commonly called adenoid hypertrophy or enlarge...",
+    "content_length": 2963,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T15:02:20.144754+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786374014,
+      "processing_end_time": 1786374140
+    }
+  },
+  "enc_00013": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-6b6a8e48c9d8fbad2aa9b283c25def07"
+    ],
+    "content_summary": "Entry: Acupuncture\nEntry Type: Alternative Therapy\nIcd Category: Z-codes\nSeverity Level: Moderate\nDefinition: Acupuncture is one of the main forms of treatment in traditional Chinese medicine. It involves the use of sharp, thin needles that are inser...",
+    "content_length": 1077,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T15:11:30.312447+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786374578,
+      "processing_end_time": 1786374690
+    }
+  },
+  "enc_00015": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-bead2f9ad4273b49f336c30d5e85e2f1"
+    ],
+    "content_summary": "Entry: Acute lymphangitis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; neurological; musculoskeletal\nSeverity Level: Critical\nDefinition: Acute lymphangitis is a bacterial infection in the lymphatic v...",
+    "content_length": 2886,
+    "created_at": "2026-08-10T14:53:34.255929+00:00",
+    "updated_at": "2026-08-10T15:09:38.219810+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_205334_b88af93c",
+    "metadata": {
+      "processing_start_time": 1786374374,
+      "processing_end_time": 1786374578
+    }
+  },
+  "enc_00025": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-63ad7797e6cff0878d267771895c9d9e"
+    ],
+    "content_summary": "Entry: Adolescent nutrition\nEntry Type: Nutrition/Diet\nIcd Category: E40-E68\nBody Systems: neurological; musculoskeletal; endocrine; hematological\nSeverity Level: Unknown\nDefinition: It is important for teenagers and adolescents to eat healthy foods ...",
+    "content_length": 1681,
+    "created_at": "2026-08-10T15:09:38.372427+00:00",
+    "updated_at": "2026-08-10T15:12:51.268657+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786374578,
+      "processing_end_time": 1786374771
+    }
+  },
+  "enc_00026": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-367a09adb7a679af80cb96f74a630807"
+    ],
+    "content_summary": "Entry: Adrenal gland cancer\nEntry Type: Cancer/Oncological\nIcd Category: C00-D49\nBody Systems: cardiovascular; endocrine; renal; hematological\nSeverity Level: Unknown\nDefinition: Adrenal gland cancers are rare cancers occurring in the endocrine tissu...",
+    "content_length": 2891,
+    "created_at": "2026-08-10T15:09:38.372427+00:00",
+    "updated_at": "2026-08-10T15:17:54.157858+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786374690,
+      "processing_end_time": 1786375074
+    }
+  },
+  "enc_00029": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c6fa507f5f147d701838337866ae6d82"
+    ],
+    "content_summary": "Entry: Adrenalectomy\nEntry Type: Surgical Procedure\nIcd Category: Z-codes\nBody Systems: gastrointestinal; endocrine; renal; hematological\nSeverity Level: Unknown\nDefinition: Adrenalectomy is the surgical removal of one or both of the adrenal glands. ...",
+    "content_length": 1730,
+    "created_at": "2026-08-10T15:09:38.372427+00:00",
+    "updated_at": "2026-08-10T15:15:37.072728+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786374771,
+      "processing_end_time": 1786374937
+    }
+  },
+  "enc_00028": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-324279f88f2311f2fd7657f0a727629e"
+    ],
+    "content_summary": "Entry: Adrenal virilism\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: endocrine; renal; oncological\nSeverity Level: Moderate\nDefinition: Adrenal virilism is the development or premature development of male secondary sexual characte...",
+    "content_length": 1885,
+    "created_at": "2026-08-10T15:09:38.372427+00:00",
+    "updated_at": "2026-08-10T15:24:51.168722+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786374937,
+      "processing_end_time": 1786375491
+    }
+  },
+  "enc_00024": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d770964e720fab65211b3835a1fc2731"
+    ],
+    "content_summary": "Entry: Admission to the hospital\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: immunological; psychiatric\nSeverity Level: Severe\nDefinition: Hospital admission involves staying at a hospital for one night or more. Purpose Staying ...",
+    "content_length": 1097,
+    "created_at": "2026-08-10T15:09:38.372427+00:00",
+    "updated_at": "2026-08-10T15:20:29.776826+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786375074,
+      "processing_end_time": 1786375229
+    }
+  },
+  "enc_00030": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-44b884468a26dc2957843352da600dce"
+    ],
+    "content_summary": "Entry: Hormone Test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: cardiovascular; neurological; endocrine; renal\nSeverity Level: Unknown\nDefinition: Adrenocorticotropic hormone test (also known as an ACTH test or a corticotropin tes...",
+    "content_length": 667,
+    "created_at": "2026-08-10T15:09:38.372427+00:00",
+    "updated_at": "2026-08-10T15:22:19.342335+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786375229,
+      "processing_end_time": 1786375339
+    }
+  },
+  "enc_00021": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-62dcc63c88cff699f68208f0455773b8"
+    ],
+    "content_summary": "Entry: Adenovirus infections\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: respiratory; endocrine; reproductive; infectious\nSeverity Level: Critical\nDefinition: Adenoviruses are DNA viruses (small infectious agents) that cause uppe...",
+    "content_length": 3179,
+    "created_at": "2026-08-10T15:09:38.371430+00:00",
+    "updated_at": "2026-08-10T15:26:12.134372+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786375339,
+      "processing_end_time": 1786375572
+    }
+  },
+  "enc_00027": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d9884cc6b8d6b0ac0b0a8e59dba54ef9"
+    ],
+    "content_summary": "Entry: Adrenal gland scan\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: cardiovascular; endocrine; renal; hematological\nSeverity Level: Unknown\nDefinition: The adrenal gland scan is a nuclear medicine evaluation of the medulla (inne...",
+    "content_length": 1658,
+    "created_at": "2026-08-10T15:09:38.372427+00:00",
+    "updated_at": "2026-08-10T15:25:46.381080+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786375491,
+      "processing_end_time": 1786375546
+    }
+  },
+  "enc_00022": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-4c6845350ae9cecf9ea358b18b2d581b"
+    ],
+    "content_summary": "Entry: Adhesions\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; gastrointestinal; immunological; reproductive\nSeverity Level: Critical\nDefinition: Adhesions are fibrous bands of scar tissue that form between internal ...",
+    "content_length": 2905,
+    "created_at": "2026-08-10T15:09:38.371430+00:00",
+    "updated_at": "2026-08-10T15:29:23.361600+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786375546,
+      "processing_end_time": 1786375763
+    }
+  },
+  "enc_00023": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-385137de84f314dee795aa333d206111"
+    ],
+    "content_summary": "Entry: Adjustment disorders\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: musculoskeletal; immunological; psychiatric; hematological\nSeverity Level: Moderate\nDefinition: Systemic anti-inflammatory medications may be used to help pr...",
+    "content_length": 4014,
+    "created_at": "2026-08-10T15:09:38.371430+00:00",
+    "updated_at": "2026-08-10T15:36:21.951767+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_210938_284046c2",
+    "metadata": {
+      "processing_start_time": 1786376047,
+      "processing_end_time": 1786376181
+    }
+  },
+  "enc_00033": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-efefc9a9914255b2db7998e6ff75be31"
+    ],
+    "content_summary": "Entry: Adult nutrition\nEntry Type: Nutrition/Diet\nIcd Category: E40-E68\nBody Systems: cardiovascular; endocrine; hematological; oncological\nSeverity Level: Unknown\nDefinition: Nutrition describes the processes by which the food a person eats is taken...",
+    "content_length": 1290,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:34:59.004786+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376047,
+      "processing_end_time": 1786376099
+    }
+  },
+  "enc_00031": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-b1571076590b816bc3bb0de3b67b9a10"
+    ],
+    "content_summary": "Entry: patient cannot eat or drink anything after midnight\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: respiratory; neurological; endocrine; renal\nSeverity Level: Critical\nDefinition: Adrenoleukodystrophy is a rare genetic disea...",
+    "content_length": 2895,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:39:44.801924+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376099,
+      "processing_end_time": 1786376384
+    }
+  },
+  "enc_00034": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-436bf04244acb1c38f4b291e7d30ec94"
+    ],
+    "content_summary": "Entry: syndrome\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; neurological; gastrointestinal\nSeverity Level: Unknown\nDefinition: Adult respiratory distress syndrome (ARDS), also called acute respiratory...",
+    "content_length": 3331,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:37:58.353662+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376182,
+      "processing_end_time": 1786376278
+    }
+  },
+  "enc_00035": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-dc48729584254d74fcf981c77bc52930"
+    ],
+    "content_summary": "Entry: Advance directives\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; renal; psychiatric\nSeverity Level: Moderate\nDefinition: Prognosis If the patient’s lung injury does not soon begin to heal, the l...",
+    "content_length": 1602,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:39:24.438405+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376278,
+      "processing_end_time": 1786376364
+    }
+  },
+  "enc_00038": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-86d3c253b310c081f68af15bdade4f77"
+    ],
+    "content_summary": "Entry: AIDS\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: immunological; infectious; hematological; oncological\nSeverity Level: Severe\nDefinition: AIDS—acquired immune deficiency syndrome— is an infectious disease caused by the hu...",
+    "content_length": 1128,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:42:07.023112+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376364,
+      "processing_end_time": 1786376527
+    }
+  },
+  "enc_00039": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c02740b694bb0616d4b4005a09fd946b"
+    ],
+    "content_summary": "Entry: Alagille syndrome\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; neurological; gastrointestinal\nSeverity Level: Severe\nDefinition: Alagille syndrome (ALGS) is a rare genetic condition that affects...",
+    "content_length": 3141,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:43:15.202302+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376384,
+      "processing_end_time": 1786376595
+    }
+  },
+  "enc_00040": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-a048e601dd7e1d6483996e8fa02d2546"
+    ],
+    "content_summary": "Entry: Alanine aminotransferase test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: gastrointestinal\nSeverity Level: Severe\nDefinition: The alanine aminotransferase test, also known as ALT, is one of a group of tests known as liver f...",
+    "content_length": 1187,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:44:14.378277+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376527,
+      "processing_end_time": 1786376654
+    }
+  },
+  "enc_00036": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-a31e273096780949be269771f5c7b3b2"
+    ],
+    "content_summary": "Entry: Aging\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: immunological\nSeverity Level: Unknown\nDefinition:  Aging PERIODICALS Aging  Declining visual abilities. Age-related changes may lead to diseases such as macular degenerati...",
+    "content_length": 1905,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:45:41.641535+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376595,
+      "processing_end_time": 1786376741
+    }
+  },
+  "enc_00037": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-4b7ae47fed28c48dbd20bd5a3891afd1"
+    ],
+    "content_summary": "Entry: Agoraphobia\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; neurological; psychiatric\nSeverity Level: Unknown\nDefinition: The word agoraphobia is derived from Greek words literally meaning ‘‘fear of the market...",
+    "content_length": 3009,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:45:32.335250+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376654,
+      "processing_end_time": 1786376732
+    }
+  },
+  "enc_00032": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-42e43bdfb4ca95c8c2fd5329b7ff5261"
+    ],
+    "content_summary": "Entry: Adult day care\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: psychiatric\nSeverity Level: Moderate\nDefinition: Adult day care encompasses programs, services, and facilities intended to assist physically or mentally impaired ...",
+    "content_length": 1013,
+    "created_at": "2026-08-10T15:34:07.974303+00:00",
+    "updated_at": "2026-08-10T15:48:39.355568+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_213407_233432a8",
+    "metadata": {
+      "processing_start_time": 1786376732,
+      "processing_end_time": 1786376919
+    }
+  },
+  "enc_00047": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-2e10029ea7f3dfee7cdfc21bb655230a"
+    ],
+    "content_summary": "Entry: Alkaline phosphatase test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: gastrointestinal; musculoskeletal; hematological; oncological\nSeverity Level: Unknown\nDefinition: Alkaline phosphatase is an enzyme found throughout the ...",
+    "content_length": 1620,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T15:51:07.324125+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786376919,
+      "processing_end_time": 1786377067
+    }
+  },
+  "enc_00042": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-3f088a5c1c6bbd06f9b18f4580c46043"
+    ],
+    "content_summary": "Entry: disease\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; neurological; gastrointestinal\nSeverity Level: Critical\nDefinition: Alcohol, or ethanol, is a poison with direct toxic effects on nerve and m...",
+    "content_length": 3094,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T15:51:08.195001+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786376919,
+      "processing_end_time": 1786377068
+    }
+  },
+  "enc_00046": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-a8123b7be7ff18b176f9e2f5778b3e2e"
+    ],
+    "content_summary": "Entry: KEY TERMS\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; gastrointestinal; musculoskeletal\nSeverity Level: Unknown\nDefinition: The Alexander technique is a somatic method for improving physical a...",
+    "content_length": 1049,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T15:53:18.937288+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786377067,
+      "processing_end_time": 1786377198
+    }
+  },
+  "enc_00049": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-60186ecba821e292a6f92302d8c6ca5e"
+    ],
+    "content_summary": "Entry: Allergic rhinitis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: immunological\nSeverity Level: Moderate\nDefinition: Allergic rhinitis, more commonly referred to as hay fever, is an inflammation of the nasal passages caused b...",
+    "content_length": 2891,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T15:55:22.464654+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786377068,
+      "processing_end_time": 1786377322
+    }
+  },
+  "enc_00048": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-e46cef0181d6e65ea01360302ddd1f7b"
+    ],
+    "content_summary": "Entry: Allergic purpura\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; musculoskeletal; immunological\nSeverity Level: Mild\nDefinition: Allergic purpura (AP) is an allergic reaction of unknown origi...",
+    "content_length": 2750,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T15:54:53.829563+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786377199,
+      "processing_end_time": 1786377293
+    }
+  },
+  "enc_00045": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-7913b0884240a87bdd0d8c498ec19f82"
+    ],
+    "content_summary": "Entry: Aldosterone assay\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: cardiovascular; endocrine; renal; hematological\nSeverity Level: Unknown\nDefinition: This test measures the levels of aldosterone, a hormone produced by the outer...",
+    "content_length": 1286,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T16:02:24.935774+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786377294,
+      "processing_end_time": 1786377744
+    }
+  },
+  "enc_00041": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-d028b3e3f4cefe67cb0e2fd00c4e75c0"
+    ],
+    "content_summary": "Entry: Albinism\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: dermatological; oncological; ophthalmological\nSeverity Level: Severe\nDefinition: Albinism is an inherited condition present at birth, characterized by a lack of pigment...",
+    "content_length": 2951,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T15:58:24.352900+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786377322,
+      "processing_end_time": 1786377504
+    }
+  },
+  "enc_00044": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-919116bb6efe3303887cfaa1a2474f3d"
+    ],
+    "content_summary": "Entry: Aldolase test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: neurological; musculoskeletal; hematological\nSeverity Level: Unknown\nDefinition: Aldolase is an enzyme found throughout the body, particularly in muscles. Like all e...",
+    "content_length": 1375,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T16:02:48.560498+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786377504,
+      "processing_end_time": 1786377768
+    }
+  },
+  "enc_00050": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-fea6119439079b171fb416dd0c1a0f6a"
+    ],
+    "content_summary": "Entry: Allergies\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; neurological; immunological; infectious\nSeverity Level: Unknown\nDefinition: Allergies are hypersensitive responses by the immune system to otherwise ha...",
+    "content_length": 2939,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T16:04:18.265779+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786377745,
+      "processing_end_time": 1786377858
+    }
+  },
+  "enc_00043": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-0b5b4ede4683a3be477e4527fbbb8cad"
+    ],
+    "content_summary": "Entry: Alcoholism\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: psychiatric; hematological\nSeverity Level: Unknown\nDefinition: Alcoholism is a chronic physical, psychological, and behavioral disorder characterized by excessive use...",
+    "content_length": 2797,
+    "created_at": "2026-08-10T15:48:39.584087+00:00",
+    "updated_at": "2026-08-10T16:04:25.679436+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_214839_84f1fd3a",
+    "metadata": {
+      "processing_start_time": 1786377768,
+      "processing_end_time": 1786377865
+    }
+  },
+  "enc_00058": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-49690ebe88a03e6a7140692753a7c25a"
+    ],
+    "content_summary": "Entry: Amblyopia\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; ophthalmological\nSeverity Level: Severe\nDefinition: Amblyopia is a decrease in vision in a healthy eye that is caused by problems with the eye and the br...",
+    "content_length": 3078,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:06:19.180868+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786377865,
+      "processing_end_time": 1786377979
+    }
+  },
+  "enc_00057": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-fd6df79e5db44ce548291f0e8d6d6cbc"
+    ],
+    "content_summary": "Entry: Alzheimer’s disease\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: neurological; psychiatric; hematological\nSeverity Level: Critical\nDefinition: Alzheimer’s disease (AD) is the most common form of dementia in those aged 65 an...",
+    "content_length": 3222,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:06:56.104573+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786377865,
+      "processing_end_time": 1786378016
+    }
+  },
+  "enc_00055": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-1dfd51ae04f9e4cb50f69eb42e877763"
+    ],
+    "content_summary": "Entry: Alport syndrome\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: renal; hematological; ophthalmological\nSeverity Level: Severe\nDefinition: Alport syndrome is a hereditary disease of the kidneys that primarily affects men, causi...",
+    "content_length": 2668,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:09:33.275589+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786377979,
+      "processing_end_time": 1786378173
+    }
+  },
+  "enc_00054": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-6edad0b009a6b67d4ddcad5b30d5bc8c"
+    ],
+    "content_summary": "Entry: Alpha-fetoprotein (AFP) test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: gastrointestinal; musculoskeletal; renal; hematological\nSeverity Level: Severe\nDefinition: Alpha-fetoprotein (AFP) test Other side effects may occur. ...",
+    "content_length": 1055,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:09:55.464672+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786378016,
+      "processing_end_time": 1786378195
+    }
+  },
+  "enc_00059": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-02e1b300199e25407d954c8745371d3a"
+    ],
+    "content_summary": "Entry: Amebiasis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: gastrointestinal\nSeverity Level: Unknown\nDefinition: Human beings are the only known host of the amebiasis organism, and all groups of people, regardless of age or sex...",
+    "content_length": 2920,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:15:59.826143+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786378173,
+      "processing_end_time": 1786378559
+    }
+  },
+  "enc_00052": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-79234b86eefaf132e002bda9d70d7428"
+    ],
+    "content_summary": "Entry: (accessed August 15, 2013).\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; endocrine; immunological\nSeverity Level: Moderate\nDefinition: Alopecia simply means hair loss (baldness).\nDescription: W...",
+    "content_length": 2693,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:12:04.765967+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786378195,
+      "processing_end_time": 1786378324
+    }
+  },
+  "enc_00051": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-6f2eb90fc948c2cce9700f6264f9195a"
+    ],
+    "content_summary": "Entry: Allergy tests\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: respiratory; neurological; gastrointestinal; immunological\nSeverity Level: Unknown\nDefinition: Allergy tests indicate a person’s allergic sensitivity to commonly enc...",
+    "content_length": 1069,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:14:03.793301+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786378325,
+      "processing_end_time": 1786378443
+    }
+  },
+  "enc_00053": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8428275c084088f8ee4bf166316b6e01"
+    ],
+    "content_summary": "Entry: Alpha1-adrenergic blockers\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; neurological; musculoskeletal; endocrine\nSeverity Level: Moderate\nDefinition: Alpha1-adrenergic blockers, called alpha blockers for sh...",
+    "content_length": 1199,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:15:35.451769+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786378444,
+      "processing_end_time": 1786378535
+    }
+  },
+  "enc_00060": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-fc361582bff104c0fe342b280686ef76"
+    ],
+    "content_summary": "Entry: G A LE EN CY C LO PE DI A O F ME D IC I NE , 5 T H E DI T IO N\nEntry Type: Disease/Condition\nIcd Category: Various\nSeverity Level: Unknown\nDefinition: Amenorrhea\nDiagnosis: It may be difficult to find the cause of amenorrhea, but the exam shou...",
+    "content_length": 1971,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:17:40.712674+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786378535,
+      "processing_end_time": 1786378660
+    }
+  },
+  "enc_00056": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-a14bbcfdde4418b0b7e82cdeea0465da"
+    ],
+    "content_summary": "Entry: Altitude sickness\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: respiratory; infectious; hematological\nSeverity Level: Severe\nDefinition: Altitude sickness is a general term encompassing a spectrum of disorders that occur a...",
+    "content_length": 3433,
+    "created_at": "2026-08-10T16:04:25.929763+00:00",
+    "updated_at": "2026-08-10T16:18:11.337367+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_220425_9cae9882",
+    "metadata": {
+      "processing_start_time": 1786378560,
+      "processing_end_time": 1786378691
+    }
+  },
+  "enc_00070": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-039b8130a20b6f937b48c9084aa01ee2"
+    ],
+    "content_summary": "Entry: internal infections.\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: gastrointestinal; musculoskeletal; dermatological; renal\nSeverity Level: Severe\nDefinition: The anus is either not present or it is in the wrong place.\nDescr...",
+    "content_length": 2059,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:20:57.103715+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786378691,
+      "processing_end_time": 1786378857
+    }
+  },
+  "enc_00068": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-170bf8fe0c421cc796fb1a155cc92877"
+    ],
+    "content_summary": "Entry: Anabolic steroid use\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; musculoskeletal; endocrine\nSeverity Level: Moderate\nDefinition: Anabolic steroids are a class of man-made drugs that are c...",
+    "content_length": 3415,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:21:20.217594+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786378691,
+      "processing_end_time": 1786378880
+    }
+  },
+  "enc_00066": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-08dacc20215db14b42730a5441dcba75"
+    ],
+    "content_summary": "Entry: Amyloidosis\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: gastrointestinal; musculoskeletal; renal; hematological\nSeverity Level: Critical\nDefinition: Amyloidosis is a progressive, incurable, metabolic disease characterized ...",
+    "content_length": 1620,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:26:16.214708+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786378857,
+      "processing_end_time": 1786379176
+    }
+  },
+  "enc_00065": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-012e85679bddc890f1489e743c060e63"
+    ],
+    "content_summary": "Entry: Amylase tests\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: respiratory; gastrointestinal; endocrine; renal\nSeverity Level: Unknown\nDefinition: Amylase is a digestive enzyme made primarily by the pancreas and salivary glands....",
+    "content_length": 1598,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:24:10.579621+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786378880,
+      "processing_end_time": 1786379050
+    }
+  },
+  "enc_00064": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-097e88fc7e1ff542a919812e0d0d508a"
+    ],
+    "content_summary": "Entry: Amputation\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; neurological; musculoskeletal; dermatological\nSeverity Level: Moderate\nDefinition: Amputation is the surgical removal of a limb or body part. It is per...",
+    "content_length": 1561,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:25:37.673074+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786379050,
+      "processing_end_time": 1786379137
+    }
+  },
+  "enc_00069": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-c1acfa8b3bcf6abb174b1db6c3878690"
+    ],
+    "content_summary": "Entry: www.usdoj.gov/dea/concern/steroids.html\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: respiratory; gastrointestinal; immunological; dermatological\nSeverity Level: Unknown\nDefinition: An anaerobic infection is an infection c...",
+    "content_length": 2215,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:28:25.644302+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786379138,
+      "processing_end_time": 1786379305
+    }
+  },
+  "enc_00062": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-3d0db65915ac0fe12261f4142e959eee"
+    ],
+    "content_summary": "Entry: Aminoglycosides\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; musculoskeletal; renal\nSeverity Level: Unknown\nDefinition: Aminoglycosides are a group of antibiotics that are used alone or in...",
+    "content_length": 1378,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:29:11.092418+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786379176,
+      "processing_end_time": 1786379351
+    }
+  },
+  "enc_00061": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-708af40669770fee42a9a9b052181fce"
+    ],
+    "content_summary": "Entry: Amino acid disorders screening\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: renal; hematological\nSeverity Level: Unknown\nDefinition: Amino acid disorder screening checks for inherited disorders in amino acid metabolism. Tes...",
+    "content_length": 1302,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:31:35.842354+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786379306,
+      "processing_end_time": 1786379495
+    }
+  },
+  "enc_00067": {
+    "status": "processed",
+    "chunks_count": 1,
+    "chunks_list": [
+      "chunk-8054e9805de4eb7c22d5bd5694cb94aa"
+    ],
+    "content_summary": "Entry: Amyotrophic lateral sclerosis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; gastrointestinal; musculoskeletal; renal\nSeverity Level: Critical\nDefinition: Amyotrophic lateral sclerosis (ALS) is a disease that b...",
+    "content_length": 2738,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T16:33:56.505781+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786379351,
+      "processing_end_time": 1786379636
+    }
+  },
+  "enc_00063": {
+    "status": "processed",
+    "content_summary": "Entry: Amnesia\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; infectious\nSeverity Level: Unknown\nDefinition: Amnesia refers to the partial or total loss of memory. The loss may be temporary or permanent. Amnestic diso...",
+    "content_length": 3103,
+    "created_at": "2026-08-10T16:18:11.683414+00:00",
+    "updated_at": "2026-08-10T21:32:25.814984+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_221811_d8a029db",
+    "metadata": {
+      "processing_start_time": 1786397545,
+      "processing_end_time": 1786397545
+    },
+    "chunks_list": []
+  },
+  "enc_00079": {
+    "status": "processed",
+    "content_summary": "Entry: Anger management\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; musculoskeletal; psychiatric; hematological\nSeverity Level: Critical\nDefinition: Anger management guides a person through learning to deal bette...",
+    "content_length": 1995,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:25.948344+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397545,
+      "processing_end_time": 1786397545
+    },
+    "chunks_list": []
+  },
+  "enc_00076": {
+    "status": "processed",
+    "content_summary": "Entry: Anemias\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: respiratory; gastrointestinal; musculoskeletal; hematological\nSeverity Level: Unknown\nDefinition: Anemia is a condition characterized by abnormally low levels of healthy...",
+    "content_length": 2968,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:26.333554+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397545,
+      "processing_end_time": 1786397546
+    },
+    "chunks_list": []
+  },
+  "enc_00078": {
+    "status": "processed",
+    "content_summary": "Entry: Aneurysmectomy\nEntry Type: Surgical Procedure\nIcd Category: Z-codes\nBody Systems: cardiovascular; respiratory; neurological; renal\nSeverity Level: Unknown\nDefinition: OPHTHALMIC ANESTHETICS. Other local anesthetics are designed for use in the ...",
+    "content_length": 1650,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:26.266323+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397545,
+      "processing_end_time": 1786397546
+    },
+    "chunks_list": []
+  },
+  "enc_00077": {
+    "status": "processed",
+    "content_summary": "Entry: Anesthesia\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; neurological; gastrointestinal\nSeverity Level: Unknown\nDefinition: Anesthesia is medication administered by a medical professional that i...",
+    "content_length": 1292,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:26.723524+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397546,
+      "processing_end_time": 1786397546
+    },
+    "chunks_list": []
+  },
+  "enc_00072": {
+    "status": "processed",
+    "content_summary": "Entry: Analgesics\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; musculoskeletal; immunological; infectious\nSeverity Level: Severe\nDefinition: Analgesics are medicines that relieve pain. Purpose Analgesics are those d...",
+    "content_length": 1290,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:26.789906+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397546,
+      "processing_end_time": 1786397546
+    },
+    "chunks_list": []
+  },
+  "enc_00073": {
+    "status": "processed",
+    "content_summary": "Entry: Analgesics, opioid\nEntry Type: Disease/Condition\nIcd Category: Various\nSeverity Level: Unknown\nDefinition: Opioid analgesics, also known as narcotic analgesics, are pain relievers that act on the central nervous system. Like all narcotics, the...",
+    "content_length": 720,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:27.126490+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397546,
+      "processing_end_time": 1786397547
+    },
+    "chunks_list": []
+  },
+  "enc_00074": {
+    "status": "processed",
+    "content_summary": "Entry: Anaphylaxis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; neurological; gastrointestinal; musculoskeletal\nSeverity Level: Critical\nDefinition: Anaphylaxis is a rapidly progressing, life-threatening allergic ...",
+    "content_length": 2893,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:27.194366+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397546,
+      "processing_end_time": 1786397547
+    },
+    "chunks_list": []
+  },
+  "enc_00071": {
+    "status": "processed",
+    "content_summary": "Entry: contracting.\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: gastrointestinal; endocrine; oncological\nSeverity Level: Unknown\nDefinition: Anal cancer is an uncommon form of cancer affecting the anus. The anus is the inch-and-...",
+    "content_length": 1749,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:27.529411+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397547,
+      "processing_end_time": 1786397547
+    },
+    "chunks_list": []
+  },
+  "enc_00080": {
+    "status": "processed",
+    "content_summary": "Entry: Angina\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; psychiatric; hematological\nSeverity Level: Unknown\nDefinition: Angina see the problem logically. Measurement also provides information to therapists to he...",
+    "content_length": 1992,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:27.587897+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397547,
+      "processing_end_time": 1786397547
+    },
+    "chunks_list": []
+  },
+  "enc_00075": {
+    "status": "processed",
+    "content_summary": "Entry: Anatomy\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; neurological; gastrointestinal\nSeverity Level: Unknown\nDefinition: Anatomy is the branch of biomedical science that deals with the morpholog...",
+    "content_length": 1381,
+    "created_at": "2026-08-10T16:33:56.951100+00:00",
+    "updated_at": "2026-08-10T21:32:27.908786+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223356_8878e902",
+    "metadata": {
+      "processing_start_time": 1786397547,
+      "processing_end_time": 1786397547
+    },
+    "chunks_list": []
+  },
+  "enc_00089": {
+    "status": "processed",
+    "content_summary": "Entry: infections will be beneficial. Corticosteroids are particularly helpful.\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; neurological; gastrointestinal\nSeverity Level: Unknown\nDefinition: Anoxia is...",
+    "content_length": 3303,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:28.005352+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397547,
+      "processing_end_time": 1786397548
+    },
+    "chunks_list": []
+  },
+  "enc_00081": {
+    "status": "processed",
+    "content_summary": "Entry: Angiography\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; neurological; renal; hematological\nSeverity Level: Severe\nDefinition: Angiography is the x-ray (radiographic) study of the blood vessels. An angiogra...",
+    "content_length": 1601,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:28.257399+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397547,
+      "processing_end_time": 1786397548
+    },
+    "chunks_list": []
+  },
+  "enc_00088": {
+    "status": "processed",
+    "content_summary": "Entry: Anosmia\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; immunological; infectious; hematological\nSeverity Level: Unknown\nDefinition: The term anosmia means lack of the sense of smell. It may also refer to a decr...",
+    "content_length": 2810,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:28.346124+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397548,
+      "processing_end_time": 1786397548
+    },
+    "chunks_list": []
+  },
+  "enc_00084": {
+    "status": "processed",
+    "content_summary": "Entry: Animal bite infections\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; neurological; musculoskeletal\nSeverity Level: Critical\nDefinition: The most common problem following an animal bite is simple ...",
+    "content_length": 3792,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:28.609731+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397548,
+      "processing_end_time": 1786397548
+    },
+    "chunks_list": []
+  },
+  "enc_00082": {
+    "status": "processed",
+    "content_summary": "Entry: enzyme inhibitors\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; endocrine; dermatological; hematological\nSeverity Level: Unknown\nDefinition: Angiotensin-converting enzyme inhibitors, often called ACE inhibit...",
+    "content_length": 1323,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:28.686537+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397548,
+      "processing_end_time": 1786397548
+    },
+    "chunks_list": []
+  },
+  "enc_00086": {
+    "status": "processed",
+    "content_summary": "Entry: Anorexia nervosa\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; psychiatric; infectious\nSeverity Level: Critical\nDefinition: Anorexia nervosa is an eating disorder that involves self-imposed...",
+    "content_length": 3397,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:28.987294+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397548,
+      "processing_end_time": 1786397548
+    },
+    "chunks_list": []
+  },
+  "enc_00083": {
+    "status": "processed",
+    "content_summary": "Entry:  salt substitutes that contain potassium\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; respiratory; gastrointestinal; endocrine\nSeverity Level: Unknown\nDefinition: This test measures blood levels of angioten...",
+    "content_length": 1015,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:29.091019+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397548,
+      "processing_end_time": 1786397549
+    },
+    "chunks_list": []
+  },
+  "enc_00085": {
+    "status": "processed",
+    "content_summary": "Entry: Anorectal disorders\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: neurological; gastrointestinal; musculoskeletal; dermatological\nSeverity Level: Unknown\nDefinition: Anorectal disorders are a group of medical disorders that ...",
+    "content_length": 2909,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:29.500777+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397549,
+      "processing_end_time": 1786397549
+    },
+    "chunks_list": []
+  },
+  "enc_00090": {
+    "status": "processed",
+    "content_summary": "Entry: Antacids\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal\nSeverity Level: Unknown\nDefinition: Antacids are medicines that neutralize stomach acid. Purpose Antacids are used to relieve acid indi...",
+    "content_length": 651,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:29.428382+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397549,
+      "processing_end_time": 1786397549
+    },
+    "chunks_list": []
+  },
+  "enc_00087": {
+    "status": "processed",
+    "content_summary": "Entry: Anoscopy\nEntry Type: Surgical Procedure\nIcd Category: Z-codes\nBody Systems: cardiovascular; dermatological; oncological\nSeverity Level: Unknown\nDefinition: An anoscopy is an examination of the rectum in which a small tube is inserted into the ...",
+    "content_length": 1593,
+    "created_at": "2026-08-10T16:34:06.437223+00:00",
+    "updated_at": "2026-08-10T21:32:29.843650+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223406_dc887636",
+    "metadata": {
+      "processing_start_time": 1786397549,
+      "processing_end_time": 1786397549
+    },
+    "chunks_list": []
+  },
+  "enc_00099": {
+    "status": "processed",
+    "content_summary": "Entry: Antianxiety drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; musculoskeletal; dermatological; psychiatric\nSeverity Level: Moderate\nDefinition: Antianxiety drugs are medicines that calm and relax people with...",
+    "content_length": 1374,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:29.914561+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397549,
+      "processing_end_time": 1786397549
+    },
+    "chunks_list": []
+  },
+  "enc_00093": {
+    "status": "processed",
+    "content_summary": "Entry: Anthrax\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: respiratory; gastrointestinal; musculoskeletal; endocrine\nSeverity Level: Critical\nDefinition: Anthrax is an infection caused by the bacterium Bacillus anthracis that pr...",
+    "content_length": 3452,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:30.210010+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397549,
+      "processing_end_time": 1786397550
+    },
+    "chunks_list": []
+  },
+  "enc_00100": {
+    "status": "processed",
+    "content_summary": "Entry: Antiarrhythmic drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; hematological\nSeverity Level: Unknown\nDefinition: Antiarrhythmic drugs are medicines that correct irregular heartbeats and slow down hearts th...",
+    "content_length": 1271,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:30.276194+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397549,
+      "processing_end_time": 1786397550
+    },
+    "chunks_list": []
+  },
+  "enc_00097": {
+    "status": "processed",
+    "content_summary": "Entry: Antiangina drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; psychiatric; hematological\nSeverity Level: Unknown\nDefinition: Antiangina drugs are medicines that relieve the\nDescription: Anti...",
+    "content_length": 872,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:30.599003+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397550,
+      "processing_end_time": 1786397550
+    },
+    "chunks_list": []
+  },
+  "enc_00091": {
+    "status": "processed",
+    "content_summary": "Entry: Antenatal testing\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: gastrointestinal; hematological\nSeverity Level: Unknown\nDefinition: Antenatal testing includes any diagnostic procedures performed before the birth of a baby. 29...",
+    "content_length": 499,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:30.665419+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397550,
+      "processing_end_time": 1786397550
+    },
+    "chunks_list": []
+  },
+  "enc_00096": {
+    "status": "processed",
+    "content_summary": "Entry: Antianemia drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: respiratory; neurological; endocrine; dermatological\nSeverity Level: Unknown\nDefinition: Antianemia drugs are therapeutic agents that increase either the number o...",
+    "content_length": 1285,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:31.040837+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397550,
+      "processing_end_time": 1786397551
+    },
+    "chunks_list": []
+  },
+  "enc_00095": {
+    "status": "processed",
+    "content_summary": "Entry: New York: Marlowe & Company, 2005.\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; endocrine; reproductive; psychiatric\nSeverity Level: Unknown\nDefinition: Androgens are male sex hormones. Antiandrogen drugs are...",
+    "content_length": 1425,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:31.157266+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397550,
+      "processing_end_time": 1786397551
+    },
+    "chunks_list": []
+  },
+  "enc_00092": {
+    "status": "processed",
+    "content_summary": "Entry: Antepartum testing\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: cardiovascular; gastrointestinal; hematological\nSeverity Level: Unknown\nDefinition: Antepartum testing consists of a variety of tests performed late in pregnanc...",
+    "content_length": 1287,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:31.482277+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397551,
+      "processing_end_time": 1786397551
+    },
+    "chunks_list": []
+  },
+  "enc_00094": {
+    "status": "processed",
+    "content_summary": "Entry: Antiacne drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: gastrointestinal; immunological; dermatological; psychiatric\nSeverity Level: Severe\nDefinition: Antiacne drugs are medicines that help clear up pimples, blackheads,...",
+    "content_length": 1295,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:31.534503+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397551,
+      "processing_end_time": 1786397551
+    },
+    "chunks_list": []
+  },
+  "enc_00098": {
+    "status": "processed",
+    "content_summary": "Entry: Antiangiogenic therapy\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: musculoskeletal; hematological; oncological; ophthalmological\nSeverity Level: Moderate\nDefinition: Interactions Antiangina drugs may interact with other med...",
+    "content_length": 1478,
+    "created_at": "2026-08-10T16:34:20.419257+00:00",
+    "updated_at": "2026-08-10T21:32:31.858424+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223420_a73f6c41",
+    "metadata": {
+      "processing_start_time": 1786397551,
+      "processing_end_time": 1786397551
+    },
+    "chunks_list": []
+  },
+  "enc_00102": {
+    "status": "processed",
+    "content_summary": "Entry: Antibiotic-associated colitis\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; infectious; hematological\nSeverity Level: Moderate\nDefinition: Antibiotic-associated colitis is an inflammation o...",
+    "content_length": 2865,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:31.954663+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397551,
+      "processing_end_time": 1786397551
+    },
+    "chunks_list": []
+  },
+  "enc_00109": {
+    "status": "processed",
+    "content_summary": "Entry: Antidepressant drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: neurological; endocrine; psychiatric\nSeverity Level: Moderate\nDefinition: Antidepressant drugs are medicines that reduce\nDescription: Antidepressant agents ac...",
+    "content_length": 826,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:32.364334+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397551,
+      "processing_end_time": 1786397552
+    },
+    "chunks_list": []
+  },
+  "enc_00104": {
+    "status": "processed",
+    "content_summary": "Entry: Antibiotics, topical\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: immunological; dermatological; infectious\nSeverity Level: Severe\nDefinition: Topical antibiotics are medicines applied to the skin to kill or stop the growt...",
+    "content_length": 735,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:32.294833+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397552,
+      "processing_end_time": 1786397552
+    },
+    "chunks_list": []
+  },
+  "enc_00107": {
+    "status": "processed",
+    "content_summary": "Entry: drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; dermatological; hematological\nSeverity Level: Unknown\nDefinition: Anticoagulant drugs, also called anticlotting drugs or blood thinners, are drugs used to pr...",
+    "content_length": 1273,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:32.788156+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397552,
+      "processing_end_time": 1786397552
+    },
+    "chunks_list": []
+  },
+  "enc_00108": {
+    "status": "processed",
+    "content_summary": "Entry: Anticonvulsant drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: neurological; musculoskeletal; dermatological; ophthalmological\nSeverity Level: Severe\nDefinition: Anticonvulsant drugs back pain stiff, swollen, or painful j...",
+    "content_length": 1355,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:32.717564+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397552,
+      "processing_end_time": 1786397552
+    },
+    "chunks_list": []
+  },
+  "enc_00103": {
+    "status": "processed",
+    "content_summary": "Entry: Antibiotics\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: endocrine; immunological; infectious\nSeverity Level: Unknown\nDefinition: Antibiotics are drugs that treat infections caused by bacteria. Some antibiotics may have seco...",
+    "content_length": 1268,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:33.132996+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397552,
+      "processing_end_time": 1786397553
+    },
+    "chunks_list": []
+  },
+  "enc_00110": {
+    "status": "processed",
+    "content_summary": "Entry: Antidepressant drugs, SSRI\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: neurological; psychiatric\nSeverity Level: Severe\nDefinition: SSRI or selective serotonin reuptake inhibitor drugs are prescribed primarily to treat ment...",
+    "content_length": 1270,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:33.150077+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397552,
+      "processing_end_time": 1786397553
+    },
+    "chunks_list": []
+  },
+  "enc_00101": {
+    "status": "processed",
+    "content_summary": "Entry: Antibiotic resistance\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: infectious\nSeverity Level: Severe\nDefinition: Origins Antibiotic resistance is the acquired ability of bacteria to reduce or eliminate the effects of antib...",
+    "content_length": 2226,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:33.542757+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397553,
+      "processing_end_time": 1786397553
+    },
+    "chunks_list": []
+  },
+  "enc_00105": {
+    "status": "processed",
+    "content_summary": "Entry: Anti cancer diet\nEntry Type: Cancer/Oncological\nIcd Category: C00-D49\nBody Systems: gastrointestinal; psychiatric; oncological\nSeverity Level: Unknown\nDefinition: The phrase cancer diet can be used to refer to several different approaches to t...",
+    "content_length": 1393,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:33.610526+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397553,
+      "processing_end_time": 1786397553
+    },
+    "chunks_list": []
+  },
+  "enc_00106": {
+    "status": "processed",
+    "content_summary": "Entry: Anticancer drugs*\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: oncological\nSeverity Level: Moderate\nDefinition: Anticancer drugs, also called antineoplastic drugs, are used to treat malignancies, or cancerous growths. Drug t...",
+    "content_length": 434,
+    "created_at": "2026-08-10T16:34:40.462076+00:00",
+    "updated_at": "2026-08-10T21:32:34.014507+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223440_9d56b158",
+    "metadata": {
+      "processing_start_time": 1786397553,
+      "processing_end_time": 1786397554
+    },
+    "chunks_list": []
+  },
+  "enc_00117": {
+    "status": "processed",
+    "content_summary": "Entry: Antihelminthic drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: gastrointestinal; infectious\nSeverity Level: Unknown\nDefinition: Antihelminthic drugs Side effects Antihelminthic drugs K E Y TE R M S Amebiasis—Parasitic inf...",
+    "content_length": 689,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:33.930895+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397553,
+      "processing_end_time": 1786397553
+    },
+    "chunks_list": []
+  },
+  "enc_00116": {
+    "status": "processed",
+    "content_summary": "Entry: Antigas agents\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: gastrointestinal; infectious\nSeverity Level: Unknown\nDefinition: Antigas agents are medicines that relieve the uncomfortable symptoms of too much gas (flatulence)...",
+    "content_length": 1159,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:34.398418+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397553,
+      "processing_end_time": 1786397554
+    },
+    "chunks_list": []
+  },
+  "enc_00111": {
+    "status": "processed",
+    "content_summary": "Entry: Antidepressant drugs, tricyclic\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: neurological; psychiatric\nSeverity Level: Moderate\nDefinition: Tricyclic antidepressants are medicines that relieve mental depression. Purpose Comb...",
+    "content_length": 1249,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:34.473146+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397554,
+      "processing_end_time": 1786397554
+    },
+    "chunks_list": []
+  },
+  "enc_00113": {
+    "status": "processed",
+    "content_summary": "Entry: Antiemetics\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: neurological; gastrointestinal; endocrine; immunological\nSeverity Level: Unknown\nDefinition: Antiemetics are a class of drugs given to treat nausea and vomiting. The...",
+    "content_length": 1412,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:34.779532+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397554,
+      "processing_end_time": 1786397554
+    },
+    "chunks_list": []
+  },
+  "enc_00119": {
+    "status": "processed",
+    "content_summary": "Entry: vomiting\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: immunological; psychiatric\nSeverity Level: Moderate\nDefinition: *Also used in the treatment of anxiety Antihistamines are drugs that block the action of histamine, a co...",
+    "content_length": 767,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:34.841342+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397554,
+      "processing_end_time": 1786397554
+    },
+    "chunks_list": []
+  },
+  "enc_00120": {
+    "status": "processed",
+    "content_summary": "Entry: Antihypertensive drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; musculoskeletal; dermatological\nSeverity Level: Unknown\nDefinition: Antihypertensive drugs, sometimes called antihypertens...",
+    "content_length": 1423,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:35.344719+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397554,
+      "processing_end_time": 1786397555
+    },
+    "chunks_list": []
+  },
+  "enc_00114": {
+    "status": "processed",
+    "content_summary": "Entry: Antifungal drugs, systemic\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: respiratory; dermatological; infectious\nSeverity Level: Critical\nDefinition: Systemic antifungal drugs are medicines taken by mouth or by injection to t...",
+    "content_length": 1339,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:35.188917+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397554,
+      "processing_end_time": 1786397555
+    },
+    "chunks_list": []
+  },
+  "enc_00118": {
+    "status": "processed",
+    "content_summary": "Entry: Antihemorrhoid drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; immunological; dermatological\nSeverity Level: Unknown\nDefinition: Antihemorrhoid drugs are medicines that reduce the swellin...",
+    "content_length": 1306,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:35.782387+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397555,
+      "processing_end_time": 1786397555
+    },
+    "chunks_list": []
+  },
+  "enc_00112": {
+    "status": "processed",
+    "content_summary": "Entry: test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: cardiovascular; neurological; endocrine; renal\nSeverity Level: Unknown\nDefinition: The antidiuretic hormone (ADH) test measures the level of antidiuretic hormone in the blood...",
+    "content_length": 842,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:35.670951+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397555,
+      "processing_end_time": 1786397555
+    },
+    "chunks_list": []
+  },
+  "enc_00115": {
+    "status": "processed",
+    "content_summary": "Entry: Antifungal drugs, topical\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: dermatological; infectious\nSeverity Level: Unknown\nDefinition: Topical antifungal drugs are medicines applied to the skin to treat skin infections caused...",
+    "content_length": 1328,
+    "created_at": "2026-08-10T16:35:12.456964+00:00",
+    "updated_at": "2026-08-10T21:32:36.104412+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223512_d4fd21c1",
+    "metadata": {
+      "processing_start_time": 1786397555,
+      "processing_end_time": 1786397556
+    },
+    "chunks_list": []
+  },
+  "enc_00127": {
+    "status": "processed",
+    "content_summary": "Entry: Antinausea drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: gastrointestinal; musculoskeletal; dermatological; ophthalmological\nSeverity Level: Unknown\nDefinition: Antinausea drugs are medicines that control nausea—a feeli...",
+    "content_length": 1183,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:36.226080+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397555,
+      "processing_end_time": 1786397556
+    },
+    "chunks_list": []
+  },
+  "enc_00123": {
+    "status": "processed",
+    "content_summary": "Entry: Anti-insomnia drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; musculoskeletal; endocrine; psychiatric\nSeverity Level: Moderate\nDefinition: Anti-insomnia drugs are medicines that help people fall asleep or ...",
+    "content_length": 1297,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:36.538245+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397556,
+      "processing_end_time": 1786397556
+    },
+    "chunks_list": []
+  },
+  "enc_00128": {
+    "status": "processed",
+    "content_summary": "Entry: Antinuclear antibody test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: musculoskeletal; immunological; infectious; hematological\nSeverity Level: Unknown\nDefinition: The antinuclear antibody (ANA) test is a test done early in...",
+    "content_length": 1621,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:36.647542+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397556,
+      "processing_end_time": 1786397556
+    },
+    "chunks_list": []
+  },
+  "enc_00122": {
+    "status": "processed",
+    "content_summary": "Entry: Anti-inflammatory diets\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; gastrointestinal; musculoskeletal; endocrine\nSeverity Level: Unknown\nDefinition: Anti-inflammatory diets are used to prevent or treat infl...",
+    "content_length": 1347,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:36.990421+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397556,
+      "processing_end_time": 1786397556
+    },
+    "chunks_list": []
+  },
+  "enc_00121": {
+    "status": "processed",
+    "content_summary": "Entry: Anti hyperuricemic drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; renal; hematological\nSeverity Level: Moderate\nDefinition: PERIODICALS Frishman, William H. ‘‘Beta-Adrenergic Blockers.’’ Circulation 107 (...",
+    "content_length": 1351,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:37.132864+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397556,
+      "processing_end_time": 1786397557
+    },
+    "chunks_list": []
+  },
+  "enc_00126": {
+    "status": "processed",
+    "content_summary": "Entry: Antimyocardial antibody test\nEntry Type: Diagnostic Test\nIcd Category: Z-codes\nBody Systems: cardiovascular; musculoskeletal; immunological; hematological\nSeverity Level: Unknown\nDefinition: Testing for antimyocardial antibodies is done when e...",
+    "content_length": 1674,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:37.441512+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397557,
+      "processing_end_time": 1786397557
+    },
+    "chunks_list": []
+  },
+  "enc_00124": {
+    "status": "processed",
+    "content_summary": "Entry: Antimalarial drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: infectious\nSeverity Level: Unknown\nDefinition: Description Antimalarial drugs are medicines that prevent or treat malaria. Purpose Antimalarial drugs treat or p...",
+    "content_length": 1251,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:37.515951+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397557,
+      "processing_end_time": 1786397557
+    },
+    "chunks_list": []
+  },
+  "enc_00129": {
+    "status": "processed",
+    "content_summary": "Entry: Antioxidants\nEntry Type: Disease/Condition\nIcd Category: Various\nSeverity Level: Unknown\nDefinition: Antioxidants are molecules that prevent oxygen molecules from interacting with other molecules in a process called oxidation. In the body, ant...",
+    "content_length": 1338,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:37.828529+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397557,
+      "processing_end_time": 1786397557
+    },
+    "chunks_list": []
+  },
+  "enc_00125": {
+    "status": "processed",
+    "content_summary": "Entry: [Tenormin]).\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; neurological; dermatological; hematological\nSeverity Level: Unknown\nDefinition: Description Antimigraine drugs are medicines used to prevent or redu...",
+    "content_length": 1296,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:37.912760+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397557,
+      "processing_end_time": 1786397557
+    },
+    "chunks_list": []
+  },
+  "enc_00130": {
+    "status": "processed",
+    "content_summary": "Entry: Antiparkinson drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: neurological; endocrine; infectious; hematological\nSeverity Level: Moderate\nDefinition: Antiparkinson drugs are medicines that relieve the\nDescription: Levodop...",
+    "content_length": 996,
+    "created_at": "2026-08-10T16:35:39.296021+00:00",
+    "updated_at": "2026-08-10T21:32:38.243854+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223539_17b98add",
+    "metadata": {
+      "processing_start_time": 1786397557,
+      "processing_end_time": 1786397558
+    },
+    "chunks_list": []
+  },
+  "enc_00138": {
+    "status": "processed",
+    "content_summary": "Entry: Antispasmodic drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: gastrointestinal; dermatological; renal; infectious\nSeverity Level: Unknown\nDefinition: Antispasmodic drugs relieve cramps or spasms of the stomach, intestines...",
+    "content_length": 1458,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:38.320636+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397557,
+      "processing_end_time": 1786397558
+    },
+    "chunks_list": []
+  },
+  "enc_00135": {
+    "status": "processed",
+    "content_summary": "Entry: Antiretroviral drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: immunological; infectious; hematological\nSeverity Level: Unknown\nDefinition: Antiretroviral drugs inhibit the reproduction of retroviruses, which are viruses ...",
+    "content_length": 1282,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:38.774506+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397558,
+      "processing_end_time": 1786397558
+    },
+    "chunks_list": []
+  },
+  "enc_00134": {
+    "status": "processed",
+    "content_summary": "Entry: Anti-rejection drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: respiratory; gastrointestinal; immunological; renal\nSeverity Level: Unknown\nDefinition: Anti-rejection drugs are daily medications taken by organ transplant p...",
+    "content_length": 1294,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:38.672606+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397558,
+      "processing_end_time": 1786397558
+    },
+    "chunks_list": []
+  },
+  "enc_00133": {
+    "status": "processed",
+    "content_summary": "Entry: Antipsychotic drugs, atypical\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: psychiatric\nSeverity Level: Unknown\nDefinition: The atypical antipsychotic agents, sometimes called the ‘‘novel’’ antipsychotic agents are a group of...",
+    "content_length": 649,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:39.128371+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397558,
+      "processing_end_time": 1786397559
+    },
+    "chunks_list": []
+  },
+  "enc_00131": {
+    "status": "processed",
+    "content_summary": "Entry: Antiprotozoal drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: gastrointestinal; immunological; infectious; hematological\nSeverity Level: Severe\nDefinition: Antiprotozoal drugs are medicines that treat infections caused by...",
+    "content_length": 1223,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:39.171069+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397558,
+      "processing_end_time": 1786397559
+    },
+    "chunks_list": []
+  },
+  "enc_00137": {
+    "status": "processed",
+    "content_summary": "Entry: Antiseptics\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: dermatological; hematological; ophthalmological\nSeverity Level: Unknown\nDefinition: Entanercept (Enbrel) may also cause blood problems, and some patients who receive...",
+    "content_length": 669,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:39.587490+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397559,
+      "processing_end_time": 1786397559
+    },
+    "chunks_list": []
+  },
+  "enc_00132": {
+    "status": "processed",
+    "content_summary": "Entry: Antipsychotic drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: cardiovascular; neurological; musculoskeletal; dermatological\nSeverity Level: Severe\nDefinition: Antipsychotic drugs are a class of medicines used to treat psy...",
+    "content_length": 1302,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:39.542810+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397559,
+      "processing_end_time": 1786397559
+    },
+    "chunks_list": []
+  },
+  "enc_00140": {
+    "status": "processed",
+    "content_summary": "Entry: Antiulcer drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: gastrointestinal; musculoskeletal; psychiatric; infectious\nSeverity Level: Moderate\nDefinition: Antiulcer drugs are a class of drugs, exclusive of antibacterial ag...",
+    "content_length": 794,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:40.062429+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397559,
+      "processing_end_time": 1786397560
+    },
+    "chunks_list": []
+  },
+  "enc_00136": {
+    "status": "processed",
+    "content_summary": "Entry: Antirheumatic drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: musculoskeletal; endocrine; immunological; renal\nSeverity Level: Critical\nDefinition: Interactions Because of the high frequency of drug interactions associate...",
+    "content_length": 1191,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:39.972046+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397559,
+      "processing_end_time": 1786397559
+    },
+    "chunks_list": []
+  },
+  "enc_00139": {
+    "status": "processed",
+    "content_summary": "Entry: Antituberculosis drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: respiratory; immunological; infectious\nSeverity Level: Moderate\nDefinition: Antituberculosis drugs are medicines used to treat tuberculosis, an infectious d...",
+    "content_length": 1284,
+    "created_at": "2026-08-10T16:35:54.645983+00:00",
+    "updated_at": "2026-08-10T21:32:40.446852+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223554_50b0f270",
+    "metadata": {
+      "processing_start_time": 1786397559,
+      "processing_end_time": 1786397560
+    },
+    "chunks_list": []
+  },
+  "enc_00143": {
+    "status": "processed",
+    "content_summary": "Entry: Anxiety disorders\nEntry Type: Disease/Disorder\nIcd Category: Various\nBody Systems: cardiovascular; musculoskeletal; psychiatric\nSeverity Level: Unknown\nDefinition: Anxiety disorders are a group of mental disturbances characterized by anxiety a...",
+    "content_length": 2798,
+    "created_at": "2026-08-10T16:36:06.400310+00:00",
+    "updated_at": "2026-08-10T21:32:40.377349+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223606_d1298eb7",
+    "metadata": {
+      "processing_start_time": 1786397560,
+      "processing_end_time": 1786397560
+    },
+    "chunks_list": []
+  },
+  "enc_00148": {
+    "status": "processed",
+    "content_summary": "Entry: Aortic valve replacement\nEntry Type: Disease/Condition\nIcd Category: Various\nBody Systems: cardiovascular; hematological\nSeverity Level: Unknown\nDefinition: Aortic valve replacement involves a medical procedure in which an artificial mechanica...",
+    "content_length": 2066,
+    "created_at": "2026-08-10T16:36:06.400310+00:00",
+    "updated_at": "2026-08-10T21:32:40.743562+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223606_d1298eb7",
+    "metadata": {
+      "processing_start_time": 1786397560,
+      "processing_end_time": 1786397560
+    },
+    "chunks_list": []
+  },
+  "enc_00141": {
+    "status": "processed",
+    "content_summary": "Entry: Antiviral drugs\nEntry Type: Drug/Medication\nIcd Category: Various\nBody Systems: neurological; musculoskeletal; infectious; oncological\nSeverity Level: Unknown\nDefinition: Antiviral drugs are medicines that cure or control virus infections. G A...",
+    "content_length": 1312,
+    "created_at": "2026-08-10T16:36:06.400310+00:00",
+    "updated_at": "2026-08-10T21:32:40.849561+00:00",
+    "file_path": "unknown_source",
+    "track_id": "insert_20260810_223606_d1298eb7",
+    "metadata": {
+      "processing_start_time": 1786397560,
+      "processing_end_time": 1786397560
+    },
+    "chunks_list": []
+  },
+  "enc_00145": {
+    "status": "processed",
+    "content_summary": 
